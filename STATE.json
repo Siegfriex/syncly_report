@@ -1,9 +1,9 @@
 {
   "schema": "syncly-report-state/1.0.0",
-  "updated_utc": "2026-09-01T23:31:00Z",
+  "updated_utc": "2026-09-01T23:51:00Z",
   "research_epoch": "RE-20260901-001",
   "execution_run": "RUN-20260902-FULL-001",
-  "phase": "PHASE 1 EXECUTING (Gate 0 PASS 22:48Z)",
+  "phase": "PHASE 1 EXECUTING — pilot GO issued; C/A sessions in orderly shutdown (handoffs on branches)",
   "reporter": "Claude C (single-writer)",
   "authority": "SSOT BRAUN-NEVO-SYNCLY-SSOT-INTERIM-20260902",
   "locks": {
@@ -25,7 +25,7 @@
     "video-feature stratified pilot (~60 posts)"
   ],
   "gates": {
-    "gate0": "PASS (C-0049) — canonical substrate 3,435 @ f8d130c2…3594",
+    "gate0": "PASS",
     "gate1": "PENDING — source validity (A_SOURCE_PANEL/T_S) + content validity (T_C)",
     "gate2": "PENDING — category validity",
     "gate3": "PENDING — entity/meaning reliability (after details/video pilot)",
@@ -51,14 +51,14 @@
     "P02": 69,
     "P03": 186
   },
-  "ledger_rows": 112,
+  "ledger_rows": 138,
   "last_reported_shas": {
     "main": "0cd7a9f",
     "claude-a/syncly-authority-governor": "29f790b",
     "claude-b/syncly-production-data": "72e12f5",
     "claude-c/syncly-assurance-fable": "b85da61",
     "claude-d/syncly-research-rnd": "ab30dae",
-    "bus/syncly-ledger": "67ff97f",
+    "bus/syncly-ledger": "7e78cff",
     "integration/syncly-current": "2c56155"
   },
   "report_cadence": {
@@ -96,5 +96,14 @@
     "C-0050→C-0052": "pilot 층 기준 full-caption으로 수정 완료; 60건 재판정 감사 대기",
     "codebook_v2": "A_SOURCE_PANEL 코드북 §1 이름 매칭 의미론 고정 필요 (D)"
   },
-  "verified_findings_count": 10
+  "verified_findings_count": 10,
+  "session_note": "C 세션 정상 종료 (2026-09-02 08:51 KST). 핸드오프: claude-c branch audits/harness/C_SESSION_HANDOFF_20260902.md. A도 동시 정지 (A_HANDOFF_20260901T2340Z.md). B/D는 사전승인 하 계속.",
+  "findings_registry": "10/10 VERIFIED, 0 PRELIMINARY (C-0058/0059)",
+  "pilot": {
+    "status": "GO issued (C-0061)",
+    "sample": "video_pilot_sample_v3.csv 60건 (검증 PASS)",
+    "rule": "v1.1 (상한 독해, SHORT-CAPTION-SCOPE)",
+    "executor": "D"
+  },
+  "event_backlog_note": "C-0055~C-0061 구간 demo 커밋 event 파일 미생성 — 차기 C 세션이 STATE baseline 대비 1:1 생성 (핸드오프 §1-4)"
 }
