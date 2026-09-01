@@ -1,0 +1,45 @@
+{
+  "schema": "syncly-report-state/1.0.0",
+  "updated_utc": "2026-09-01T22:30:30Z",
+  "research_epoch": "RE-20260901-001",
+  "execution_run": "RUN-20260902-FULL-001",
+  "phase": "PHASE0_FINALIZATION — PHASE1 READY AFTER C ASSURANCE",
+  "reporter": "Claude C (single-writer)",
+  "authority": "SSOT BRAUN-NEVO-SYNCLY-SSOT-INTERIM-20260902",
+  "locks": {
+    "QUERY_SOURCE_LOCK": true,
+    "ANALYSIS_CUTOFF": "2026-08-31T00:00:00Z",
+    "cutoff_status": "LOCKED; awaiting B rematerialization + C assurance (Gate 0)",
+    "query_mutation": "PROHIBITED within current epoch"
+  },
+  "constructs": {
+    "T_S": "source-based category entry = A_SOURCE_PANEL ∩ M01",
+    "T_C": "content-based target-affinity subset of M01 (after full-details)",
+    "legacy_single_T": "DEPRECATED"
+  },
+  "approvals": ["full-details retrieval (~857 calls)", "promotion enumeration", "language enumeration (manual precision QA required)", "video-feature stratified pilot (~60 posts)"],
+  "gates": {
+    "gate0": "PENDING — cutoff rematerialization + exact hash + C verification",
+    "gate1": "PENDING — source validity (A_SOURCE_PANEL/T_S) + content validity (T_C)",
+    "gate2": "PENDING — category validity",
+    "gate3": "PENDING — entity/meaning reliability (after details/video pilot)",
+    "gate4": "PROVISIONAL — n>=10 quantitative else qualitative; reassess after video pilot",
+    "gate5": "CONDITIONAL PASS — robust variants (Full / minus-top1 / minus-top1%) mandatory"
+  },
+  "holds": {
+    "HOLD-A0013": "Phase 2 platform-level quantitative product-comparison claims gated by Gate 4 reassessment after video pilot (narrowed per SSOT)"
+  },
+  "corpus_frozen_night": {"A01": 1849, "M01": 1271, "P02": 64, "P03": 179, "D00_listable": 193, "unique_substrate": 3503},
+  "corpus_live_ui_20260902": {"A01": 1892, "M01": 1292, "P02": 69, "P03": 186},
+  "ledger_rows": 92,
+  "last_reported_shas": {
+    "main": "2c56155",
+    "claude-a/syncly-authority-governor": "fb556af",
+    "claude-b/syncly-production-data": "7bddefe",
+    "claude-c/syncly-assurance-fable": "2989e84",
+    "claude-d/syncly-research-rnd": "682bc90",
+    "bus/syncly-ledger": "09e2512",
+    "integration/syncly-current": "2c56155"
+  },
+  "report_cadence": {"watchdog_seconds": 180, "full_status_minutes": 30, "last_full_report_utc": "2026-09-01T22:30:30Z"}
+}
