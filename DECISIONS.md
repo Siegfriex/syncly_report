@@ -20,10 +20,15 @@
 ## Agent 판정 (A disposition)
 - A-0013: PRF-0005(비교 격자 붕괴) RECONCILE — 발견 유효성 수용, Phase 2 정량 비교 클레임은 HOLD-A0013으로 보류 (C가 SSOT Gate 4 경로로 조화)
 
+## 확정 (추가, 09-02 07:37~08:00 KST)
+- A-0014: LOCK/CUTOFF 공식 비준, B8=COMPLETE, bundle v2=RATIFIED
+- C-0049: **Gate 0 PASS** — canonical 분모 3,435 (EPOCH-CORPUS-RULE)
+- C-0047: 상세표본 147 기준(보충 금지); GUARD-C0047(패널은 재물질화 후 — 충족됨)
+
 ## 대기 중
-- A의 LOCK/CUTOFF 공식 비준 티켓
-- B8 완료 판정, 데이터 번들 v2 비준 (A 몫)
-- Gate 0 최종 판정 (B 재물질화 후 C)
+- C-0050: video-pilot 포함 규칙 fix-forward (B, 추출 전)
+- Gate 1~5 재평가 (Phase 1 산출 도착 시)
+- GO_PHASE2 (Gates 1~5 PASS 후 A 발행)
 
 ## 기각/금지 (주장 경계 — SSOT §10)
 - SOV Insight의 시장점유율 해석 금지
