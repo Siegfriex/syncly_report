@@ -1,16 +1,17 @@
 {
   "schema": "syncly-report-state/1.0.0",
-  "updated_utc": "2026-09-01T22:40:00Z",
+  "updated_utc": "2026-09-01T22:45:30Z",
   "research_epoch": "RE-20260901-001",
   "execution_run": "RUN-20260902-FULL-001",
-  "phase": "PHASE0_FINALIZATION — PHASE1 READY AFTER C ASSURANCE",
+  "phase": "PHASE0 FINALIZATION EXECUTING — B cutoff rematerialization in flight, C Gate 0 standing",
   "reporter": "Claude C (single-writer)",
   "authority": "SSOT BRAUN-NEVO-SYNCLY-SSOT-INTERIM-20260902",
   "locks": {
     "QUERY_SOURCE_LOCK": true,
     "ANALYSIS_CUTOFF": "2026-08-31T00:00:00Z",
     "cutoff_status": "LOCKED; awaiting B rematerialization + C assurance (Gate 0)",
-    "query_mutation": "PROHIBITED within current epoch"
+    "query_mutation": "PROHIBITED within current epoch",
+    "ratified_by_A": "A-0014 (LOCK/CUTOFF/B8 COMPLETE/bundle v2)"
   },
   "constructs": {
     "T_S": "source-based category entry = A_SOURCE_PANEL ∩ M01",
@@ -32,7 +33,9 @@
     "gate5": "CONDITIONAL PASS — robust variants (Full / minus-top1 / minus-top1%) mandatory"
   },
   "holds": {
-    "HOLD-A0013": "Phase 2 platform-level quantitative product-comparison claims gated by Gate 4 reassessment after video pilot (narrowed per SSOT)"
+    "HOLD-A0013": "Phase 2 platform-level quantitative product-comparison claims gated by Gate 4 reassessment after video pilot (narrowed per SSOT)",
+    "HOLD-C0014": "RELEASED",
+    "HOLD-C0016": "RELEASED"
   },
   "corpus_frozen_night": {
     "A01": 1849,
@@ -48,14 +51,14 @@
     "P02": 69,
     "P03": 186
   },
-  "ledger_rows": 93,
+  "ledger_rows": 98,
   "last_reported_shas": {
-    "main": "2c56155",
-    "claude-a/syncly-authority-governor": "fb556af",
+    "main": "0cd7a9f",
+    "claude-a/syncly-authority-governor": "4421e1d",
     "claude-b/syncly-production-data": "7bddefe",
-    "claude-c/syncly-assurance-fable": "b4b53ae",
+    "claude-c/syncly-assurance-fable": "4d92ea7",
     "claude-d/syncly-research-rnd": "18b48a8",
-    "bus/syncly-ledger": "9b1547f",
+    "bus/syncly-ledger": "4878412",
     "integration/syncly-current": "2c56155"
   },
   "report_cadence": {
