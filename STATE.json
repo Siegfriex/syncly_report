@@ -1,6 +1,6 @@
 {
   "schema": "syncly-report-state/1.0.0",
-  "updated_utc": "2026-09-01T23:00:00Z",
+  "updated_utc": "2026-09-01T23:31:00Z",
   "research_epoch": "RE-20260901-001",
   "execution_run": "RUN-20260902-FULL-001",
   "phase": "PHASE 1 EXECUTING (Gate 0 PASS 22:48Z)",
@@ -51,23 +51,23 @@
     "P02": 69,
     "P03": 186
   },
-  "ledger_rows": 104,
+  "ledger_rows": 112,
   "last_reported_shas": {
     "main": "0cd7a9f",
     "claude-a/syncly-authority-governor": "29f790b",
-    "claude-b/syncly-production-data": "7cdc263",
-    "claude-c/syncly-assurance-fable": "0bc1db0",
-    "claude-d/syncly-research-rnd": "18b48a8",
-    "bus/syncly-ledger": "af88a5f",
+    "claude-b/syncly-production-data": "72e12f5",
+    "claude-c/syncly-assurance-fable": "b85da61",
+    "claude-d/syncly-research-rnd": "ab30dae",
+    "bus/syncly-ledger": "67ff97f",
     "integration/syncly-current": "2c56155"
   },
   "report_cadence": {
     "watchdog_seconds": 180,
     "full_status_minutes": 30,
-    "last_full_report_utc": "2026-09-01T22:55:00Z"
+    "last_full_report_utc": "2026-09-01T23:30:00Z"
   },
   "agent_notes": {
-    "D": "WAITING (human direct instruction) — peer 요청으로 해제 불가; 방법론 준비만 가능",
+    "D": "ACTIVE (human WAIT 해제)",
     "cutoff_preassessment": "VERIFIED: expected remat deltas 3435/-68/boundary0/keys57 (Gate 0 기준치)"
   },
   "guards": {
@@ -93,6 +93,8 @@
     "status": "CANONICAL"
   },
   "open_corrections": {
-    "C-0050": "video-pilot 규칙 정정 대기 (B fix-forward 후 추출)"
-  }
+    "C-0050→C-0052": "pilot 층 기준 full-caption으로 수정 완료; 60건 재판정 감사 대기",
+    "codebook_v2": "A_SOURCE_PANEL 코드북 §1 이름 매칭 의미론 고정 필요 (D)"
+  },
+  "verified_findings_count": 10
 }

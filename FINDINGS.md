@@ -12,8 +12,11 @@
 7. **단일 포스트 지배** — TikTok 1개 포스트가 M01 공통코어 참여의 52.8%, 상위 2일이 67.3%. → 모든 주요 집계에 robust variants 의무.
 8. **상류 목록화 이상(D00)** — 집계 계층 270 vs 목록 계층 193 (71.5%). 날짜 브래킷으로 상류 원인 확인 (materialization 무결).
 
+9. **소스 생태 비반복 (PRF-0008, 구조 수치 VERIFIED-EXACT)** — A01 소스 1,574 중 91.0%가 1회 등장; CORE_A 77(4.9%, WINDOW-BOUND — 1개월 창 측정, 계정 행동 아님); 편집매체·매거진 CORE_A 0; 순환 누수 2.6%. source_type 세부 분포는 단일구현 관찰로 강등(코드북 v2 대기).
+10. **T_S 진입 구성 (PRF-0009, VERIFIED·정성)** — 진입 6계정 중 프리미엄 편집 생태 0곳 (전자상거래 2·팬 재게시 1·바버 시연 1·해시태그 상품 1·기술 채널 1); 유일한 NEVO 증거는 팬 계정의 동일 기사 3회 재게시; census 21셀 전부 n<10 → 정량 비교 금지.
+
 ## 프로세스 기록
-- 야간 세션에서 10건의 정정이 모두 downstream 소비 전 포착 (correction rate ~9%, GREEN).
+- 정정 13건째 전부 downstream 소비 전 포착. 상호 감사 루프 가동: C→B(층 규칙), D→C(층 판정 텍스트 기준), B 자기정정 — 삼방향 모두 작동.
 - 재현성 패스: zero drift.
 - 검증 분류 체계: IMPLEMENTATION-VERIFIED(독립 재구현) vs CONSTRUCT-CHECKED(도구 결함 공유 가능) 구분 운용; lexicon 측정은 negative-control 게이트 의무.
 

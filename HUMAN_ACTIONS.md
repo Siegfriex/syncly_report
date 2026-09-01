@@ -19,7 +19,9 @@
 | HUI-006 | P1 | 비디오 파일럿 ~60건 중 일부 human gold spot-check | 비디오 분석 확장 결정 |
 | HUI-007 | P1 | Paid/Organic/Suspected 분류 표본 검증 | message salience vs consumer concern 구분 문구 |
 | HUI-008 | P2 | Language 필터 KO 라벨 정밀도 수동 검증 | 한국 시장 headline 허용 범위 |
-| HUR-004 | P1 | D00 UI 목록 건수 확인 (270 vs 193) | D00 딥에비던스 하한 문구 |
+| HUR-004 | P2↓ | D00 UI 목록 건수 확인 — 서버측 상한 해소 확인됨, confirmatory | D00 증거 코퍼스 각주 |
 | HUR-005 | P2 | YouTube 동명 handle 실채널 동일성 확인 | YT 소스 정체성 CONDITIONAL 해제 |
+
+| HUR-008 | P1 | 12개 계정의 8월(01~31) 창 내 면도 카테고리 포스트 유무 + 각 PostID/URL (Dashboard Author 차원 또는 Quick Search; 진입 6곳은 양성 대조) | 저진입(0.38%) 인과 해석만 — 다른 작업 전부 계속 |
 
 각 항목의 정확한 UI 경로·확인 대상·가설 A/B·다운스트림은 운영 repo의 HUR 티켓(16필드)에 기재 — 필요 시 C가 요청 시점에 제공.
