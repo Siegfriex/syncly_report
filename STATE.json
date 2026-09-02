@@ -1,6 +1,6 @@
 {
  "schema": "syncly-report-state/1.0.0",
- "updated_utc": "2026-09-02T07:48:00Z",
+ "updated_utc": "2026-09-02T07:50:00Z",
  "research_epoch": "RE-20260901-001",
  "execution_run": "RUN-20260902-FULL-001",
  "phase": "v2.2 RATIFIED (A-0059) + REGIONAL_SCHEMA_FREEZE-2.2.0 (C-0099) → AD1~AD5 CREATED (spec v1.2 RECONCILED A-0061; collection in progress, not yet server-listed) → B/D ACTIVATED (C-0100/0101, 0 MCP) → awaiting AD query_ids → Batch 1 collection",
@@ -219,7 +219,7 @@
   "d00_evidence_r2": "261 rows (77 beyond canonical D00; 68 new to substrate) — NON-DENOMINATOR",
   "ko_language_membership": "555/3,435 (16.16%) captured, NOT licensed (manual QA pending); by query A01 251 / M01 213 / D00 112 / P03 5 / P02 0 — C-verified (C-0087)"
  },
- "bus_head": "f4aaff4",
+ "bus_head": "d2630a3",
  "method": {
   "current": "MCP_FIRST_DPDD_v2.2_REGIONAL",
   "proposed_successor": "MCP_FIRST_DPDD_v2.2_REGIONAL",
@@ -296,7 +296,7 @@
   "HR": "falsification memo (D-0048); min-n criterion pairing (floor 20 + 80%-power line); HR5 NO-DECISION unless mart_creative; HR6 needs comparator-seeding symmetry; effect sizes → A; effect size 0.20 frozen for HR1/2/3/4/6 (HR5 NO-DECISION; HR7 0.20 or NO-DECISION) at REGIONAL_MM_SPEC_FREEZE (A-0068)",
   "mm_spec_inputs": "KR Philips premium naming = i9000/프레스티지/SkinIQ/XP94 (S9000 only 2 in KR text); OneBlade excluded; Panasonic vocabulary frozen with KMM5 rule (D-0049, C recount exact); ROLE_INTERNAL_COMPARATOR and ROLE_EXTERNAL_COMPARATOR tokens must not share a substring (s9 vs s9000; C-0111)",
   "gate_r0_sample": "240-post stratified design pre-registered (D-0044); execution = C spend ticket after AD ids CONFIRMED",
-  "detection_parity": "A-0069 precondition; A-0073 revised premise: signs NOT uniform (P1 bare 브라운 = KR over; P2-P5 KR under; X1 s9⊂s9000 = non-directional role merge) → per-component sign + net required; two MEASURED rows (D-0052 2AB asymmetry; B-0050 retailer 37/51); B-0051 pre-repair reach gaps recorded per entity, not summed",
+  "detection_parity": "A-0069 precondition; A-0073 revised premise: signs NOT uniform (P1 bare 브라운 = KR over; P2-P5 KR under; X1 s9⊂s9000 = non-directional role merge) → per-component sign + net required; two MEASURED rows (D-0052 2AB asymmetry; B-0050 retailer 37/51); B-0051 pre-repair reach gaps recorded per entity, not summed; A-0079: NET computed at post level (instrument level), component rows are diagnostics; validation labels per confusion class",
   "token_containment": "TOKEN_CONTAINMENT_PAIRS freeze artifact (C-0113, A-0075 R1 extension): cross-entity pairs S9⊂S9000, Series 9⊂Series 9000, 시리즈 9⊂시리즈 9000 handled by bounding the contained token at every matching site",
   "gate_r0_amendment": "LATIN SCRIPT ≠ ENGLISH; language_detected ≠ script (D-0055 multiscript observation) → D-0044 QA design adds a script-vs-language confusion row"
  },
