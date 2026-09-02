@@ -78,3 +78,4 @@
 - 07:40Z B-0057(D-0056 확인: AD4 전용 어휘로는 Rams 누출) · D-0057 → 07:5xZ **C-0118** affinity 어휘 = 5 slot 전체 100 키워드 (BUS ea3289a)
 - 07:40~41Z A-0081(회귀 집합 = stage 1 게이트) · A-0082(PROXY 라벨) · D-0058(dry run 동반 규칙 — C 기정정) → 08:0xZ **C-0119** (BUS 4a5b7e3, tickets 316)
 - 07:4xZ A-0083 프록시-얇음 근거 철회(PROXY 라벨 유지) (BUS 0334b74)
+- 07:43Z D-0059 · B-0058(회귀 0/10 실행 시험) · A-0084 → 08:0xZ **C-0120 회귀 게이트 PASS, STAGE 1 READY**(AD ids만 대기) (BUS 1b9fa99, tickets 320)

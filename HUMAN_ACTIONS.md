@@ -1,6 +1,6 @@
 # Human 확인 큐
 
-갱신: 2026-09-02T06:50:00Z
+갱신: 2026-09-02T08:07:00Z
 
 ## 완료
 | ID | 내용 | 결과 |
@@ -11,7 +11,7 @@
 ## 열림 (우선순위순)
 | ID | 우선 | 내용 | blocks_scope (이것만 막힘) |
 |---|---|---|---|
-| **HUR-009** | **P0 → 진행 중** | **AD1~AD5 생성 완료(Human 자체 정의, 15:3x KST) — C가 as-created를 AD spec v1.2로 등록**(`reports/AD_BATCH_AS_CREATED_SPEC_v1.2.md`), A RECONCILE 요청(C-0097). Baseline 5개 **전량 Archive 완료** — C canary **ADDRESSABLE**(archived 데이터 접근 정상). 지금 Human이 할 일: **없음**(수집 진행 중; query_id는 C가 서버에서 자동 포착). 선택: AD 5개 설정 화면 스크린샷 1장씩. 참고: AD3가 덤프에 2회 등장 — 서버에 2개면 C가 나중 것 Archive 요청 예정. | Batch 1 수집 착수(B)는 C REGIONAL_SCHEMA_FREEZE 후 |
+| **HUR-009** | **P0 → 진행 중** | **AD1~AD5 생성 완료(Human 자체 정의, 15:3x KST) — C가 as-created를 AD spec v1.2로 등록**(`reports/AD_BATCH_AS_CREATED_SPEC_v1.2.md`), A RECONCILE 요청(C-0097). Baseline 5개 **전량 Archive 완료** — C canary **ADDRESSABLE**(archived 데이터 접근 정상). 지금 Human이 할 일: **UI에서 AD1~AD5 진행률/수집 건수 확인 후 C에 알려주세요**(생성 후 ~75분, 서버 API 목록에 아직 미노출). 그 외 없음. 선택: AD 5개 설정 화면 스크린샷 1장씩. 참고: AD3가 덤프에 2회 등장 — 서버에 2개면 C가 나중 것 Archive 요청 예정. | Batch 1 수집 착수(B)는 C REGIONAL_SCHEMA_FREEZE 후 |
 
 ### 기존 열림
 | CORR-V22-MD-SYNC | P2 | v2.2 Addendum MD(cbb02933…, 25절 'PROPOSED')를 PDF(6102e181…, 34절 'Revised Final', normative)에서 재생성해 표현을 동기화 — A 비준 비차단, FULLY ratified 표기 전 필요 | 방법 상태 'FULLY RATIFIED' 표기만 |
