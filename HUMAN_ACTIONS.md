@@ -1,6 +1,6 @@
 # Human 확인 큐
 
-갱신: 2026-09-02T03:48:56Z
+갱신: 2026-09-02T03:54:58Z
 
 ## 완료
 | ID | 내용 | 결과 |
@@ -11,7 +11,7 @@
 ## 열림 (우선순위순)
 | ID | 우선 | 내용 | blocks_scope (이것만 막힘) |
 |---|---|---|---|
-| **HUR-009** | **P0** | **UI_MUTATION_REQUIRED (C-0084 개정)** — **Archive 전에 먼저**: HUR-007·HUR-008·HUI-005·HUI-007 UI 확인(Baseline Query가 있어야 가능) + A가 B-0040 2건 결정. 그 다음 (1) A의 AD3 옵션 결정 후 AD1~AD5를 claude-c `control/rotation/AD_BATCH_QUERY_SPEC_SHEET_v1.md`대로 생성 (3) query_id·tracking_since·keyword 캡처 → C. (4) **Archive는 단계적(C-0085)**: P02 하나만 먼저 Archive → C가 접근성 canary 검정 → 결과 통보 후 나머지 4개 Archive(또는 중단). Delete 금지, 스크린샷. 요청서 `control/human_review/HUR-009_baseline_rotation_ui_mutation.md` | Batch 1 수집 시작만 |
+| **HUR-009** | **P0** | **UI_MUTATION_REQUIRED (C-0084 개정)** — **지금 순서**: ① HUR-007·HUR-008·HUI-005·HUI-007 UI 확인(Baseline Query 존재 중; 설정 변경 금지) → ② AD1~AD5를 (A-0053 비준·AD3=옵션 A) claude-c `control/rotation/AD_BATCH_QUERY_SPEC_SHEET_v1.md`대로 생성 (3) query_id·tracking_since·keyword 캡처 → C. (4) **Archive는 단계적(C-0085)**: P02 하나만 먼저 Archive → C가 접근성 canary 검정 → 결과 통보 후 나머지 4개 Archive(또는 중단). Delete 금지, 스크린샷. 요청서 `control/human_review/HUR-009_baseline_rotation_ui_mutation.md` | Batch 1 수집 시작만 |
 
 ### 기존 열림
 | ID | 우선 | 내용 | blocks_scope (이것만 막힘) |
