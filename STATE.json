@@ -1,6 +1,6 @@
 {
  "schema": "syncly-report-state/1.0.0",
- "updated_utc": "2026-09-02T07:07:00Z",
+ "updated_utc": "2026-09-02T07:22:00Z",
  "research_epoch": "RE-20260901-001",
  "execution_run": "RUN-20260902-FULL-001",
  "phase": "v2.2 RATIFIED (A-0059) + REGIONAL_SCHEMA_FREEZE-2.2.0 (C-0099) → AD1~AD5 CREATED (spec v1.2 RECONCILED A-0061; collection in progress, not yet server-listed) → B/D ACTIVATED (C-0100/0101, 0 MCP) → awaiting AD query_ids → Batch 1 collection",
@@ -218,7 +218,7 @@
   "d00_evidence_r2": "261 rows (77 beyond canonical D00; 68 new to substrate) — NON-DENOMINATOR",
   "ko_language_membership": "555/3,435 (16.16%) captured, NOT licensed (manual QA pending); by query A01 251 / M01 213 / D00 112 / P03 5 / P02 0 — C-verified (C-0087)"
  },
- "bus_head": "83b129f",
+ "bus_head": "889d41c",
  "method": {
   "current": "MCP_FIRST_DPDD_v2.2_REGIONAL",
   "proposed_successor": "MCP_FIRST_DPDD_v2.2_REGIONAL",
@@ -267,7 +267,7 @@
   "hygiene": "forbidden seeds 0/100 keywords; AD4 definition lacks the exclusion sentence → proposed downstream rule AD4_SHAVING_ONLY; 'everyday carry' in AD3+AD5; identifier D4_MensStyle_Grooming_SelfCare; AD3 appears twice in dump (server to confirm)",
   "b_hold": "no AD downstream materialization before REGIONAL_SCHEMA_FREEZE + activation",
   "ad4_rule": "AD4_SHAVING_ONLY posts excluded from affinity-source denominator AND AD4-discovered shaving-only sources excluded from the affinity source panel (A-0061)",
-  "agents": "B: C-0100 items 1-3 delivered and verified (C-0103); AD ingestion interface ready; no AD pull until C confirms query_ids. D: C-0101 + item 0 (get_post_features demographics row from held pilot payloads)."
+  "agents": "B: C-0100 delivered+verified; AD4 screener stage 1 implemented (B-0048); token list supersession pending (C-0106→D audit→C-0104-v2→A). D: all 7 C-0101 deliverables verified (C-0105); item 8 = validate screen token forms. No AD pull; AD queries not yet listed."
  },
  "baseline_rotation": {
   "server_06_41Z": "all 5 Baseline queries ARCHIVED (P03 186 / P02 69 / M01 1,292 / A01 1,892 / D00 277)",
@@ -281,5 +281,14 @@
   "source": "PREREG-B-002 executed (B-0046), C exact replication (C-0103), 0 MCP calls",
   "batch0_held_evidence": "OFFICIAL_MARKET_ACCOUNT 8 · LOCAL_RETAIL_DESTINATION 127 upper / 51 domain floor · LOCAL_COMMERCE 51 · LOCAL_CAMPAIGN not observable by permitted route · CREATOR_LOCATION aggregate ceiling only (region 89.1% blank, server pop) · LANGUAGE_ONLY 555 separate · UNKNOWN 3,301/3,435 = 96.1% · HIGH/MEDIUM reach 134 (3.9%)",
   "reading": "describes the Batch 0 evidence base under permitted routes; NOT a limitation finding for KMM/EMM (A-0059 R8); tool-surface table: region is the only structured creator-location field observed; get_post_features row → D (0 calls); search_voc UNDETERMINED"
+ },
+ "ad4_screener": "C-0104 ratified (A-0066) with exclusion scope (a)+(b); token list under class-level supersession (C-0106) — stage 1 must not run until C-0104-v2 ratified",
+ "batch2_prep": {
+  "lexicon_v2": "88 candidates (D-0045), audit re-run identical (C-0105); KO_STEM mode licensed; re-audit on AD/KMM corpus before LEXICON_V2_FREEZE",
+  "value_role_codebook": "v0 with counterexamples (D-0046)",
+  "2AB": "strict reading 2AB=0 for MINIMISED_NOT_NEGATED; pair reporting (C-0105)",
+  "HR": "falsification memo (D-0048); min-n criterion pairing (floor 20 + 80%-power line); HR5 NO-DECISION unless mart_creative; HR6 needs comparator-seeding symmetry; effect sizes → A",
+  "mm_spec_inputs": "KR Philips premium naming = i9000/프레스티지/SkinIQ/XP94 (S9000 only 2 in KR text); OneBlade excluded; Panasonic vocabulary frozen with KMM5 rule (D-0049, C recount exact)",
+  "gate_r0_sample": "240-post stratified design pre-registered (D-0044); execution = C spend ticket after AD ids CONFIRMED"
  }
 }

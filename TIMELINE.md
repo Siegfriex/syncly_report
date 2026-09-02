@@ -61,3 +61,4 @@
 - 07:05Z A-0065 AD4 임계 승인 + rider 3 → 07:1xZ **C-0104 AD4 screener 사전등록**(preview 후보 → full caption 확인 후 제외; 수동 밴드 ≤20; spend ≤100) (BUS e66dbdc)
 - 07:06Z B-0047 PREREG-B-003 (127/114/51 3중 인용, GATE_R1 headline 불변) → C 재현 검증 VERIFIED (BUS f2a4e37)
 - 07:08Z A-0066 C-0104 비준(밴드 20·spend 100·2단계) + AD4 제외 범위 정정: (a) AD4 100% shaving-only(full caption) AND (b) 타 slot 본문 affinity 없음 → 5 slot 물질화 후 판정 (BUS 5507991)
+- 07:09Z D-0044~0050(7 산출, 0콜) · B-0048(screener 구현 + 브라운 누락 제기) · 07:12Z A-0067(브라운 = A 결함, 클래스 대칭 점검) → 07:1x~2xZ **C-0105** D 검증·판정 6 · **C-0106** 대칭 점검(BRAUN 비대칭 + 5 entity 후보) → D audit → C-0104-v2 (BUS 889d41c)
