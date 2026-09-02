@@ -1,6 +1,6 @@
 {
  "schema": "syncly-report-state/1.0.0",
- "updated_utc": "2026-09-02T07:43:00Z",
+ "updated_utc": "2026-09-02T07:48:00Z",
  "research_epoch": "RE-20260901-001",
  "execution_run": "RUN-20260902-FULL-001",
  "phase": "v2.2 RATIFIED (A-0059) + REGIONAL_SCHEMA_FREEZE-2.2.0 (C-0099) → AD1~AD5 CREATED (spec v1.2 RECONCILED A-0061; collection in progress, not yet server-listed) → B/D ACTIVATED (C-0100/0101, 0 MCP) → awaiting AD query_ids → Batch 1 collection",
@@ -219,7 +219,7 @@
   "d00_evidence_r2": "261 rows (77 beyond canonical D00; 68 new to substrate) — NON-DENOMINATOR",
   "ko_language_membership": "555/3,435 (16.16%) captured, NOT licensed (manual QA pending); by query A01 251 / M01 213 / D00 112 / P03 5 / P02 0 — C-verified (C-0087)"
  },
- "bus_head": "6d66d08",
+ "bus_head": "f4aaff4",
  "method": {
   "current": "MCP_FIRST_DPDD_v2.2_REGIONAL",
   "proposed_successor": "MCP_FIRST_DPDD_v2.2_REGIONAL",
@@ -288,7 +288,7 @@
   "citation_form_A0071": "96.1% = CEILING on unreachability; 134 = FLOOR on reachability; instrument under-detects Korean (37 additional posts measured on one basis); neither is a point estimate of coverage",
   "after_B004": "LOCAL_RETAIL/COMMERCE sequence 127 (B-002 upper) / 114 (B-003 digit-anchored) / 51 (domain floor) / 80 (B-004 Hangul retailers, 11 ambiguous held out); HIGH/MEDIUM reach FLOOR 163 (was 134); UNKNOWN CEILING 95.25% (was 96.1%); C replicated"
  },
- "ad4_screener": "token list v2.1 CONSOLIDATED (C-0114): all 36 tokens validated; Braun/브라운 and Panasonic/파나소닉 companion rule in BOTH scripts (design-icon sense measured in both; colour KR-only); grooming tokens inactive candidates; pending A ratification → B load → stage 1 (needs AD ids CONFIRMED); A-0077 converges (Latin Braun companion); category tokens validated by topicality sampling (D item 10); B loaded v2 with C-0111 modes — role merge verified gone (212/39→165/0, C replicated)",
+ "ad4_screener": "token list v2.1 RATIFIED (A-0078; A-0074 condition discharged); v2.2 pre-registered (C-0116): Braun trimmer inactive, razor idiom exclusion, Series 9 companion, category tokens validated by topicality (47/48) — pending A ratification → B load → stage 1 (needs AD ids CONFIRMED)",
  "batch2_prep": {
   "lexicon_v2": "88 candidates (D-0045), audit re-run identical (C-0105); KO_STEM mode licensed; re-audit on AD/KMM corpus before LEXICON_V2_FREEZE",
   "value_role_codebook": "v0 with counterexamples (D-0046)",
@@ -297,7 +297,8 @@
   "mm_spec_inputs": "KR Philips premium naming = i9000/프레스티지/SkinIQ/XP94 (S9000 only 2 in KR text); OneBlade excluded; Panasonic vocabulary frozen with KMM5 rule (D-0049, C recount exact); ROLE_INTERNAL_COMPARATOR and ROLE_EXTERNAL_COMPARATOR tokens must not share a substring (s9 vs s9000; C-0111)",
   "gate_r0_sample": "240-post stratified design pre-registered (D-0044); execution = C spend ticket after AD ids CONFIRMED",
   "detection_parity": "A-0069 precondition; A-0073 revised premise: signs NOT uniform (P1 bare 브라운 = KR over; P2-P5 KR under; X1 s9⊂s9000 = non-directional role merge) → per-component sign + net required; two MEASURED rows (D-0052 2AB asymmetry; B-0050 retailer 37/51); B-0051 pre-repair reach gaps recorded per entity, not summed",
-  "token_containment": "TOKEN_CONTAINMENT_PAIRS freeze artifact (C-0113, A-0075 R1 extension): cross-entity pairs S9⊂S9000, Series 9⊂Series 9000, 시리즈 9⊂시리즈 9000 handled by bounding the contained token at every matching site"
+  "token_containment": "TOKEN_CONTAINMENT_PAIRS freeze artifact (C-0113, A-0075 R1 extension): cross-entity pairs S9⊂S9000, Series 9⊂Series 9000, 시리즈 9⊂시리즈 9000 handled by bounding the contained token at every matching site",
+  "gate_r0_amendment": "LATIN SCRIPT ≠ ENGLISH; language_detected ≠ script (D-0055 multiscript observation) → D-0044 QA design adds a script-vs-language confusion row"
  },
  "corpus_live_ui_rule": "ARCHIVED-LIVE-COUNT-UNSTABLE (C-0107; ratified+extended A-0070): archived live counts observed 07:22Z — M01 1,020 / A01 1,043 / P02 69 / P03 186 / D00 277 — are NOT canonical; canonical window re-canary exact (A01 1,816 / M01 1,244 / P03 176); cause undetermined; 'archiving caused it' is itself unverified"
 }

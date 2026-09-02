@@ -50,3 +50,4 @@
 - **토큰 계층 역할 병합(B-0051/C-0111)**: 동결 토큰 's9'가 's9000'의 substring이라 Braun 내부 비교군 토큰이 Philips 포스트 70건 중 21건과 매치. 언어 편향이 아닌 entity 오염이며, KMM/EMM seeding에서 내부/외부 비교군 토큰은 substring을 공유하면 안 된다. 수정: S9·Series 9·시리즈 9는 숫자 비후행 경계.
 - **GATE_R1 입력 갱신(B-004, C 재현)**: 한글 소매처 토큰 추가로 LOCAL_COMMERCE 51→80, HIGH/MEDIUM reach FLOOR 134→163, UNKNOWN CEILING 96.1%→95.25%; 열 인용 127/114/51/80. 여전히 Batch 0 증거기반 기술이며 KMM 예측이 아님.
 - **Braun 토큰 모호성은 양 문자 공통(D-0054/B-0053)**: Latin Braun 399건 중 디자인 아이콘 4~5(1.1%), Hangul 브라운 69건 중 디자인 3·색상 10. 디자인 아이콘 포스트는 TA2 bridge 소스이므로 양 문자 모두 동반 토큰 규칙. '동일 검출'이 대칭의 정의.
+- **범주 토큰 topicality(D-0055, C 재현)**: 단독 매치 포스트 표본 48 중 47 topical. 유일한 결함은 'razor sharp' 관용구가 EDC 나이프(프리미엄 오브젝트 소스)를 shaving-only로 잡는 것 → 관용구 제외. 토큰 단위 substring 차이는 OR-screen의 post 커버리지로 전이되지 않는다(면도 45 → 0 posts).
