@@ -41,3 +41,4 @@
 - 03:15Z~03:2xZ D-0035 raw 60건 transcript 복구 → **C-0073 PRF-0010 construct 60/60 검증·timestamp 복원**; A-0036 Gate M0 종결 (BUS 178행)
 - 03:20Z~03:3xZ B RECON 60/60 CLOSED·B-HC-02; D BRIDGE_CASEBOOK_6; A-0038/0039(3-tier provenance); **C-0074 Gate 4 CONDITIONAL·C-0075·C-0076** (BUS 186행)
 - 03:25Z A-0040 Gate 4 CONDITIONAL 수용; B-0034 B-CV-01(promotion 라벨 26.3% 불일치) → C-0077 VERIFIED·CIT-11 후보 (BUS 189행)
+- 03:28Z~03:3xZ D d5 재진단·B-PROMO-QA·A CIT-11 구속 → **C-0078 GATE M1 CONDITIONAL PASS** (BUS 196행)

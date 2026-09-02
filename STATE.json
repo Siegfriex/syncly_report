@@ -1,9 +1,9 @@
 {
   "schema": "syncly-report-state/1.0.0",
-  "updated_utc": "2026-09-02T03:28:33Z",
+  "updated_utc": "2026-09-02T03:32:00Z",
   "research_epoch": "RE-20260901-001",
   "execution_run": "RUN-20260902-FULL-001",
-  "phase": "PHASE R2 — Baseline Enrichment: Gate M0 CONDITIONAL PASS (C-0070); B checkpoints 1-5 VERIFIED; PRF-0010 construct-verified; Gate M1 OPEN awaiting D limitation re-diagnosis",
+  "phase": "PHASE R2→R3 — Gate M1 CONDITIONAL PASS (C-0078); awaiting A 3,408 decision → Gate 1/2/3/5 final dispositions → Baseline seal",
   "reporter": "Claude C (single-writer)",
   "authority": "Bundle Braun_NEVO_Syncly_MCP_First_Restart_Bundle_20260902 v2.1.0 (APPROVED_FOR_RESTART) > DPDD_MASTER_v2.1 > protocols; legacy: SSOT-INTERIM-20260902, FINAL-20260901",
   "locks": {
@@ -32,7 +32,7 @@
     "gate4": "CONDITIONAL — ACCEPTED by A (A-0040); HOLD-A0013 stays; final with M1",
     "gate5": "CONDITIONAL PASS — robust variants (Full / minus-top1 / minus-top1%) mandatory",
     "gateM0": "CONDITIONAL PASS — ACCEPTED AND CLOSED (A-0036)",
-    "gateM1": "OPEN — inputs: B checkpoints 1-5 verified, promotion complete, 3,408/3,435 lack full text; awaiting D d5 re-diagnosis",
+    "gateM1": "CONDITIONAL PASS (C-0078) — preview dependency removed; batch/aggregate/page enrichment complete & verified; targeted text 39 / features 72; d5 re-diagnosis accepted (0 TRUE_SYNCLY_LIMIT); COND: A 3,408 decision, HUI-007 label, lexicon v2 before Batch 2",
     "gate6": "NOT_STARTED — business activation"
   },
   "holds": {
@@ -54,14 +54,14 @@
     "P02": 69,
     "P03": 186
   },
-  "ledger_rows": 189,
+  "ledger_rows": 196,
   "last_reported_shas": {
     "main": "7e030b0",
-    "claude-a/syncly-authority-governor": "f7aca25",
-    "claude-b/syncly-production-data": "438a24b",
-    "claude-c/syncly-assurance-fable": "1fea715",
-    "claude-d/syncly-research-rnd": "cc5df8d",
-    "bus/syncly-ledger": "76d27d8",
+    "claude-a/syncly-authority-governor": "e750c82",
+    "claude-b/syncly-production-data": "0b48898",
+    "claude-c/syncly-assurance-fable": "f019381",
+    "claude-d/syncly-research-rnd": "2260b8f",
+    "bus/syncly-ledger": "ee38a43",
     "integration/syncly-current": "2c56155"
   },
   "report_cadence": {
@@ -70,10 +70,10 @@
     "last_full_report_utc": "2026-09-02T03:28:33Z"
   },
   "agent_notes": {
-    "A": "ACTIVE — A-0032/33/34 (CIT-07/08/09); awaiting M1",
-    "B": "ACTIVE — RECON CLOSED 60/60; B-PROMO-QA (classifier self-consistency, 0 calls) routed",
-    "C": "ACTIVE — C-0074/0075/0076; awaiting d5 for Gate M1",
-    "D": "ACTIVE — d4 BRIDGE_CASEBOOK_6 VERIFIED; d5 limitation re-diagnosis next (Gate M1 input)"
+    "A": "ACTIVE — owes 3,408 design decision (M1 input delivered), then Gate 1-5 disposition & seal judgement",
+    "B": "ACTIVE — all checkpoints + QA closed; blocked on nothing",
+    "C": "ACTIVE — Gate 1/2/3/5 final dispositions ready to issue after A decision",
+    "D": "ACTIVE — d1-d6 all delivered"
   },
   "guards": {
     "GUARD-C0047": "A_SOURCE_PANEL/T_S 구축은 B 재물질화+Gate0 통과 이후 (57키 증발 방지)"
@@ -163,7 +163,7 @@
     "CIT-08": "time buckets KST / filters UTC",
     "CIT-09": "Response leg not claimable (content-blind + RFR 68.3%)",
     "CIT-10": "codebook brand/language coverage (ko/en-only; Korean budget brands absent) is a Batch 2 design defect — Product Occupancy other-electric cell undercounted until lexicon v2",
-    "CIT-11 (proposed, C-verified)": "PROMOTION-LABEL-CONSTRUCT — vendor promotion label self-inconsistent 26.3% group-level on duplicate families; corpus shares bounded ≤0.73pp; fine-grained Paid/Organic contrasts need caveat + duplicate-family check"
+    "CIT-11": "BOUND (A-0042): PROMOTION-LABEL-CONSTRUCT — vendor promotion label self-inconsistent (26.3% group / agreement 78.0% on caption-head families); corpus shares bounded ≤0.73pp; fine-grained Paid/Organic contrasts need caveat + duplicate-family check"
   },
   "alt2": {
     "81.8%": "RETIRED",
@@ -175,5 +175,14 @@
     "SUSPECTED": 211,
     "supply_share_stable_RFR_pct": 0.5,
     "engagement_share_unstable_RFR_pct": 68.3
+  },
+  "limitation_rediagnosis": {
+    "LIM-001 203-char preview": "RESOLVED_BY_MCP (availability)",
+    "LIM-002 product sparsity": "MEASUREMENT_DESIGN_LIMIT (lexicon brand/language; focal sparsity itself not text-limited)",
+    "LIM-003 T_C cost": "PARTIALLY_RESOLVED (depends on T_C definition)",
+    "LIM-004 creative": "PARTIALLY_RESOLVED (72.7% prose-reachable; timing unreachable; shortform-only)",
+    "LIM-005 VOC": "OPEN — TRUE_SYNCLY_LIMIT(narrow) vs MEASUREMENT_DESIGN_LIMIT pending HUI-007",
+    "LIM-006 source ecology": "MEASUREMENT_DESIGN_LIMIT (1-month keyword frame)",
+    "TRUE_SYNCLY_LIMIT_declared": 0
   }
 }

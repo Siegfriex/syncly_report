@@ -32,3 +32,14 @@
 - **PRF-0010 video pilot (2026-09-02)** — get_post_features 60/60. 짧은 캡션(SHORT-CAPTION-SCOPE) 층1에서 영상 서술이 코드북 엔티티를 드러내는 비율 **상한 57.1%(20/35)**, 경계 제외 40.0%, 전기면도기 엔티티만 34.3%; 층2 민감도 15/15. 모든 arm MATERIAL(상한 독해: "상한이 임계를 넘었다"까지만). FB/IG Post는 영상 feature set 없음(10/10). C 검증 완료: 사전 지정 12건 독립 재호출(구절 12/12) + D가 세션 transcript에서 복구한 60건 원본(12건 겹침이 C recall과 전문 동일) 위에서 라벨 60/60·문자열 매칭 60/60·호출 순서(timestamp) 검증. 인용 규칙: electric+PRIMARY 11/35(31.4%)를 20/35와 병기, 57.1% 단독 인용 금지. 코드북 외 브랜드(DIXIX/JOAS/Daiso)는 NEG 처리됨(coverage caveat). HUI-006 사람 spot-check만 대기.
 - **OBS-0003 (VOC)** — search_voc 25회 전건 무반환, 동일 질의가 summary 검색엔 반환 → 이 workspace의 댓글 index 공백. 라벨(vendor vs 수집설정)은 HUI-007 후. **CIT-07: 소비자 발화(Observed Reception)는 현재 코퍼스에서 관측 불가.**
 - **PRF-0012** — top_influencers 상위 24 handle 전부 로컬 1,574 registry에 기포함(신규 0); PRF-0008 재현. AD1~AD5 vocabulary 후보는 설계 근거 전용.
+
+## Limitation 재진단 (D d5, C-0078 수용 · 2026-09-02)
+| 항목 | 재분류 | 근거 |
+|---|---|---|
+| 203자 preview | RESOLVED_BY_MCP (가용성) | details/features/video 검색으로 전문·analyzer 산문 회수 가능; FaceByte 실물 표본 |
+| 제품 희소성 | MEASUREMENT_DESIGN_LIMIT | 코드북 ko/en 전용·브랜드 커버리지 협소(CIT-10); 단 focal 희소성은 텍스트 한계가 아님(video로도 2/35) |
+| T_C 비용 | PARTIALLY_RESOLVED | 싼 경로는 영상 산문, 캡션 전문은 아님 — T_C 정의에 의존 |
+| 크리에이티브 관측 | PARTIALLY_RESOLVED | 72.7% prose 도달, timing 미도달, 숏폼 전용 |
+| VOC 가용성 | 미확정 (HUI-007) | 도구 정상·index 공백; vendor vs 수집설정 |
+| 소스 생태 | MEASUREMENT_DESIGN_LIMIT | 1개월 키워드 Query 프레임 |
+**TRUE_SYNCLY_LIMIT 확정 0건.**
