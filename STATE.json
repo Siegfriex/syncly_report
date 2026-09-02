@@ -1,9 +1,9 @@
 {
  "schema": "syncly-report-state/1.0.0",
- "updated_utc": "2026-09-02T11:06:56Z",
+ "updated_utc": "2026-09-02T11:23:33Z",
  "research_epoch": "RE-20260901-001",
  "execution_run": "RUN-20260902-V23-001",
- "phase": "v2.3 RUN STARTED (RUN_START_V23_FROZEN_HYPOTHESIS_LOOP, C-V23-000) — Gate V0 PASS; P1/P2/P3 prereg FROZEN; A released (C-V23-006), awaiting A-V23-ACK; B/D/E HOLD",
+ "phase": "v2.3 Loop 1 RUNNING — A-0088 ACK verified ACCEPT (C-V23-010); B/D/E released (C-V23-007/008/009); A WAIT; P3-Q5 HOLD; M4 deferred until H1-2.1",
  "reporter": "Claude C (single-writer)",
  "authority": "Human latest instruction > main 68f1ad3 Braun_NEVO_Syncly_v2.3_Final_Execution_Bundle_20260902/ (state/CURRENT_AUTHORITY_v2.3.json > DPDD_MASTER_v2.3.md > protocols) > C-sealed v2.3 artifacts > INHERITED_FROZEN_CHECKPOINT > legacy/ (v2.1, v2.2, prior handoffs: lineage only)",
  "locks": {
@@ -55,15 +55,16 @@
   "P03": 186,
   "RULE": "ARCHIVED-LIVE-COUNT-UNSTABLE (C-0107, A-0070): no figure read from an archived query's live 'Collected' is canonical; only date-filtered totals against the sealed manifest are"
  },
- "ledger_rows": 337,
+ "ledger_rows": 342,
  "last_reported_shas": {
   "main": "68f1ad3",
-  "claude-a/syncly-authority-governor": "9e315aa",
+  "claude-a/syncly-authority-governor": "d603955 (local)",
   "claude-b/syncly-production-data": "7533ef6",
-  "claude-c/syncly-assurance-fable": "8a27ba4",
+  "claude-c/syncly-assurance-fable": "578304a",
   "claude-d/syncly-research-rnd": "eb77c4c",
-  "bus/syncly-ledger": "43b4734",
-  "integration/syncly-current": "2c56155"
+  "bus/syncly-ledger": "71f72ca",
+  "integration/syncly-current": "2c56155",
+  "claude-e/syncly-desk-evidence": "68f1ad3"
  },
  "report_cadence": {
   "watchdog_seconds": 180,
@@ -71,11 +72,11 @@
   "last_full_report_utc": "2026-09-02T06:10:10Z"
  },
  "agent_notes": {
-  "A": "RELEASED (C-V23-006) — awaiting A-V23-ACK",
-  "B": "HOLD until A ACK verified",
-  "C": "v2.3 intake done; waiting for A ACK; then B/D/E independent releases",
-  "D": "HOLD until A ACK verified",
-  "E": "HOLD (new lane) until A ACK verified"
+  "A": "WAIT — ACK verified; blind gold rating later",
+  "B": "RUNNING Loop 1 (P1→P2→P3-Q1..Q4)",
+  "C": "awaiting B-0062 / D-0061 / E-0001; then COUNTER-01 routing + C-V23-012 spend ticket",
+  "D": "RUNNING mart build + P1/P2 local Loop 1",
+  "E": "RUNNING independent desk collection"
  },
  "guards": {
   "GUARD-C0047": "A_SOURCE_PANEL/T_S 구축은 B 재물질화+Gate0 통과 이후 (57키 증발 방지)"
@@ -306,7 +307,7 @@
   "status": "OPEN — v2.3 run started 2026-09-02 ~20:05 KST",
   "previous_close": "C-0123 (legacy lineage)",
   "restart_order": "C → A → B+D+E",
-  "c_head": "8a27ba4"
+  "c_head": "578304a"
  },
  "execution_mode": "FROZEN_CORPUS_ONLY",
  "v23": {
@@ -324,10 +325,10 @@
    "desk_independence": "C-V23-005"
   },
   "release_state": {
-   "A": "RELEASED C-V23-006 (Human starts A session; ACK expected A-0088 = A-V23-ACK)",
-   "B": "HOLD (reserved C-V23-007)",
-   "D": "HOLD (reserved C-V23-008)",
-   "E": "HOLD (reserved C-V23-009)"
+   "A": "WAIT (ACK verified)",
+   "B": "RELEASED Loop 1 — TCK-20260902112214-C-V23-007 (cap 120 read-only calls; P3-Q5 HOLD)",
+   "D": "RELEASED Loop 1 — TCK-20260902112214-C-V23-008 (0 MCP; M4 deferred)",
+   "E": "RELEASED independent — TCK-20260902112214-C-V23-009 (branch claude-e/syncly-desk-evidence @ 68f1ad3)"
   },
   "superseded_legacy_next_actions": [
    "AD1~AD5 query_id wait / list_data_queries CONFIRMED",
@@ -339,6 +340,24 @@
    "Batch 1/2 acquisition DAG"
   ],
   "open_for_A": "text-coverage priority (a/b/c) for classifier labels: 3,408 posts (99.2%) lack local full text",
-  "consumer_reception": "NO-DECISION (VOC not observed)"
+  "consumer_reception": "NO-DECISION (VOC not observed)",
+  "a_ack": {
+   "ticket": "TCK-20260902111307-A-0088",
+   "verdict": "ACCEPT 13/13 (C-V23-010)",
+   "text_coverage": "(b) bounded read-only recovery of frozen NEVO/S9 subset + (a) Tier-A/B denominator disclosure; (c) rejected",
+   "gold": "Human final; A blind 2nd rater; D excluded",
+   "a_state": "WAIT until Page seal",
+   "note": "A commit d603955 local — origin push pending by A"
+  },
+  "reserved": {
+   "C-V23-011": "P1/P2-COUNTER-01 routing",
+   "C-V23-012": "full-detail recovery spend ticket + cap (prelim ceiling 450) after D subset size"
+  },
+  "c_clarifications": [
+   "CLAR-1 quadrant coords PROVISIONAL at 1.1/2.1; decision class only after full ladder; prereg governs",
+   "CLAR-2 A sequencing adopted as C routing",
+   "CLAR-3 recovery = separate spend ticket",
+   "CLAR-4 A WAIT"
+  ]
  }
 }
