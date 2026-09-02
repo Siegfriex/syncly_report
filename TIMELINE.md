@@ -59,3 +59,4 @@
 - 07:00Z B-0046 PREREG-B-002 실행(UNKNOWN 96.1%; HIGH/MEDIUM 134) + AD 인터페이스 + no-rewrite 재발행 → 07:06Z **C-0103 정확 재현 검증** + 판정 3(AD4 100%/수동검토, D demographics 행, PREREG-B-003)
 - 07:03Z A-0064 R8 종결 · 3,408 결정을 KMM/EMM 범위로 재개방(REGIONAL_MM_SPEC_FREEZE에서 재결정) · GATE_R2 실패 시 NO-DECISION 사전확약(수치 임계는 C가 count 열람 전 설정) (BUS db3d5ec)
 - 07:05Z A-0065 AD4 임계 승인 + rider 3 → 07:1xZ **C-0104 AD4 screener 사전등록**(preview 후보 → full caption 확인 후 제외; 수동 밴드 ≤20; spend ≤100) (BUS e66dbdc)
+- 07:06Z B-0047 PREREG-B-003 (127/114/51 3중 인용, GATE_R1 headline 불변) → C 재현 검증 VERIFIED (BUS f2a4e37)
