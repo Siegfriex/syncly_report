@@ -1,8 +1,10 @@
 # Syncly 연구 현황 — LATEST
 
-갱신: 2026-09-02T11:25Z (KST 20:25) · Epoch `RE-20260901-001` · Run `RUN-20260902-V23-001` · Method `MCP_FIRST_DPDD_v2.3_FROZEN_CORPUS_HYPOTHESIS_LOOP` · 작성: Claude C (단독 writer)
+갱신: 2026-09-02T12:27Z (KST 21:27) · Epoch `RE-20260901-001` · Run `RUN-20260902-V24-LOCAL-001` · Authority `PRESENTATION_FIRST_NEVO_V2.4` · 작성: Claude C (단독 writer)
 
 ## 한 줄 현황
+**(21:25) v2.4 PRESENTATION-FIRST RE-ENTRY.** Human이 `Braun_NEVO_Presentation_First_Final_Bundle_v2.4_20260902`를 현재 권위로 확정(main 8e8c74d, 17/17 SHA). C: `PRESENTATION_FIRST_V24_REENTRY` → `GLOBAL_AGENT_REVOKE_V24`(v2.3 release 티켓 실행권한 종료, 결과는 historical evidence 보존) → input ledger SEAL(B/D/E 53행, 절대경로+sha) → **D-V24-001_LOCAL_PRESENTATION_VALIDATION 발행**(WP0~WP8, Tier A headline, Syncly CLOSED). 상태: B CLOSED · E FROZEN · A WAIT · D RELEASED · C ACTIVE. **Human**: D 세션 시작; A/B/D에게 로컬 커밋 push 요청(provenance delivery). 상세: reports/30min/20260902/2125_v24_reentry.md
+
 **(20:25) A ACK 검증 ACCEPT → B/D/E Loop 1 RELEASE.** A-0088(`A-V23-ACK`)은 prereg sha echo 정확, threshold/RQ 변경 없음, result peeking 없음(C-V23-010, 13/13). text-coverage = (b) 제품 subset 한정 read-only 회수 + (a) coverage 공개. B(C-V23-007: P1→P2→P3-Q1..Q4, P3-Q5 HOLD, cap 120콜) · D(C-V23-008: mart → P1/P2 local, MCP 0, M4는 H1-2.1 후) · E(C-V23-009: 독립 desk, 신규 branch claude-e). A는 WAIT. **Human**: B/D/E 세션 시작 + A에게 d603955 origin push 요청. 상세: reports/30min/20260902/2025_v23_loop1_release.md
 
 **(20:10) v2.3 RUN START — `RUN_START_V23_FROZEN_HYPOTHESIS_LOOP`(C-V23-000).** 유일 권위 = main 68f1ad3 v2.3 Final Execution Bundle; v2.1/v2.2/과거 handoff/AD 대기/Batch 1·2 DAG 전부 legacy. Gate V0 PASS(3,435/f8d130c2 등 12/12 재계산 일치, MCP 0콜). P1/P2/P3 사전등록 동결(α=.05, BH q=.05, |h|≥.20, TOST/ROPE, loop 2). A release(C-V23-006) — **Human이 A 세션을 시작해 주세요**; B/D/E는 A ACK 검증 후 HOLD 해제. E lane branch 신설은 Human 결정. 상세: reports/30min/20260902/2010_v23_run_start.md

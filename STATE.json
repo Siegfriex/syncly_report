@@ -1,11 +1,11 @@
 {
  "schema": "syncly-report-state/1.0.0",
- "updated_utc": "2026-09-02T11:23:33Z",
+ "updated_utc": "2026-09-02T12:26:28Z",
  "research_epoch": "RE-20260901-001",
- "execution_run": "RUN-20260902-V23-001",
- "phase": "v2.3 Loop 1 RUNNING — A-0088 ACK verified ACCEPT (C-V23-010); B/D/E released (C-V23-007/008/009); A WAIT; P3-Q5 HOLD; M4 deferred until H1-2.1",
+ "execution_run": "RUN-20260902-V24-LOCAL-001",
+ "phase": "v2.4 RE-ENTRY: GLOBAL_AGENT_REVOKE_V24 issued; input artifact ledger SEALED (53 rows); D-V24-001 RELEASED (D session not started by C); A WAIT; B CLOSED; E FROZEN",
  "reporter": "Claude C (single-writer)",
- "authority": "Human latest instruction > main 68f1ad3 Braun_NEVO_Syncly_v2.3_Final_Execution_Bundle_20260902/ (state/CURRENT_AUTHORITY_v2.3.json > DPDD_MASTER_v2.3.md > protocols) > C-sealed v2.3 artifacts > INHERITED_FROZEN_CHECKPOINT > legacy/ (v2.1, v2.2, prior handoffs: lineage only)",
+ "authority": "Human latest instruction > main 8e8c74d Braun_NEVO_Presentation_First_Final_Bundle_v2.4_20260902/ (CURRENT_AUTHORITY.json) > C-sealed v2.4 control artifacts > v2.3 bundle (methodology/falsification lineage only) > legacy/",
  "locks": {
   "QUERY_SOURCE_LOCK": true,
   "ANALYSIS_CUTOFF": "2026-08-31T00:00:00Z",
@@ -55,16 +55,16 @@
   "P03": 186,
   "RULE": "ARCHIVED-LIVE-COUNT-UNSTABLE (C-0107, A-0070): no figure read from an archived query's live 'Collected' is canonical; only date-filtered totals against the sealed manifest are"
  },
- "ledger_rows": 342,
+ "ledger_rows": 349,
  "last_reported_shas": {
-  "main": "68f1ad3",
+  "main": "8e8c74d",
   "claude-a/syncly-authority-governor": "d603955 (local)",
-  "claude-b/syncly-production-data": "7533ef6",
-  "claude-c/syncly-assurance-fable": "578304a",
-  "claude-d/syncly-research-rnd": "eb77c4c",
-  "bus/syncly-ledger": "71f72ca",
+  "claude-b/syncly-production-data": "eb1f497 (local)",
+  "claude-c/syncly-assurance-fable": "65a5e65",
+  "claude-d/syncly-research-rnd": "b603e19 (local)",
+  "bus/syncly-ledger": "bfb359d",
   "integration/syncly-current": "2c56155",
-  "claude-e/syncly-desk-evidence": "68f1ad3"
+  "claude-e/syncly-desk-evidence": "f5d627c"
  },
  "report_cadence": {
   "watchdog_seconds": 180,
@@ -72,11 +72,11 @@
   "last_full_report_utc": "2026-09-02T06:10:10Z"
  },
  "agent_notes": {
-  "A": "WAIT — ACK verified; blind gold rating later",
-  "B": "RUNNING Loop 1 (P1→P2→P3-Q1..Q4)",
-  "C": "awaiting B-0062 / D-0061 / E-0001; then COUNTER-01 routing + C-V23-012 spend ticket",
-  "D": "RUNNING mart build + P1/P2 local Loop 1",
-  "E": "RUNNING independent desk collection"
+  "A": "WAIT — A-V24-001 after C local page seal",
+  "B": "CLOSED — provenance delivery only (commit+push Page 3, push eb1f497)",
+  "C": "awaiting D-V24-001-RESULT → INDEPENDENT VERIFY",
+  "D": "RELEASED D-V24-001 (Human starts session)",
+  "E": "FROZEN — citation/path provenance only on C-named fields"
  },
  "guards": {
   "GUARD-C0047": "A_SOURCE_PANEL/T_S 구축은 B 재물질화+Gate0 통과 이후 (57키 증발 방지)"
@@ -119,7 +119,7 @@
   "raw": "60/60 originals recovered from session transcript (D-0035), validated byte-identical to C independent recall on 12 overlap posts"
  },
  "event_backlog_note": "backlog 34 events (C-0055~C-0061 구간 포함) 재시작 세션에서 1:1 생성 완료",
- "method_revision": "MCP_FIRST_DPDD_v2.3_FROZEN_CORPUS_HYPOTHESIS_LOOP",
+ "method_revision": "PRESENTATION_FIRST_NEVO_V2.4",
  "methodology_correction": {
   "source_corpus_invalidation": false,
   "severity": "MAJOR",
@@ -307,9 +307,9 @@
   "status": "OPEN — v2.3 run started 2026-09-02 ~20:05 KST",
   "previous_close": "C-0123 (legacy lineage)",
   "restart_order": "C → A → B+D+E",
-  "c_head": "578304a"
+  "c_head": "65a5e65"
  },
- "execution_mode": "FROZEN_CORPUS_ONLY",
+ "execution_mode": "SYNCLY_CLOSED_LOCAL_VALIDATION_ACTIVE",
  "v23": {
   "run_start_ticket": "TCK-20260902110458-C-V23-000",
   "gate_V0_frozen_integrity": "PASS (C-V23-001): 3,435/f8d130c2, cutoff, 5 membership hashes, 2,856 sources, A_SOURCE_PANEL 1,574, promotion 2554/670/211, enrichment hash — all recomputed and matched; 0 MCP calls",
@@ -359,5 +359,48 @@
    "CLAR-3 recovery = separate spend ticket",
    "CLAR-4 A WAIT"
   ]
+ },
+ "v24": {
+  "reentry_ticket": "TCK-20260902122503-C-V24-000",
+  "revoke_ticket": "TCK-20260902122503-C-V24-001",
+  "input_seal_ticket": "TCK-20260902122503-C-V24-002",
+  "d_master_ticket": "D-V24-001_LOCAL_PRESENTATION_VALIDATION (file TCK-20260902122503-C-V24-003_D-V24-001.json)",
+  "a_reserved": "A-V24-001_FINAL_BUSINESS_INTERPRETATION (after C local page seal)",
+  "claims": {
+   "USE": [
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "C6"
+   ],
+   "USE_WITH_SHORT_CAVEAT": [
+    "C5"
+   ],
+   "STRATEGIC_INFERENCE": [
+    "S1"
+   ],
+   "LOCAL_VALIDATION_REQUIRED": [
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5"
+   ]
+  },
+  "agent_states": {
+   "A": "REVOKED_WAITING_FINAL_INTERPRETATION (WAIT)",
+   "B": "REVOKED_SYNCLY_CLOSED (CLOSED)",
+   "D": "RELEASED D-V24-001",
+   "E": "REVOKED_DESK_EVIDENCE_FROZEN (FROZEN)",
+   "C": "ACTIVE_CONTROL_PLANE"
+  },
+  "provenance_gaps": [
+   "claude-a d603955 not pushed",
+   "claude-b eb1f497 not pushed + Page 3 results untracked (NOT_USED)",
+   "claude-d b603e19 not pushed",
+   "no B-0062 return ticket"
+  ],
+  "control_artifacts": "claude-c control/v24/*"
  }
 }
