@@ -1,9 +1,9 @@
 {
   "schema": "syncly-report-state/1.0.0",
-  "updated_utc": "2026-09-02T02:30:57Z",
+  "updated_utc": "2026-09-02T02:48:18Z",
   "research_epoch": "RE-20260901-001",
   "execution_run": "RUN-20260902-FULL-001",
-  "phase": "PHASE R1 — MCP REBASELINE: GO_MCP_REBASELINE issued (A-0023); B/D released; D pilot GO standing; Gate M0 OPEN",
+  "phase": "PHASE R1→R2 — MCP REBASELINE: B checkpoints 1-3 landed (route probe VERIFIED); D pilot EXECUTED (PRF-0010 EXPERIMENTAL, arithmetic verified); Gate M0 OPEN (search_voc exhaustion only)",
   "reporter": "Claude C (single-writer)",
   "authority": "Bundle Braun_NEVO_Syncly_MCP_First_Restart_Bundle_20260902 v2.1.0 (APPROVED_FOR_RESTART) > DPDD_MASTER_v2.1 > protocols; legacy: SSOT-INTERIM-20260902, FINAL-20260901",
   "locks": {
@@ -54,14 +54,14 @@
     "P02": 69,
     "P03": 186
   },
-  "ledger_rows": 149,
+  "ledger_rows": 156,
   "last_reported_shas": {
     "main": "7e030b0",
-    "claude-a/syncly-authority-governor": "a345b7c",
-    "claude-b/syncly-production-data": "a46c878",
-    "claude-c/syncly-assurance-fable": "0839a7b",
-    "claude-d/syncly-research-rnd": "a501738",
-    "bus/syncly-ledger": "0ed4ad6",
+    "claude-a/syncly-authority-governor": "28b1b56",
+    "claude-b/syncly-production-data": "8ae71b9",
+    "claude-c/syncly-assurance-fable": "81db69e",
+    "claude-d/syncly-research-rnd": "8934765",
+    "bus/syncly-ledger": "ba00313",
     "integration/syncly-current": "2c56155"
   },
   "report_cadence": {
@@ -70,10 +70,10 @@
     "last_full_report_utc": "2026-09-02T02:14:32Z"
   },
   "agent_notes": {
-    "A": "ACTIVE — GO_MCP_REBASELINE issued (A-0023); DAG A-0024(B)/A-0025(D)/A-0026(C)",
-    "B": "RELEASED — start MCP_ROUTE_PROBE (A-0024); session start pending human paste",
-    "C": "ACTIVE — C-0064 ACK; awaiting B/D checkpoints for Gate M0/M1",
-    "D": "RELEASED — execute pilot NOW (C-0061) then exhaustion (A-0025); session start pending human paste"
+    "A": "ACTIVE governor — A-0029 (CIT-01..05 frozen; 808 deferred)",
+    "B": "ACTIVE — checkpoints MCP_ROUTE_PROBE(VERIFIED C-0065), BASELINE_AGGREGATES, SOURCE_TERM_ENRICHMENT landed; C verification pending",
+    "C": "ACTIVE — C-0065/0066/0067 issued; verifying B checkpoint 2-3 next",
+    "D": "ACTIVE — pilot done; d2 exhaustion in progress; owes raw responses + ledger + FACT_CORRECTION (C-0067)"
   },
   "guards": {
     "GUARD-C0047": "A_SOURCE_PANEL/T_S 구축은 B 재물질화+Gate0 통과 이후 (57키 증발 방지)"
@@ -103,14 +103,14 @@
   },
   "verified_findings_count": 10,
   "session_note": "C 세션 재시작 (2026-09-02 11:14 KST). RUN_RESUME_BASELINE_MCP_FIRST 발행. A/B/D는 bundle prompts로 순차 재개(C→A→B+D).",
-  "findings_registry": "10/10 VERIFIED, 0 PRELIMINARY (C-0058/0059)",
+  "findings_registry": "10/10 VERIFIED + PRF-0010 EXPERIMENTAL (arithmetic verified, construct pending)",
   "pilot": {
-    "status": "GO standing (C-0061) — D executes without re-approval",
-    "sample": "video_pilot_sample_v3.csv 60 rows (C-verified; do not redraw)",
-    "rule": "v1.1 (upper-bound reading, SHORT-CAPTION-SCOPE, fixed-seed 2000 bootstrap)",
-    "get_post_features_actual_calls": 0,
-    "executor": "D",
-    "result_label": "EXPERIMENTAL/NON_CANONICAL until C verifies"
+    "status": "EXECUTED (D-0031) — 60/60 get_post_features calls, 0 failures",
+    "get_post_features_actual_calls": 60,
+    "result_label": "EXPERIMENTAL / NON_CANONICAL (C-0067: ARITHMETIC-VERIFIED, CONSTRUCT-PENDING — raw responses + call ledger not yet committed)",
+    "headline_upper_bound": "S2 sensitivity 15/15; S1 gain 20/35=57.1% CI[42.9,71.4]; PRIMARY-only 14/35=40.0%; electric-only 12/35=34.3% — all arms MATERIAL (upper bound only, SHORT-CAPTION-SCOPE)",
+    "capability_boundary": "FB/IG_POST return no video feature sets (10/10)",
+    "human_check": "HUI-006 gold spot-check of 20 posts (P1, non-blocking; >20% disagreement → HOLD)"
   },
   "event_backlog_note": "backlog 34 events (C-0055~C-0061 구간 포함) 재시작 세션에서 1:1 생성 완료",
   "method_revision": "MCP_FIRST_DPDD_v2.1",
@@ -127,12 +127,14 @@
     "tools_discovered": 14,
     "probed_by_c": 13,
     "verdict_counts": {
-      "PRODUCTION_READY": 10,
+      "PRODUCTION_READY": 9,
       "CONDITIONAL": 2,
-      "EXPLORATORY_ONLY": 1,
-      "PENDING_PILOT": 1
+      "EXPLORATORY_ONLY": 2,
+      "PENDING_PILOT_VERDICT": 1
     },
-    "matrix_location": "operational repo claude-c branch control/mcp/ (private)"
+    "matrix_location": "operational repo claude-c branch control/mcp/ (private)",
+    "probed": "14/14 (get_post_features via D pilot)",
+    "gate_m0_blocker": "search_voc exhaustion (D d2)"
   },
   "next_milestones": [
     "A GO_MCP_REBASELINE",

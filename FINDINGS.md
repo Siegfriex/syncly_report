@@ -21,3 +21,7 @@
 - 검증 분류 체계: IMPLEMENTATION-VERIFIED(독립 재구현) vs CONSTRUCT-CHECKED(도구 결함 공유 가능) 구분 운용; lexicon 측정은 negative-control 게이트 의무.
 
 상세 근거(포스트/계정 식별자 포함)는 비공개 운영 repo의 C 감사 기록에 있음 — 본 public repo에는 집계 수치만 기재.
+
+
+## EXPERIMENTAL (C 산술 검증 완료 · construct 검증 보류 · 인용 금지)
+- **PRF-0010 video pilot (2026-09-02)** — get_post_features 60/60. 짧은 캡션(SHORT-CAPTION-SCOPE) 층1에서 영상 서술이 코드북 엔티티를 드러내는 비율 **상한 57.1%(20/35)**, 경계 제외 40.0%, 전기면도기 엔티티만 34.3%; 층2 민감도 15/15. 모든 arm MATERIAL(상한 독해: "상한이 임계를 넘었다"까지만). FB/IG Post는 영상 feature set 없음(10/10). raw 응답·call ledger 미커밋으로 NON_CANONICAL 유지; HUI-006 사람 spot-check 대기.

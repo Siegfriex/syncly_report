@@ -1,6 +1,6 @@
 # Human 확인 큐
 
-갱신: 2026-09-01T22:30Z · 원칙: human 응답 부재가 전체 run을 정지시키지 않음 — 각 항목에 blocks_scope 명시
+갱신: 2026-09-02T02:48:18Z
 
 ## 완료
 | ID | 내용 | 결과 |
@@ -16,7 +16,7 @@
 | HUI-003 | P1 | M01 상위 20~50 소스 계정 특성화 | T_S 교집합 해석 확정 |
 | HUI-004 | P1 | 공유 소스 6곳 + 매칭 포스트 전건 검토 | category-entry 사례 연구 확정 |
 | HUI-005 | P1 | 3.7M 바이럴 outlier의 카테고리 적합성 판정 | Gate 2/5 최종 판정 (robust variants로 분석은 계속) |
-| HUI-006 | P1 | 비디오 파일럿 ~60건 중 일부 human gold spot-check | 비디오 분석 확장 결정 |
+| HUI-006 | P1 | **준비 완료** — pilot 층1 V_POS 20건 gold spot-check (운영 repo claude-c : URL 열고 영상에 면도 제품 엔티티가 보이는지/말하는지 Y/N + 무엇인지 기입). 불일치 >4/20 → PRF-0010 HOLD | PRF-0010의 EXPERIMENTAL 이상 승격·ALT-2 확대 판단만 — 나머지 전부 계속 |
 | HUI-007 | P1 | Paid/Organic/Suspected 분류 표본 검증 | message salience vs consumer concern 구분 문구 |
 | HUI-008 | P2 | Language 필터 KO 라벨 정밀도 수동 검증 | 한국 시장 headline 허용 범위 |
 | HUR-004 | P2↓ | D00 UI 목록 건수 확인 — 서버측 상한 해소 확인됨, confirmatory | D00 증거 코퍼스 각주 |

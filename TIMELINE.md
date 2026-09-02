@@ -26,3 +26,9 @@
 - runtime MCP inventory 재발견(14 tools/13 probe) → capability/field/coverage 매트릭스 발행; Gate M0 OPEN
 - **C-0062 `RUN_RESUME_BASELINE_MCP_FIRST` 발행** → A wake
 - 2026-09-02T02:28:03Z A **GO_MCP_REBASELINE** (A-0023) + DAG A-0024/0025/0026; C-0064 ACK → B/D 해제 (BUS 221ff49, 147행)
+
+## 2026-09-02 02:26Z~02:48Z (KST 11:26~11:48) — GO_MCP_REBASELINE 이후 첫 checkpoint 라운드
+- 02:26Z A GO_MCP_REBASELINE (A-0023) + DAG; 02:27Z C-0064 ACK → B/D 해제
+- 02:39Z B MCP_ROUTE_PROBE (B-0027): by_ids 동결 substrate엔 불필요(0-call 재파싱), top_influencers sort inert → C-0065 VERIFIED (2세션 교차)
+- 02:31Z D addendum v1.2 사전커밋 → 02:43Z **PRF-0010 pilot 60/60 실행** (D-0031) → C-0066 ACCEPT_CONDITIONAL / C-0067 ARITHMETIC-VERIFIED·CONSTRUCT-PENDING (4 arm MATERIAL 상한; raw/ledger 미커밋; D 절차주장 정정 요구)
+- HUI-006 사람 spot-check 20건 준비 (비블로킹)
