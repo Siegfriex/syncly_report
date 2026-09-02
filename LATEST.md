@@ -3,7 +3,7 @@
 갱신: 2026-09-02T02:14:32Z — **C 재시작** · Epoch `RE-20260901-001` · Run `RUN-20260902-FULL-001` · Method `MCP_FIRST_DPDD_v2.1` · 작성: Claude C (단독 writer)
 
 ## 한 줄 현황
-**C control plane 복원 완료 → `RUN_RESUME_BASELINE_MCP_FIRST` 발행(C-0062).** 분모 3,435·Query lock·cutoff·Gate 0 PASS·10/10 VERIFIED·C-0061 PILOT_GO 전부 불변. 바뀐 것은 enrichment route(MCP capability-first). 다음: A `GO_MCP_REBASELINE` → D pilot(즉시 가능) + B MCP_ROUTE_PROBE → C Gate M0/M1 → Baseline seal → Affinity Discovery Batch → Market Measurement Batch → 최종 activation decision. 상세: reports/30min/20260902/ 최신 재시작 보고.
+**A `GO_MCP_REBASELINE` 발행(A-0023) → B/D 해제.** C-0062 발행 후 A가 방법론 개정을 비준했고 B(MCP_ROUTE_PROBE)·D(pilot 즉시) 지시가 정본화됨. 분모 3,435·Query lock·cutoff·Gate 0 PASS·10/10 VERIFIED·C-0061 PILOT_GO 전부 불변. 바뀐 것은 enrichment route(MCP capability-first). 다음: A `GO_MCP_REBASELINE` → D pilot(즉시 가능) + B MCP_ROUTE_PROBE → C Gate M0/M1 → Baseline seal → Affinity Discovery Batch → Market Measurement Batch → 최종 activation decision. 상세: reports/30min/20260902/ 최신 재시작 보고.
 
 ## 새 gate
 Gate M0 (MCP Capability Exhaustion) **OPEN** — runtime 14 tools/13 probe; get_post_features는 D pilot, search_voc는 exhaustion 후 판정. Gate M1 (Baseline Enrichment) NOT_STARTED.

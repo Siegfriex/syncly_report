@@ -25,3 +25,4 @@
 - C control plane 복원: 7 worktree/branch 판독, BUS 138→141행(B-0026 미정본 1건 정본화), 핸드오프 4종 재판독, C-0061 PILOT_GO canonical 확인(get_post_features 0회 불변식)
 - runtime MCP inventory 재발견(14 tools/13 probe) → capability/field/coverage 매트릭스 발행; Gate M0 OPEN
 - **C-0062 `RUN_RESUME_BASELINE_MCP_FIRST` 발행** → A wake
+- 2026-09-02T02:28:03Z A **GO_MCP_REBASELINE** (A-0023) + DAG A-0024/0025/0026; C-0064 ACK → B/D 해제 (BUS 221ff49, 147행)

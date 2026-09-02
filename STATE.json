@@ -1,9 +1,9 @@
 {
   "schema": "syncly-report-state/1.0.0",
-  "updated_utc": "2026-09-02T02:14:32Z",
+  "updated_utc": "2026-09-02T02:28:03Z",
   "research_epoch": "RE-20260901-001",
   "execution_run": "RUN-20260902-FULL-001",
-  "phase": "PHASE R1 — MCP REBASELINE (restart): C control plane restored; RUN_RESUME_BASELINE_MCP_FIRST issued (C-0062); awaiting A GO_MCP_REBASELINE",
+  "phase": "PHASE R1 — MCP REBASELINE: GO_MCP_REBASELINE issued (A-0023); B/D released; D pilot GO standing; Gate M0 OPEN",
   "reporter": "Claude C (single-writer)",
   "authority": "Bundle Braun_NEVO_Syncly_MCP_First_Restart_Bundle_20260902 v2.1.0 (APPROVED_FOR_RESTART) > DPDD_MASTER_v2.1 > protocols; legacy: SSOT-INTERIM-20260902, FINAL-20260901",
   "locks": {
@@ -54,14 +54,14 @@
     "P02": 69,
     "P03": 186
   },
-  "ledger_rows": 141,
+  "ledger_rows": 147,
   "last_reported_shas": {
-    "main": "4ccbd94",
-    "claude-a/syncly-authority-governor": "aeb1f6e",
+    "main": "7e030b0",
+    "claude-a/syncly-authority-governor": "d2ee2d3",
     "claude-b/syncly-production-data": "a46c878",
-    "claude-c/syncly-assurance-fable": "0365f13",
+    "claude-c/syncly-assurance-fable": "0839a7b",
     "claude-d/syncly-research-rnd": "a501738",
-    "bus/syncly-ledger": "55a6840",
+    "bus/syncly-ledger": "221ff49",
     "integration/syncly-current": "2c56155"
   },
   "report_cadence": {
@@ -70,10 +70,10 @@
     "last_full_report_utc": "2026-09-02T02:14:32Z"
   },
   "agent_notes": {
-    "A": "STANDBY → wake required (ratify METHOD_REVISION, issue GO_MCP_REBASELINE)",
-    "B": "PAUSED (handoff 307ab27); worktree dirty 1 file (fix-forward on resume); starts after A GO with MCP_ROUTE_PROBE",
-    "C": "ACTIVE (session restarted; C-0062 issued)",
-    "D": "PAUSED (handoff a501738); pilot GO standing — may execute immediately"
+    "A": "ACTIVE — GO_MCP_REBASELINE issued (A-0023); DAG A-0024(B)/A-0025(D)/A-0026(C)",
+    "B": "RELEASED — start MCP_ROUTE_PROBE (A-0024); session start pending human paste",
+    "C": "ACTIVE — C-0064 ACK; awaiting B/D checkpoints for Gate M0/M1",
+    "D": "RELEASED — execute pilot NOW (C-0061) then exhaustion (A-0025); session start pending human paste"
   },
   "guards": {
     "GUARD-C0047": "A_SOURCE_PANEL/T_S 구축은 B 재물질화+Gate0 통과 이후 (57키 증발 방지)"
@@ -145,5 +145,6 @@
     "SAFE_TO_ROTATE",
     "Affinity Discovery Batch (AD1-AD5)",
     "Market Measurement Batch (MM1-MM5)"
-  ]
+  ],
+  "method_revision_status": "RATIFIED by A-0023 (2026-09-02T02:26:00Z)"
 }
