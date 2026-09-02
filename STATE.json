@@ -1,6 +1,6 @@
 {
   "schema": "syncly-report-state/1.0.0",
-  "updated_utc": "2026-09-02T03:48:56Z",
+  "updated_utc": "2026-09-02T03:50:05Z",
   "research_epoch": "RE-20260901-001",
   "execution_run": "RUN-20260902-FULL-001",
   "phase": "BATCH 0 SEALED (A-0048) → SAFE_TO_ROTATE (C-0083) — awaiting A spec ratification + Human UI rotation (HUR-009) → Batch 1 Affinity Discovery",
@@ -54,14 +54,14 @@
     "P02": 69,
     "P03": 186
   },
-  "ledger_rows": 219,
+  "ledger_rows": 221,
   "last_reported_shas": {
     "main": "7e030b0",
-    "claude-a/syncly-authority-governor": "549ee28",
+    "claude-a/syncly-authority-governor": "798b03e",
     "claude-b/syncly-production-data": "54b31e1",
     "claude-c/syncly-assurance-fable": "7f6545c",
     "claude-d/syncly-research-rnd": "33f165f",
-    "bus/syncly-ledger": "38f3cdd",
+    "bus/syncly-ledger": "b233b41",
     "integration/syncly-current": "2c56155"
   },
   "report_cadence": {
