@@ -55,3 +55,4 @@
 - 06:3xZ Human: **v2.2 REGIONAL DELTA = 유일 SSOT** → main 88908a0 정본화 → **C-0090 INTAKE**(PDF normative, MD sync item) · **C-0091 A 비준 요청** · C-0092 B/C-0093 D 사전 할당 · **C-0094 HUR-009 v2.2 개정+AD1~AD5 exact 시트** · C-0095 보충(B-0044/D-0043 사실 → FREEZE 구속 6항) (BUS 5c90336, tickets 239)
 - 06:38Z **A-0059 v2.2 RATIFY**(riders 9) + A-0058 CIT-13 + A-0060 → 06:4xZ Human AD1~AD5 UI 생성(자체 정의) → **C-0096 HOLD STILL** · **C-0097** as-created v1.2 등록·Baseline 전량 ARCHIVED·**P02 canary ADDRESSABLE** · C-0098 Gate 4 20+ 부정 allocation-conditional(결함 #22) (BUS 0320251, tickets 246)
 - 06:47Z A-0061 **RECONCILE AD v1.2** + A-0062 allocation-conditional → 06:51Z **C-0099 REGIONAL_SCHEMA_FREEZE-2.2.0** · C-0100 B 활성 · C-0101 D 활성 · C-0102 격자 집중도(3 null) (BUS 83b129f, tickets 252)
+- 06:53Z A-0063 FREEZE ACK · Gate 4 부정 3-null 인용형 · ALT-2 probe 2문항(Q_A tier / Q_B allocation) 사전선언 의무 (BUS c9d7587)
