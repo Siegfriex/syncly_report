@@ -64,3 +64,4 @@
 - 07:09Z D-0044~0050(7 산출, 0콜) · B-0048(screener 구현 + 브라운 누락 제기) · 07:12Z A-0067(브라운 = A 결함, 클래스 대칭 점검) → 07:1x~2xZ **C-0105** D 검증·판정 6 · **C-0106** 대칭 점검(BRAUN 비대칭 + 5 entity 후보) → D audit → C-0104-v2 (BUS 889d41c)
 - 07:14~15Z B-0049 · D-0051 · **A-0068**(효과크기 0.20 동결; 2AB = JOINT ASSERTION, 교차언어 보정 의무) → 07:2xZ **C-0107** archived Query Collected 감소 관측(M01/A01, cutoff 이후 구간) + cutoff 창 재canary 정확 → canonical 창 ADDRESSABLE (BUS e1b58c9)
 - 07:17Z **A-0069** 한국어 과소검출 4건 동일 부호 → HR freeze 선결조건(DETECTION-PARITY) → 07:3xZ **C-0108** 2AB JOINT ASSERTION 채택(C 결함 #23)·parity 원장 계기화·교차언어 보정 사전등록 (BUS fbbf6c7)
+- 07:18~19Z D-0052(2AB 코드북 재단·가짜 ULID 발행 전 차단 자기보고) · **A-0070**(A-0061 정정: 손실은 canonical 창 밖; ARCHIVED-LIVE-COUNT-UNSTABLE 비준·STATE에도 부착) (BUS 7b535ad)

@@ -1,6 +1,6 @@
 {
  "schema": "syncly-report-state/1.0.0",
- "updated_utc": "2026-09-02T07:36:00Z",
+ "updated_utc": "2026-09-02T07:40:00Z",
  "research_epoch": "RE-20260901-001",
  "execution_run": "RUN-20260902-FULL-001",
  "phase": "v2.2 RATIFIED (A-0059) + REGIONAL_SCHEMA_FREEZE-2.2.0 (C-0099) → AD1~AD5 CREATED (spec v1.2 RECONCILED A-0061; collection in progress, not yet server-listed) → B/D ACTIVATED (C-0100/0101, 0 MCP) → awaiting AD query_ids → Batch 1 collection",
@@ -52,7 +52,8 @@
   "A01": 1892,
   "M01": 1292,
   "P02": 69,
-  "P03": 186
+  "P03": 186,
+  "RULE": "ARCHIVED-LIVE-COUNT-UNSTABLE (C-0107, A-0070): no figure read from an archived query's live 'Collected' is canonical; only date-filtered totals against the sealed manifest are"
  },
  "ledger_rows": 231,
  "last_reported_shas": {
@@ -218,7 +219,7 @@
   "d00_evidence_r2": "261 rows (77 beyond canonical D00; 68 new to substrate) — NON-DENOMINATOR",
   "ko_language_membership": "555/3,435 (16.16%) captured, NOT licensed (manual QA pending); by query A01 251 / M01 213 / D00 112 / P03 5 / P02 0 — C-verified (C-0087)"
  },
- "bus_head": "fbbf6c7",
+ "bus_head": "7b535ad",
  "method": {
   "current": "MCP_FIRST_DPDD_v2.2_REGIONAL",
   "proposed_successor": "MCP_FIRST_DPDD_v2.2_REGIONAL",
@@ -273,7 +274,8 @@
   "server_06_41Z": "all 5 Baseline queries ARCHIVED (P03 186 / P02 69 / M01 1,292 / A01 1,892 / D00 277)",
   "sequence": "Human archived all at once (C-0085 P02-first not followed) — recorded as fact",
   "canary": "ADDRESSABLE (C-MCP-031..033: by_ids 2/2, details full, metric_summary 63 = canonical) → C-0084 hold closed, C-0085 closed, A-0043 targeted-evidence path intact",
-  "archive_observation_07_22Z": "archived M01 Collected 1,292→1,020, A01 1,892→1,043 (P02/P03/D00 unchanged); cutoff-window re-canary A01 1,816 exact / M01 1,244 (+1 known) / P03 176 exact → canonical 3,435 window ADDRESSABLE; drop is post-cutoff only; cause not asserted; rule ARCHIVED-LIVE-COUNT-UNSTABLE (C-0107)"
+  "archive_observation_07_22Z": "archived M01 Collected 1,292→1,020, A01 1,892→1,043 (P02/P03/D00 unchanged); cutoff-window re-canary A01 1,816 exact / M01 1,244 (+1 known) / P03 176 exact → canonical 3,435 window ADDRESSABLE; drop is post-cutoff only; cause not asserted; rule ARCHIVED-LIVE-COUNT-UNSTABLE (C-0107)",
+  "a0061_correction": "A-0070: 'no loss observed' narrowed to 'no loss in the canonical window; loss outside it; cause undetermined'; A-0052 contingency stays CLOSED on the 4-query re-canary"
  },
  "cit": {
   "CIT-13": "every bounded figure carries estimator name + licensed use; positives tested at the tighter bound, negatives at the more permissive (A-0058)"
@@ -292,5 +294,6 @@
   "mm_spec_inputs": "KR Philips premium naming = i9000/프레스티지/SkinIQ/XP94 (S9000 only 2 in KR text); OneBlade excluded; Panasonic vocabulary frozen with KMM5 rule (D-0049, C recount exact)",
   "gate_r0_sample": "240-post stratified design pre-registered (D-0044); execution = C spend ticket after AD ids CONFIRMED",
   "detection_parity": "A-0069 precondition on HR freeze: 4 components (screen tokens, 2AB criterion, lexicon v2, comparator seed) all carry KR_UNDER risk, residuals UNMEASURED; signs summed in one table before any HR reading; HR2-affirm / HR1,HR4-reject NO-DECISION until parity shown (ledger: claude-c control/lexicon/DETECTION_PARITY_LEDGER_20260902.json)"
- }
+ },
+ "corpus_live_ui_rule": "ARCHIVED-LIVE-COUNT-UNSTABLE (C-0107; ratified+extended A-0070): archived live counts observed 07:22Z — M01 1,020 / A01 1,043 / P02 69 / P03 186 / D00 277 — are NOT canonical; canonical window re-canary exact (A01 1,816 / M01 1,244 / P03 176); cause undetermined; 'archiving caused it' is itself unverified"
 }
