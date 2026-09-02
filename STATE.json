@@ -1,9 +1,9 @@
 {
   "schema": "syncly-report-state/1.0.0",
-  "updated_utc": "2026-09-02T03:38:50Z",
+  "updated_utc": "2026-09-02T03:40:44Z",
   "research_epoch": "RE-20260901-001",
   "execution_run": "RUN-20260902-FULL-001",
-  "phase": "PHASE R3 — Baseline Closure: all gates dispositioned (0 PASS; M0/M1/1/2/5 CONDITIONAL PASS; 3/4 CONDITIONAL); 3,408 decision = TARGETED EVIDENCE; awaiting B manifest → A BASELINE_BATCH_SEALED → C SAFE_TO_ROTATE",
+  "phase": "PHASE R3 — Baseline Closure: all gates dispositioned & accepted; manifest VERIFIED; awaiting A BASELINE_BATCH_SEALED → C SAFE_TO_ROTATE → Human creates AD1-AD5",
   "reporter": "Claude C (single-writer)",
   "authority": "Bundle Braun_NEVO_Syncly_MCP_First_Restart_Bundle_20260902 v2.1.0 (APPROVED_FOR_RESTART) > DPDD_MASTER_v2.1 > protocols; legacy: SSOT-INTERIM-20260902, FINAL-20260901",
   "locks": {
@@ -54,14 +54,14 @@
     "P02": 69,
     "P03": 186
   },
-  "ledger_rows": 207,
+  "ledger_rows": 210,
   "last_reported_shas": {
     "main": "7e030b0",
-    "claude-a/syncly-authority-governor": "eb71e14",
-    "claude-b/syncly-production-data": "4fbdb79",
-    "claude-c/syncly-assurance-fable": "83b8995",
+    "claude-a/syncly-authority-governor": "1dc3d23",
+    "claude-b/syncly-production-data": "2efd157",
+    "claude-c/syncly-assurance-fable": "b7b881f",
     "claude-d/syncly-research-rnd": "33f165f",
-    "bus/syncly-ledger": "20708dd",
+    "bus/syncly-ledger": "14be8ec",
     "integration/syncly-current": "2c56155"
   },
   "report_cadence": {
@@ -187,8 +187,9 @@
   },
   "decision_3408": "TARGETED EVIDENCE (A-0043) — no uniform full-text labelling in Batch 0; moves to Batch 2 with lexicon v2 + pre-registered classifier; targeted-evidence discipline bound",
   "seal": {
-    "status": "PREPARING",
-    "outstanding": "B QUERY_BATCH_MANIFEST (0 calls) → A BASELINE_BATCH_SEALED → C SAFE_TO_ROTATE",
+    "status": "READY — checklist DONE (C-0082)",
+    "manifest": "QUERY_BATCH_MANIFEST_20260902.csv sha 32e57819… verified 25/25",
+    "outstanding": "A BASELINE_BATCH_SEALED → C SAFE_TO_ROTATE (+ AD1-AD5 spec sheet for Human)",
     "human_items_block_seal": false
   },
   "standing_rules_added": [
@@ -199,5 +200,11 @@
     "PREREG-B-001 approve/decline (25 details calls; not seal-blocking)",
     "BASELINE_BATCH_SEALED after B manifest",
     "ALT-2 (expected NO-DECISION; inside HUI-006 scope)"
+  ],
+  "baseline_not_produced": [
+    "meaning measurement (TA/Need/JTBD) — discovery only",
+    "creative measurement — prose reachable, no classifier",
+    "reception/VOC evidence — content 0",
+    "quantitative focal product comparison — Batch 2"
   ]
 }
