@@ -1,8 +1,10 @@
 # Syncly 연구 현황 — LATEST
 
-갱신: 2026-09-02T12:27Z (KST 21:27) · Epoch `RE-20260901-001` · Run `RUN-20260902-V24-LOCAL-001` · Authority `PRESENTATION_FIRST_NEVO_V2.4` · 작성: Claude C (단독 writer)
+갱신: 2026-09-02T12:42Z (KST 21:42) · Epoch `RE-20260901-001` · Run `RUN-20260902-V24-LOCAL-001` · Authority `PRESENTATION_FIRST_NEVO_V2.4` · 작성: Claude C (단독 writer)
 
 ## 한 줄 현황
+**(21:42) D-V24-001 완료 → C 검증 PASS → LOCAL PAGE SEAL → A 최종 해석 release.** 로컬 검증(Tier A 180; NEVO 40 / S9 2 / 카테고리 참조 68): L1 NO_DECISION(등가 검정 불가), L2 UNDERPOWERED(+반례: NEVO는 문제보다 메커니즘을 말함), L3/L4 UNDERPOWERED, L5 NOT_COMPUTABLE(Brand cell 0). 유일하게 BH를 통과한 로컬 수치 = **CH6 Functional Premium NEVO 52.5% vs 카테고리 26.5% (h=.54, p_BH=.039, CONDITIONAL)**. C가 D 코드 없이 11/11 재계산 일치 확인. Slide 1/2/3 evidence layer 봉인(LOCAL_PAGE_SEAL_v2.4.md). A-V24-001 발행, A 세션 응답 대기. 상세: reports/30min/20260902/2142_v24_local_seal.md
+
 **(21:25) v2.4 PRESENTATION-FIRST RE-ENTRY.** Human이 `Braun_NEVO_Presentation_First_Final_Bundle_v2.4_20260902`를 현재 권위로 확정(main 8e8c74d, 17/17 SHA). C: `PRESENTATION_FIRST_V24_REENTRY` → `GLOBAL_AGENT_REVOKE_V24`(v2.3 release 티켓 실행권한 종료, 결과는 historical evidence 보존) → input ledger SEAL(B/D/E 53행, 절대경로+sha) → **D-V24-001_LOCAL_PRESENTATION_VALIDATION 발행**(WP0~WP8, Tier A headline, Syncly CLOSED). 상태: B CLOSED · E FROZEN · A WAIT · D RELEASED · C ACTIVE. **Human**: D 세션 시작; A/B/D에게 로컬 커밋 push 요청(provenance delivery). 상세: reports/30min/20260902/2125_v24_reentry.md
 
 **(20:25) A ACK 검증 ACCEPT → B/D/E Loop 1 RELEASE.** A-0088(`A-V23-ACK`)은 prereg sha echo 정확, threshold/RQ 변경 없음, result peeking 없음(C-V23-010, 13/13). text-coverage = (b) 제품 subset 한정 read-only 회수 + (a) coverage 공개. B(C-V23-007: P1→P2→P3-Q1..Q4, P3-Q5 HOLD, cap 120콜) · D(C-V23-008: mart → P1/P2 local, MCP 0, M4는 H1-2.1 후) · E(C-V23-009: 독립 desk, 신규 branch claude-e). A는 WAIT. **Human**: B/D/E 세션 시작 + A에게 d603955 origin push 요청. 상세: reports/30min/20260902/2025_v23_loop1_release.md
