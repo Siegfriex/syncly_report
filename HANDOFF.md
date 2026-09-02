@@ -40,7 +40,13 @@ C-MCP-001..037 (`control/mcp/MCP_CALL_LEDGER_C_20260902.csv`); 이 세션 추가
 ## 8. Human 열린 항목
 HUR-009: **AD1~AD5 UI 진행률/수집 건수 확인 후 C에 통보**(서버 API 미노출 ~2h; 다른 workspace 여부 포함). 비차단: HUR-007/008, HUI-005/006/007, CORR-V22-MD-SYNC(MD를 PDF에서 재생성).
 
+## 8b. A/B/D 핸드오프 수신 (C 점검 완료)
+- A: A-0087 → harness/handoff/A_SESSION_HANDOFF_20260902.md (claude-a 9e315aa; MCP 0; A-0058~A-0086 29건; 'Incomplete/carried' + 'First actions for successor' 섹션 포함)
+- B: B-0061 → B_SESSION_HANDOFF_20260902.md (claude-b 7533ef6; MCP 누계 41; ACTIVE_TOKEN_LIST v2.2; 핵심 미완: stage 1은 실데이터 미실행)
+- D: D-0060 → D_SESSION_HANDOFF_20260902.md (claude-d eb77c4c; MCP 0; OPEN 8건 중 6건 AD_ids_CONFIRMED 차단)
+- 세 파일 사본: BUS harness/handoff/ (bus/syncly-ledger 2ddfcf5). 필수 섹션 점검 통과(HEAD·상태·OPEN·산출물·규칙·MCP·미완).
+
 ## 9. 미완/불확실 (명시)
 - AD 서버 노출 원인 미확인(수집 지연 vs workspace 상이 vs API 노출 조건).
 - archived live count 감소 원인 미확인.
-- A/B/D 핸드오프: C-0122 지시 후 도착분은 BUS에 정본화; 미도착분은 HANDOFF.md에 '미수신'으로 표기.
+- A/B/D 핸드오프: 3/3 수신·정본화 완료(8b).

@@ -1,6 +1,6 @@
 {
  "schema": "syncly-report-state/1.0.0",
- "updated_utc": "2026-09-02T08:50:00Z",
+ "updated_utc": "2026-09-02T08:55:00Z",
  "research_epoch": "RE-20260901-001",
  "execution_run": "RUN-20260902-FULL-001",
  "phase": "SESSION CLOSED — v2.2 RATIFIED + SCHEMA FROZEN; AD1~AD5 created (v1.2) but not yet server-listed; AD4 screener STAGE 1 READY pending AD ids; Batch 1 collection not started",
@@ -219,7 +219,7 @@
   "d00_evidence_r2": "261 rows (77 beyond canonical D00; 68 new to substrate) — NON-DENOMINATOR",
   "ko_language_membership": "555/3,435 (16.16%) captured, NOT licensed (manual QA pending); by query A01 251 / M01 213 / D00 112 / P03 5 / P02 0 — C-verified (C-0087)"
  },
- "bus_head": "07c44d5",
+ "bus_head": "f4f9d70",
  "method": {
   "current": "MCP_FIRST_DPDD_v2.2_REGIONAL",
   "proposed_successor": "MCP_FIRST_DPDD_v2.2_REGIONAL",
@@ -305,7 +305,13 @@
   "status": "CLOSED 2026-09-02 ~17:50 KST by Human instruction",
   "handoff": "HANDOFF.md (= claude-c audits/harness/C_SESSION_HANDOFF_20260902.md)",
   "restart_order": "C → A → B+D",
-  "c_head": "d87c86e",
-  "agent_handoffs": "requested by C-0122; see BUS ledger for arrival"
+  "c_head": "ce5ca9a",
+  "agent_handoffs": {
+   "A": "A-0087 @ 9e315aa",
+   "B": "B-0061 @ 7533ef6",
+   "D": "D-0060 @ eb77c4c",
+   "copies": "bus/syncly-ledger harness/handoff/"
+  },
+  "close_ticket": "C-0123"
  }
 }
