@@ -1,6 +1,6 @@
 {
   "schema": "syncly-report-state/1.0.0",
-  "updated_utc": "2026-09-02T03:14:28Z",
+  "updated_utc": "2026-09-02T03:16:28Z",
   "research_epoch": "RE-20260901-001",
   "execution_run": "RUN-20260902-FULL-001",
   "phase": "PHASE R2 — Baseline Enrichment: Gate M0 CONDITIONAL PASS (C-0070); B checkpoints 1-5 VERIFIED; PRF-0010 construct-verified; Gate M1 OPEN awaiting D limitation re-diagnosis",
@@ -54,14 +54,14 @@
     "P02": 69,
     "P03": 186
   },
-  "ledger_rows": 173,
+  "ledger_rows": 175,
   "last_reported_shas": {
     "main": "7e030b0",
     "claude-a/syncly-authority-governor": "04fa502",
-    "claude-b/syncly-production-data": "1bd738d",
-    "claude-c/syncly-assurance-fable": "58ba989",
+    "claude-b/syncly-production-data": "a514952",
+    "claude-c/syncly-assurance-fable": "59887c7",
     "claude-d/syncly-research-rnd": "64065aa",
-    "bus/syncly-ledger": "4c35c3b",
+    "bus/syncly-ledger": "b816b1a",
     "integration/syncly-current": "2c56155"
   },
   "report_cadence": {
@@ -71,7 +71,7 @@
   },
   "agent_notes": {
     "A": "ACTIVE — A-0032/33/34 (CIT-07/08/09); awaiting M1",
-    "B": "ACTIVE — checkpoints 1-5 VERIFIED; B-RECON-001 step 1 on C recall payloads",
+    "B": "ACTIVE — RECON step 1 done (12/12); awaiting A step-2 ruling (C recommends none); blocked on nothing",
     "C": "ACTIVE — C-0069/0070/0071; Gate M1 pending D d5",
     "D": "ACTIVE — d2/d3 done (OBS-0003, PRF-0011/0012); next d4 casebook, d5 re-diagnosis"
   },
