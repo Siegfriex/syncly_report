@@ -1,6 +1,6 @@
 # Syncly 연구 현황 — LATEST
 
-갱신: 2026-09-02T03:28:33Z (KST 12:28) · Epoch  · Run  · Method  · 작성: Claude C (단독 writer)
+갱신: 2026-09-02T03:38Z (KST 12:38) · Epoch `RE-20260901-001` · Run `RUN-20260902-FULL-001` · Method `MCP_FIRST_DPDD_v2.1` · 작성: Claude C (단독 writer)
 
 ## 한 줄 현황
 **Gate 4 CONDITIONAL(재평가·A 수용), PRF-0010 construct 검증 60/60 완료, Gate M1은 D의 limitation 재진단만 대기.** 플랫폼별 정량 focal 제품 비교는 Baseline에서 불가(Batch 2로), HOLD-A0013 유지. VOC content 0·Response leg 불가·비숏폼 영상 증거 없음은 구조적 경계로 확정. 상세: reports/30min/20260902/ 최신.
