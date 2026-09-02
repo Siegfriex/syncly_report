@@ -1,9 +1,9 @@
 {
  "schema": "syncly-report-state/1.0.0",
- "updated_utc": "2026-09-02T06:41:00Z",
+ "updated_utc": "2026-09-02T06:50:00Z",
  "research_epoch": "RE-20260901-001",
  "execution_run": "RUN-20260902-FULL-001",
- "phase": "BATCH 0 SEALED (A-0048) → SAFE_TO_ROTATE (C-0083) → v2.2 REGIONAL DELTA intake (C-0090; A ratification pending C-0091) → HUR-009 AD1~AD5 creation (exact A-0053) → Batch 1",
+ "phase": "v2.2 RATIFIED (A-0059 06:38:33Z) → AD1~AD5 CREATED by Human (as-created spec v1.2; collection in progress) → Baseline ARCHIVED (canary ADDRESSABLE) → awaiting REGIONAL_SCHEMA_FREEZE (C) → Batch 1",
  "reporter": "Claude C (single-writer)",
  "authority": "Human latest instruction > v2.2 REGIONAL DELTA (sole SSOT per Human; PROPOSED until A ratifies; PDF normative) > CURRENT_AUTHORITY.json v2.1 > DPDD_MASTER_v2.1 > protocols; legacy lineage",
  "locks": {
@@ -29,7 +29,7 @@
   "gate1": "CONDITIONAL PASS (C-0080) — registry exact; identity 24.1% unresolved; Panel v2 tiers after AD batch; T_C not built (design)",
   "gate2": "CONDITIONAL PASS (C-0080) — M01 denominator; supply STABLE; membership trigger not observable; HUI-005 open",
   "gate3": "CONDITIONAL (C-0080) — entity lower bounds (CIT-10); meaning NOT MEASURED; creative NOT MEASURED; VOC not observable",
-  "gate4": "CONDITIONAL — holds under the upper bound (C-0088): focal video gain 2/35 observed, CI 0-14.3%; extrapolation 27 point / 67 upper over 471; at the upper bound ≤4-6 shortform focal cells could reach the 10-19 descriptive tier only; \"≤27\" retired as a bare figure",
+  "gate4": "CONDITIONAL (A-0040; C-0088/C-0098) — focal video extrapolation: observed 2/35; over 471 point 27 / bootstrap upper 67 / Wilson upper 88 (CIT-13: positives at 67, negatives tested at 88). At 67: up to 5 shortform focal cells could enter 10-19 (uniform allocation); at 88: 6 cells; NO cell enters 20+ under near-uniform allocation, but S9000-REELS crosses 20 if ≥16.4% (of 67) / ≥12.5% (of 88) of additions concentrate there vs uniform 11.1% → the 20+ negative is ALLOCATION-CONDITIONAL, not robust at 88. Non-shortform unreachable (CIT-06).",
   "gate5": "CONDITIONAL PASS (C-0080) — supply STABLE 0.5%; engagement UNSTABLE 68.3%; variants mandatory",
   "gateM0": "CONDITIONAL PASS — ACCEPTED AND CLOSED (A-0036)",
   "gateM1": "CONDITIONAL PASS (C-0078) — preview dependency removed; batch/aggregate/page enrichment complete & verified; targeted text 39 / features 72; d5 re-diagnosis accepted (0 TRUE_SYNCLY_LIMIT); COND: A 3,408 decision, HUI-007 label, lexicon v2 before Batch 2",
@@ -218,11 +218,11 @@
   "d00_evidence_r2": "261 rows (77 beyond canonical D00; 68 new to substrate) — NON-DENOMINATOR",
   "ko_language_membership": "555/3,435 (16.16%) captured, NOT licensed (manual QA pending); by query A01 251 / M01 213 / D00 112 / P03 5 / P02 0 — C-verified (C-0087)"
  },
- "bus_head": "5c90336",
+ "bus_head": "0320251",
  "method": {
-  "current": "MCP_FIRST_DPDD_v2.1",
+  "current": "MCP_FIRST_DPDD_v2.2_REGIONAL",
   "proposed_successor": "MCP_FIRST_DPDD_v2.2_REGIONAL",
-  "status": "PROPOSED_UNTIL_A_RATIFICATION (C-0091)",
+  "status": "RATIFIED (A-0059, effective 2026-09-02T06:38:33Z; ratified object = Addendum PDF sha 6102e181…)",
   "effective_point": "AFTER_RATIFICATION; BEFORE_AD_DOWNSTREAM_MATERIALIZATION",
   "bundle": "main 88908a0 (11/11 SHA)",
   "addendum_pdf_sha256": "6102e181d223a0b5534b781ad6c281a83c563f6e03b6b9b788b90e3e4fdd9be6",
@@ -256,7 +256,23 @@
    "mart_reception_voc / mart_term_vocabulary",
    "regional marts = BUILD ORDER",
    "Gate R1 on text/manual bases; LANGUAGE_ONLY excluded"
-  ]
+  ],
+  "riders": "A-0059 R1~R9 + A-0060 (placeholder-name ban; Gate R1 exhaustiveness unverified) — carried into REGIONAL_SCHEMA_FREEZE (pending, C verifies B-0045 first)",
+  "freeze": "REGIONAL_SCHEMA_FREEZE NOT YET ISSUED"
  },
- "human_open": "HUR-009: create AD1~AD5 now from reports/HUR-009_AD1-AD5_UI_SHEET.md (A-0053 exact); capture query_id/tracking_since/keywords/relevance/platforms/backfill/screenshot → C; then P02-first archive canary"
+ "human_open": "HUR-009: nothing required now (AD created; C polls for query_ids). Optional: settings screenshot per AD query. Open non-blocking: UI reads HUR-007/008, HUI-005/007, HUI-006, CORR-V22-MD-SYNC.",
+ "batch1": {
+  "queries": "AD1~AD5 CREATED in UI by Human 2026-09-02 (~15:3x KST) from Human's own definitions — registered as AD spec v1.2 (reports/AD_BATCH_AS_CREATED_SPEC_v1.2.md); A-0053 v1.1 exact sheet = legacy design; A RECONCILE requested (C-0097)",
+  "server": "list_data_queries 06:41Z: AD not yet listed (collection ~10%); C polls",
+  "hygiene": "forbidden seeds 0/100 keywords; AD4 definition lacks the exclusion sentence → proposed downstream rule AD4_SHAVING_ONLY; 'everyday carry' in AD3+AD5; identifier D4_MensStyle_Grooming_SelfCare; AD3 appears twice in dump (server to confirm)",
+  "b_hold": "no AD downstream materialization before REGIONAL_SCHEMA_FREEZE + activation"
+ },
+ "baseline_rotation": {
+  "server_06_41Z": "all 5 Baseline queries ARCHIVED (P03 186 / P02 69 / M01 1,292 / A01 1,892 / D00 277)",
+  "sequence": "Human archived all at once (C-0085 P02-first not followed) — recorded as fact",
+  "canary": "ADDRESSABLE (C-MCP-031..033: by_ids 2/2, details full, metric_summary 63 = canonical) → C-0084 hold closed, C-0085 closed, A-0043 targeted-evidence path intact"
+ },
+ "cit": {
+  "CIT-13": "every bounded figure carries estimator name + licensed use; positives tested at the tighter bound, negatives at the more permissive (A-0058)"
+ }
 }

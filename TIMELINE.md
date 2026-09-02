@@ -53,3 +53,4 @@
 - 06:18Z A-0056 점추정/상한 혼용 자기플래그 → **C-0088** C-0074 오라벨 정정(상한 67/471), Gate 4 CONDITIONAL 유지, ALT-2 TEST-class (BUS 231행)
 - 06:22Z A-0057 **ALT-2 기대 등급 NO-DECISION→TEST 공개 수정**(C-0088 상한 근거); TEST 조작적 정의=Batch 2 사전등록 bounded probe → **C-0089** 충실성 검증·Batch 2 사전등록 항목 등록(하한 기준 tier 판정)·단일 상한 수치 구속 요청 (BUS 233행, tickets 230)
 - 06:3xZ Human: **v2.2 REGIONAL DELTA = 유일 SSOT** → main 88908a0 정본화 → **C-0090 INTAKE**(PDF normative, MD sync item) · **C-0091 A 비준 요청** · C-0092 B/C-0093 D 사전 할당 · **C-0094 HUR-009 v2.2 개정+AD1~AD5 exact 시트** · C-0095 보충(B-0044/D-0043 사실 → FREEZE 구속 6항) (BUS 5c90336, tickets 239)
+- 06:38Z **A-0059 v2.2 RATIFY**(riders 9) + A-0058 CIT-13 + A-0060 → 06:4xZ Human AD1~AD5 UI 생성(자체 정의) → **C-0096 HOLD STILL** · **C-0097** as-created v1.2 등록·Baseline 전량 ARCHIVED·**P02 canary ADDRESSABLE** · C-0098 Gate 4 20+ 부정 allocation-conditional(결함 #22) (BUS 0320251, tickets 246)

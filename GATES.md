@@ -10,10 +10,10 @@
 | Gate 1 | 소스 유효성 | **CONDITIONAL PASS** (C-0080) | registry 2,856 exact; T_S 6/12 전문 특성화(커머스 노출면); identity 24.1% 미해결(HUR-005); Panel v2 tier는 AD batch 후; T_C 미구축(설계 결정) |
 | Gate 2 | 카테고리 유효성 | **CONDITIONAL PASS** (C-0080) | M01 유일 분모; supply STABLE; keyword-tagged membership trigger API 비관측; HUI-005 outlier 미결(변형 의무) |
 | Gate 3 | 엔티티/의미/크리에이티브 | **CONDITIONAL** (C-0080) | entity 하한(CIT-10·절단); meaning NOT MEASURED(discovery만); creative NOT MEASURED(prose 도달 72.7%·classifier 없음); VOC 관측 불가 |
-| Gate 4 | 비교 격자 최소 n | **CONDITIONAL** (C-0074 재평가) | pilot의 focal(NEVO/S9/S9000) video gain 2/35(상한 5.7%) → PRF-0005 희소셀 23/30 해소 불가; 플랫폼별 정량 focal 비교는 Batch 2(MM1~MM4)로; HOLD-A0013 유지; 최종 disposition은 M1과 함께 |
+| Gate 4 | 제품 비교 셀 충분성 | **CONDITIONAL** (A-0040; C-0088/C-0098) | focal 영상 외삽: 관측 2/35; 471 기준 point 27 / bootstrap 상한 67 / Wilson 88 (CIT-13: 긍정은 67, 부정은 88에서 검정). 67: 숏폼 focal 셀 최대 5개 10~19 진입; 88: 6개; 20+ 신규 진입은 균등 배분에선 0이나 S9000-REELS에 추가분의 ≥16.4%(67)/≥12.5%(88) 집중 시 도달(균등 11.1%) → **20+ 부정은 allocation-conditional**. 비숏폼 도달 불가(CIT-06) |
 | Gate 5 | robustness | **CONDITIONAL PASS** (C-0080) | supply RFR 0.5% STABLE; engagement RFR 68.3% UNSTABLE(CIT-09); top-date 67.3%; 변형 의무 |
 | Gate 6 | Business Activation | NOT_STARTED | Batch 1(AD)·Batch 2(MM) 이후 |
 
 **BASELINE_BATCH_SEALED (A-0048, 03:42Z) · SAFE_TO_ROTATE (C-0083).** Baseline seal 조건: M0 + M1 + Gate 1~5 최종 disposition(PASS/CONDITIONAL/NO-GO 모두 완결) → BASELINE_BATCH_SEALED → C SAFE_TO_ROTATE → Human만 UI Query 생성.
 
-| Gate R0~R5 (v2.2) | Language Quality / Market Attribution / Mirrored Denominator / Reception Observability / Regional Robustness / Activation Readiness | **NOT_BOUND** — A 비준(C-0091) 후 C REGIONAL_SCHEMA_FREEZE에서 구속 | R3 실패는 Supply/Translation을 막지 않음 → 'Syncly Observed Reception = NO-DECISION'; regional response RFR>25% → UNSTABLE → NO-DECISION; R1은 text/manual basis 기준(region 필드 89.1% 공백, 서버모집단 기준 B-0044) |
+| Gate R0~R5 (v2.2) | Language Quality / Market Attribution / Mirrored Denominator / Reception Observability / Regional Robustness / Activation Readiness | **RATIFIED (A-0059) / NOT YET FROZEN** — C REGIONAL_SCHEMA_FREEZE 대기(B-0045 검증 후); riders R1~R9·A-0060 반영 예정 | R3 실패는 Supply/Translation을 막지 않음 → 'Syncly Observed Reception = NO-DECISION'; regional response RFR>25% → UNSTABLE → NO-DECISION; R1은 text/manual basis 기준(region 필드 89.1% 공백, 서버모집단 기준 B-0044) |
