@@ -23,5 +23,11 @@
 상세 근거(포스트/계정 식별자 포함)는 비공개 운영 repo의 C 감사 기록에 있음 — 본 public repo에는 집계 수치만 기재.
 
 
-## EXPERIMENTAL (C 산술 검증 완료 · construct 검증 보류 · 인용 금지)
-- **PRF-0010 video pilot (2026-09-02)** — get_post_features 60/60. 짧은 캡션(SHORT-CAPTION-SCOPE) 층1에서 영상 서술이 코드북 엔티티를 드러내는 비율 **상한 57.1%(20/35)**, 경계 제외 40.0%, 전기면도기 엔티티만 34.3%; 층2 민감도 15/15. 모든 arm MATERIAL(상한 독해: "상한이 임계를 넘었다"까지만). FB/IG Post는 영상 feature set 없음(10/10). raw 응답·call ledger 미커밋으로 NON_CANONICAL 유지; HUI-006 사람 spot-check 대기.
+## 검증된 역량 발견 (2026-09-02, VERIFIED)
+- **PRF-0011** — video-feature 검색이 get_post_features와 동일한 analyzer 문자열을 반환(표적 7/7 + C 1/1). discovery엔 우월, 전수 enrichment엔 결정성 부재(랭킹 비결정·post_id 주소 불가).
+- **PRF-0007 REBASE** — ALT-2 도달 특징 8/11=72.7%(81.8% 폐기). 도달=prose(이진 라벨 아님), 숏폼 전용, timing 미도달.
+
+## EXPERIMENTAL (C 검증 완료 · 사람 확인 대기 · 인용 시 caveat 필수)
+- **PRF-0010 video pilot (2026-09-02)** — get_post_features 60/60. 짧은 캡션(SHORT-CAPTION-SCOPE) 층1에서 영상 서술이 코드북 엔티티를 드러내는 비율 **상한 57.1%(20/35)**, 경계 제외 40.0%, 전기면도기 엔티티만 34.3%; 층2 민감도 15/15. 모든 arm MATERIAL(상한 독해: "상한이 임계를 넘었다"까지만). FB/IG Post는 영상 feature set 없음(10/10). C가 사전 지정 12건을 독립 재호출해 construct 검증 완료(구절 재현 12/12, 라벨 12/12, 문자열 매칭 12/12; raw 보존). 인용 규칙: electric+PRIMARY 11/35(31.4%)를 20/35와 병기, 57.1% 단독 인용 금지. 코드북 외 브랜드(DIXIX/JOAS/Daiso)는 NEG 처리됨(coverage caveat). HUI-006 사람 spot-check만 대기.
+- **OBS-0003 (VOC)** — search_voc 25회 전건 무반환, 동일 질의가 summary 검색엔 반환 → 이 workspace의 댓글 index 공백. 라벨(vendor vs 수집설정)은 HUI-007 후. **CIT-07: 소비자 발화(Observed Reception)는 현재 코퍼스에서 관측 불가.**
+- **PRF-0012** — top_influencers 상위 24 handle 전부 로컬 1,574 registry에 기포함(신규 0); PRF-0008 재현. AD1~AD5 vocabulary 후보는 설계 근거 전용.

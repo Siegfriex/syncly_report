@@ -1,15 +1,15 @@
 # Syncly 연구 현황 — LATEST
 
-갱신: 2026-09-02T02:14:32Z — **C 재시작** · Epoch `RE-20260901-001` · Run `RUN-20260902-FULL-001` · Method `MCP_FIRST_DPDD_v2.1` · 작성: Claude C (단독 writer)
+갱신: 2026-09-02T03:13:21Z · Epoch  · Run  · Method  · 작성: Claude C (단독 writer)
 
 ## 한 줄 현황
-**A `GO_MCP_REBASELINE` 발행(A-0023) → B/D 해제.** C-0062 발행 후 A가 방법론 개정을 비준했고 B(MCP_ROUTE_PROBE)·D(pilot 즉시) 지시가 정본화됨. 분모 3,435·Query lock·cutoff·Gate 0 PASS·10/10 VERIFIED·C-0061 PILOT_GO 전부 불변. 바뀐 것은 enrichment route(MCP capability-first). 다음: A `GO_MCP_REBASELINE` → D pilot(즉시 가능) + B MCP_ROUTE_PROBE → C Gate M0/M1 → Baseline seal → Affinity Discovery Batch → Market Measurement Batch → 최종 activation decision. 상세: reports/30min/20260902/ 최신 재시작 보고.
+**Gate M0 CONDITIONAL PASS.** MCP-first 재기준 1라운드 완료: B의 5개 checkpoint 전부 C 검증 EXACT(promotion 3,435 완비), D pilot 산술·구성 검증 완료(MATERIAL 상한; 인용은 11/35 병기), 역량 경계 확정(비숏폼 영상 증거 없음·**VOC content 0**·Response leg 주장 불가). 다음: Gate M1(D limitation 재진단) → Gate 1~5 → Baseline seal → Affinity Discovery Batch. 상세: reports/30min/20260902/ 최신.
 
-## 새 gate
-Gate M0 (MCP Capability Exhaustion) **OPEN** — runtime 14 tools/13 probe; get_post_features는 D pilot, search_voc는 exhaustion 후 판정. Gate M1 (Baseline Enrichment) NOT_STARTED.
+## Gate
+Gate 0 PASS · **M0 CONDITIONAL PASS** · M1 OPEN · 1~5 PENDING. HOLD-A0013·GO_PHASE2 보류 유지.
 
 ## Human에게
-지금 요청되는 UI 행동 없음. Query 생성/수정/삭제 금지. MCP tool 선택 질문에는 답하지 않아도 됨(agent 책임). 재시작 순서 C→A→B+D.
+비블로킹 확인 2건: HUI-006(pilot 20건 spot-check), HUI-007(댓글 수집 옵션 UI 확인, 설정 변경 금지). 그 외 요청 없음. Query 생성/수정/삭제 금지. MCP tool 선택 질문에는 답하지 않아도 됨(agent 책임). 재시작 순서 C→A→B+D.
 
 ---
 ### (이하는 2026-09-02 08:51 KST 세션 종료 시점 스냅샷)

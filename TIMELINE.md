@@ -32,3 +32,9 @@
 - 02:39Z B MCP_ROUTE_PROBE (B-0027): by_ids 동결 substrate엔 불필요(0-call 재파싱), top_influencers sort inert → C-0065 VERIFIED (2세션 교차)
 - 02:31Z D addendum v1.2 사전커밋 → 02:43Z **PRF-0010 pilot 60/60 실행** (D-0031) → C-0066 ACCEPT_CONDITIONAL / C-0067 ARITHMETIC-VERIFIED·CONSTRUCT-PENDING (4 arm MATERIAL 상한; raw/ledger 미커밋; D 절차주장 정정 요구)
 - HUI-006 사람 spot-check 20건 준비 (비블로킹)
+
+## 2026-09-02 02:50Z~03:12Z (KST 11:50~12:12) — Gate M0 라운드
+- 02:50Z~02:59Z D: OBS-0003 search_voc 소진(23콜), PRF-0011, PRF-0007 rebase 72.7%, D-0032 자기철회(raw 미보존), PRF-0012
+- 02:54Z B: checkpoints 4-5 (promotion complement 3,435 완비, partition test), B-0029 자기정정, B-RB-01 robustness(supply STABLE/engagement UNSTABLE)
+- 02:55Z C: 12건 assurance recall 실행·raw 보존; 02:56Z~03:01Z A: CIT-07/08/09, PROVENANCE-BEFORE-SPEND, sequenced lift
+- 03:11Z **C-0069 PRF-0010 CONSTRUCT-VERIFIED · C-0070 Gate M0 CONDITIONAL PASS · C-0071 B 2-5 VERIFIED** (BUS 172행)

@@ -44,3 +44,11 @@
 - Syncly limitation 선언은 relevant MCP family 소진 후에만 · semantic/video/VOC 검색 건수 ≠ prevalence · MCP tool 선택은 agent 책임(Human 질문 금지)
 - C-0061 PILOT_GO는 재승인 불요(D 즉시 실행) · 결과는 EXPERIMENTAL/NON_CANONICAL → C 검증
 - Query mutation은 BASELINE_BATCH_SEALED + SAFE_TO_ROTATE 전 금지 · 직접 crawler/OCR/STT/CV는 MCP exhaustion + C fallback gate + A 승인 후에만
+
+
+## 2026-09-02 12:00 KST 전후 확정 (Gate M0 라운드)
+- Gate M0 CONDITIONAL PASS (C-0070). 인용 제약 CIT-06~09 추가: 비숏폼 영상 증거 없음 / VOC content 0 / 시계열 KST 버킷·UTC 필터 / Response leg 주장 불가(Supply 축만).
+- PROVENANCE-BEFORE-SPEND: 증거 생산 MCP 호출은 raw를 즉시 보존(≥60k는 harness 자동, 미만은 명시적 기록); harness-persisted route 우선(get_ranked_posts > get_posts_by_ids).
+- MIDFLIGHT-RULE-4: 실행 중 규칙 변경은 구조 유래·사전 커밋·노출 공개·재계산 가능 4조건 충족 시에만.
+- pilot 인용 수치: electric+PRIMARY 11/35 + 사전등록 20/35 병기; 81.8% 폐기, 72.7% C 검증(A 복원 판단).
+- RAW-EQUIVALENCE-POINTER: held raw의 field-subset임이 증명된 응답은 포인터로 verbatim 요건 충족.

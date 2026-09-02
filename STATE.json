@@ -1,9 +1,9 @@
 {
   "schema": "syncly-report-state/1.0.0",
-  "updated_utc": "2026-09-02T02:51:26Z",
+  "updated_utc": "2026-09-02T03:13:21Z",
   "research_epoch": "RE-20260901-001",
   "execution_run": "RUN-20260902-FULL-001",
-  "phase": "PHASE R1→R2 — MCP REBASELINE: B checkpoints 1-3 landed (route probe VERIFIED); D pilot EXECUTED (PRF-0010 EXPERIMENTAL, arithmetic verified); Gate M0 OPEN (search_voc exhaustion only)",
+  "phase": "PHASE R2 — Baseline Enrichment: Gate M0 CONDITIONAL PASS (C-0070); B checkpoints 1-5 VERIFIED; PRF-0010 construct-verified; Gate M1 OPEN awaiting D limitation re-diagnosis",
   "reporter": "Claude C (single-writer)",
   "authority": "Bundle Braun_NEVO_Syncly_MCP_First_Restart_Bundle_20260902 v2.1.0 (APPROVED_FOR_RESTART) > DPDD_MASTER_v2.1 > protocols; legacy: SSOT-INTERIM-20260902, FINAL-20260901",
   "locks": {
@@ -31,8 +31,8 @@
     "gate3": "PENDING — entity/meaning reliability (after details/video pilot)",
     "gate4": "PROVISIONAL — n>=10 quantitative else qualitative; reassess after video pilot",
     "gate5": "CONDITIONAL PASS — robust variants (Full / minus-top1 / minus-top1%) mandatory",
-    "gateM0": "OPEN — MCP capability exhaustion (get_post_features via D pilot + search_voc exhaustion pending)",
-    "gateM1": "NOT_STARTED — baseline MCP enrichment",
+    "gateM0": "CONDITIONAL PASS (C-0070) — 14/14 families probed; conditions: OBS-0003 label via HUI-007, mention local route, PROVENANCE-BEFORE-SPEND",
+    "gateM1": "OPEN — inputs: B checkpoints 1-5 verified, promotion complete, 3,408/3,435 lack full text; awaiting D d5 re-diagnosis",
     "gate6": "NOT_STARTED — business activation"
   },
   "holds": {
@@ -54,26 +54,26 @@
     "P02": 69,
     "P03": 186
   },
-  "ledger_rows": 159,
+  "ledger_rows": 172,
   "last_reported_shas": {
     "main": "7e030b0",
-    "claude-a/syncly-authority-governor": "e9e4f47",
-    "claude-b/syncly-production-data": "8ae71b9",
-    "claude-c/syncly-assurance-fable": "a709658",
-    "claude-d/syncly-research-rnd": "8934765",
-    "bus/syncly-ledger": "e136721",
+    "claude-a/syncly-authority-governor": "b48dee9",
+    "claude-b/syncly-production-data": "1bd738d",
+    "claude-c/syncly-assurance-fable": "58ba989",
+    "claude-d/syncly-research-rnd": "64065aa",
+    "bus/syncly-ledger": "049e78d",
     "integration/syncly-current": "2c56155"
   },
   "report_cadence": {
     "watchdog_seconds": 180,
     "full_status_minutes": 30,
-    "last_full_report_utc": "2026-09-02T02:14:32Z"
+    "last_full_report_utc": "2026-09-02T03:13:21Z"
   },
   "agent_notes": {
-    "A": "ACTIVE governor — A-0029 (CIT-01..05 frozen; 808 deferred)",
-    "B": "ACTIVE — checkpoints 1-3 VERIFIED (C-0065/C-0068); next EVIDENCE_ENRICHMENT → BASELINE_MART_V2",
-    "C": "ACTIVE — C-0065/0066/0067 issued; verifying B checkpoint 2-3 next",
-    "D": "ACTIVE — pilot done; d2 exhaustion in progress; owes raw responses + ledger + FACT_CORRECTION (C-0067)"
+    "A": "ACTIVE — A-0032/33/34 (CIT-07/08/09); awaiting M1",
+    "B": "ACTIVE — checkpoints 1-5 VERIFIED; B-RECON-001 step 1 on C recall payloads",
+    "C": "ACTIVE — C-0069/0070/0071; Gate M1 pending D d5",
+    "D": "ACTIVE — d2/d3 done (OBS-0003, PRF-0011/0012); next d4 casebook, d5 re-diagnosis"
   },
   "guards": {
     "GUARD-C0047": "A_SOURCE_PANEL/T_S 구축은 B 재물질화+Gate0 통과 이후 (57키 증발 방지)"
@@ -103,15 +103,16 @@
   },
   "verified_findings_count": 10,
   "session_note": "C 세션 재시작 (2026-09-02 11:14 KST). RUN_RESUME_BASELINE_MCP_FIRST 발행. A/B/D는 bundle prompts로 순차 재개(C→A→B+D).",
-  "findings_registry": "10/10 VERIFIED + PRF-0010 EXPERIMENTAL (arithmetic verified, construct pending)",
+  "findings_registry": "10/10 VERIFIED + PRF-0011 VERIFIED; PRF-0010 EXPERIMENTAL (C-verified, HUI-006 pending); PRF-0012, OBS-0003 EXPERIMENTAL",
   "pilot": {
     "status": "EXECUTED (D-0031) — 60/60 get_post_features calls, 0 failures",
-    "get_post_features_actual_calls": 60,
-    "result_label": "EXPERIMENTAL / NON_CANONICAL (C-0067: ARITHMETIC-VERIFIED, CONSTRUCT-PENDING — raw responses + call ledger not yet committed)",
+    "get_post_features_actual_calls": 72,
+    "result_label": "EXPERIMENTAL — C verification COMPLETE (arithmetic 60/60 + construct recall 12/12); awaiting only HUI-006",
     "headline_upper_bound": "S2 sensitivity 15/15; S1 gain 20/35=57.1% CI[42.9,71.4]; PRIMARY-only 14/35=40.0%; electric-only 12/35=34.3% — all arms MATERIAL (upper bound only, SHORT-CAPTION-SCOPE)",
     "capability_boundary": "FB/IG_POST return no video feature sets (10/10)",
     "human_check": "HUI-006 gold spot-check of 20 posts (P1, non-blocking; >20% disagreement → HOLD)",
-    "citation_rule": "A-0031: ALT-2 reasoning figure = electric+PRIMARY 11/35 (31.4%, CI 17.1-48.6); pre-registered 20/35 reported alongside; 57.1% never cited alone; ALT-2 input 81.8% SUSPENDED (A-0030)"
+    "citation_rule": "A-0031: ALT-2 reasoning figure = electric+PRIMARY 11/35 (31.4%, CI 17.1-48.6); pre-registered 20/35 reported alongside; 57.1% never cited alone; ALT-2 input 81.8% SUSPENDED (A-0030)",
+    "recall": "C 12-post assurance recall persisted verbatim (claude-c control/recall/), 0 disagreements"
   },
   "event_backlog_note": "backlog 34 events (C-0055~C-0061 구간 포함) 재시작 세션에서 1:1 생성 완료",
   "method_revision": "MCP_FIRST_DPDD_v2.1",
@@ -149,5 +150,27 @@
     "Affinity Discovery Batch (AD1-AD5)",
     "Market Measurement Batch (MM1-MM5)"
   ],
-  "method_revision_status": "RATIFIED by A-0023 (2026-09-02T02:26:00Z)"
+  "method_revision_status": "RATIFIED by A-0023 (2026-09-02T02:26:00Z)",
+  "citation_constraints": {
+    "CIT-01": "WEEK boundary buckets are artefacts",
+    "CIT-02": "MONTH degenerate",
+    "CIT-03": "08-17 spike = campaign supply",
+    "CIT-04": "demographics server-base, vendor-inferred",
+    "CIT-05": "(A-0029)",
+    "CIT-06": "non-shortform: no video evidence route",
+    "CIT-07": "VOC/comment content = 0 → Observed Reception unobservable",
+    "CIT-08": "time buckets KST / filters UTC",
+    "CIT-09": "Response leg not claimable (content-blind + RFR 68.3%)"
+  },
+  "alt2": {
+    "81.8%": "RETIRED",
+    "72.7% (8/11)": "C-verified (C-0069); reinstatement is A's call; prose-not-labels, shortform-only"
+  },
+  "promotion_over_frozen_3435": {
+    "PAID": 2554,
+    "ORGANIC": 670,
+    "SUSPECTED": 211,
+    "supply_share_stable_RFR_pct": 0.5,
+    "engagement_share_unstable_RFR_pct": 68.3
+  }
 }
