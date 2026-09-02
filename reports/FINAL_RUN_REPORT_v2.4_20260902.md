@@ -66,7 +66,7 @@ v2.3 frozen hypothesis loop (Loop 1 executed by B/D/E; Loop 2 not executed; supe
 
 | axis | local | Hey (UI final / B MCP) | desk (E) | placement |
 |---|---|---|---|---|
-| X Product meaning | L1 NO_DECISION · L2 UNDERPOWERED(+counter) · L3 UNDERPOWERED · **CH6 Functional/Material Premium 52.5% vs 26.5%, h=.54, p_BH=.039, CONDITIONAL** | closeness/comfort = category hygiene (M01/P03/P02); NEVO = mechanism + object premium; S9 = throughput + spec/origin | S9 PRO+ and Philips i9000 official copy satisfy 2AB; NEVO official = SilkGlide / 24% / unibody | **INSUFFICIENT for a quadrant word; candidate direction = material/mechanism premium (CONDITIONAL)** |
+| X Product meaning | L1 NO_DECISION · L2 UNDERPOWERED(+counter) · L3 UNDERPOWERED · **CH6 Functional/Material Premium 52.5% vs 26.5%, h=.54, p_BH=.039, CONDITIONAL** | closeness/comfort = category hygiene (M01/P03/P02); NEVO = mechanism + object premium; S9 = throughput + spec/origin | S9 PRO+ and Philips i9000 official copy satisfy 2AB; NEVO official = SilkGlide / 24% friction reduction (KR·JP official; US·DE official states the same figure as glide improvement) / unibody | **INSUFFICIENT for a quadrant word; candidate direction = material/mechanism premium (CONDITIONAL)** |
 | Y External translation | L4 UNDERPOWERED · **L5 NOT_COMPUTABLE** (Brand cells 0/0) | NEVO clean independent external = 0 (INSUFFICIENT); S9 PARTIALLY_RETAINED; retention observed is PR-shaped | — | **coverage gap, not a signal** |
 | Overlay Price/Value | price_value labels not computed locally; PG1 experience 37.5% vs 17.6% (h=.45, p_bh .064) | inside Brand: no price talk; outside: price is the frame; organic objection n=1 | DE 1.70 · KR 1.52/1.27 · JP 1.56/1.40 · US NOT_COMPUTABLE | **per-market spread; reception NO-DECISION** |
 
@@ -98,7 +98,7 @@ Headline: **A's replacement (pending Human ratification CORR-V24-SLIDE2):** "Bra
 
 ## Slide 3 — 그렇다면 NEVO는 무엇을 팔아야 하는가?
 Headline (STRATEGIC_INFERENCE, prescriptive): "더 좋은 면도가 아니라, Series 9이 아직 소유하지 않은 사용 경험." Chain Specific Problem → Distinct Mechanism → Felt Experience → Premium Ownership → Price Justification, labeled "recommended positioning architecture" — never "current market state".
-- Evidence for the direction: CH6 (material/functional premium already NEVO's most-carried differentiator vs category), PG1/PG3 direction, E official intent (SilkGlide / 24% friction / -0.12mm / 316L unibody), GQ / Men's Health editorial (refining not reinventing; fewer-pass comfort; value tension for S9 owners).
+- Evidence for the direction: CH6 (material/functional premium already NEVO's most-carried differentiator vs category), PG1/PG3 direction, E official intent (SilkGlide / 24% friction reduction (KR·JP official; US·DE = glide improvement; never bare "24%") / -0.12mm / 316L unibody), GQ / Men's Health editorial (refining not reinventing; fewer-pass comfort; value tension for S9 owners).
 - Evidence against "already owns": L2 (mechanism without problem).
 - Price/value overlay (E, per market, no global multiple): DE 1.70 (street −43% vs UVP, €100 trade-in) · KR 1.52 / 1.27 · JP 1.56 / 1.40 · US NOT_COMPUTABLE. Inside Brand: no price talk (aspiration + preorder/gift wedges); outside Brand: price is the frame (B P3-C1). Consumer reception of price: NO-DECISION.
 - Appendix: E_PRICE_NORMALIZATION.csv (19 rows), E_CAMPAIGN_LANGUAGE_MATRIX.csv, CE-01..CE-12.
@@ -188,7 +188,7 @@ Headline (STRATEGIC_INFERENCE, prescriptive): "더 좋은 면도가 아니라, S
 | claude-d | e711b24 | `v24/` specs·results·gold·viz·scripts (19730c9) |
 | claude-a | 78d8793 | A-0089/0090/0091, `harness/handoff/A_V24_001_FINAL_INTERPRETATION.md` |
 | claude-b | 13befe8 | `runs/v2.3_20260902/B/` Loop-1 결과·ledger·raw 38 |
-| claude-e | f5d627c | `runs/v2.3_20260902/E/` 6 deliverables |
+| claude-e | b55a743 (ERRATUM-1; sealed lineage f5d627c) | `runs/v2.3_20260902/E/` 6 deliverables |
 | syncly_report | 7707500+ | STATE.json, LATEST.md, HANDOFF.md, reports/30min/20260902/* |
 
 ## 10. 금지 문구 (deck)

@@ -1,6 +1,6 @@
 {
  "schema": "syncly-report-state/1.0.0",
- "updated_utc": "2026-09-02T13:06:28Z",
+ "updated_utc": "2026-09-02T13:15:58Z",
  "research_epoch": "RE-20260901-001",
  "execution_run": "RUN-20260902-V24-LOCAL-001",
  "phase": "SEALED — PRESENTATION_EVIDENCE_PACK_SEALED (C-V24-010); decision class NO-DECISION + targeted evidence",
@@ -59,12 +59,12 @@
  "last_reported_shas": {
   "main": "8e8c74d",
   "claude-a/syncly-authority-governor": "f1a8ef2",
-  "claude-b/syncly-production-data": "13befe8",
+  "claude-b/syncly-production-data": "68d97cd",
   "claude-c/syncly-assurance-fable": "2a1dc18",
   "claude-d/syncly-research-rnd": "e711b24",
   "bus/syncly-ledger": "bfb359d",
   "integration/syncly-current": "2c56155",
-  "claude-e/syncly-desk-evidence": "f5d627c"
+  "claude-e/syncly-desk-evidence": "b55a743"
  },
  "report_cadence": {
   "watchdog_seconds": 180,
@@ -422,6 +422,7 @@
    "gold labeling",
    "targeted evidence (7)",
    "US same-date street price"
-  ]
+  ],
+  "erratum_1": "C-V24-012 post-seal: CE-02 wording (never bare 24%), CE-08 reason (no featured offer), PN-020 guard, E re-pointed to b55a743; seal unchanged"
  }
 }
