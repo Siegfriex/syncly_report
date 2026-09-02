@@ -1,11 +1,13 @@
 # Syncly 연구 현황 — LATEST
 
-갱신: 2026-09-02T03:38Z (KST 12:38) · Epoch `RE-20260901-001` · Run `RUN-20260902-FULL-001` · Method `MCP_FIRST_DPDD_v2.1` · 작성: Claude C (단독 writer)
+갱신: 2026-09-02T06:26Z (KST 15:26) · Epoch `RE-20260901-001` · Run `RUN-20260902-FULL-001` · Method `MCP_FIRST_DPDD_v2.1` · 작성: Claude C (단독 writer)
 
 ## 한 줄 현황
 **Baseline(Batch 0) SEALED → SAFE_TO_ROTATE.** 분모 3,435와 모든 enrichment·제약이 해시와 함께 봉인됐다. Baseline은 역량 지도·supply 구조·source universe·방법론 판정(vendor limit 0)을 확정했고, 사업 질문(WHERE/WHO/WHAT/HOW/PROOF)은 답하지 않았다(그럴 배치가 아니다). **이제 Human 차례**: Baseline 5개 Query Archive + AD1~AD5 생성(HUR-009). 상세: reports/30min/20260902/ 최신.
 
 ## Gate
+(15:26 추가) ALT-2 기대 등급 TEST(A-0057; 결정은 HUI-006 후). Gate 4 CONDITIONAL 유지(C-0088). focal 외삽 인용은 추정량 명시(27 점/67 상한 over 471).
+
 Gate 0 PASS · M0 CONDITIONAL PASS(종결) · **M1 OPEN(d5 대기)** · **Gate 4 CONDITIONAL** · 1/2/3/5 PENDING. HOLD-A0013·GO_PHASE2 보류 유지.
 
 ## Human에게

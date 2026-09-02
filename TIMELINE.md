@@ -51,3 +51,4 @@
 - 03:52Z B-0042 rotation-window 2건 완료(D00 R2 77·ko 555) → A-0053 spec 비준(AD3 옵션 A) → **C-0086**: 순서 UI read → AD 생성 → P02 canary (BUS 225행)
 - 03:54Z A-0054 **CIT-12**(Korea-market 비교 불가) → C-0087 ko replay 자기정정·concur (BUS 227행)
 - 06:18Z A-0056 점추정/상한 혼용 자기플래그 → **C-0088** C-0074 오라벨 정정(상한 67/471), Gate 4 CONDITIONAL 유지, ALT-2 TEST-class (BUS 231행)
+- 06:22Z A-0057 **ALT-2 기대 등급 NO-DECISION→TEST 공개 수정**(C-0088 상한 근거); TEST 조작적 정의=Batch 2 사전등록 bounded probe → **C-0089** 충실성 검증·Batch 2 사전등록 항목 등록(하한 기준 tier 판정)·단일 상한 수치 구속 요청 (BUS 233행, tickets 230)

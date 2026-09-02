@@ -1,218 +1,222 @@
 {
-  "schema": "syncly-report-state/1.0.0",
-  "updated_utc": "2026-09-02T06:20:37Z",
-  "research_epoch": "RE-20260901-001",
-  "execution_run": "RUN-20260902-FULL-001",
-  "phase": "BATCH 0 SEALED (A-0048) → SAFE_TO_ROTATE (C-0083) — awaiting A spec ratification + Human UI rotation (HUR-009) → Batch 1 Affinity Discovery",
-  "reporter": "Claude C (single-writer)",
-  "authority": "Bundle Braun_NEVO_Syncly_MCP_First_Restart_Bundle_20260902 v2.1.0 (APPROVED_FOR_RESTART) > DPDD_MASTER_v2.1 > protocols; legacy: SSOT-INTERIM-20260902, FINAL-20260901",
-  "locks": {
-    "QUERY_SOURCE_LOCK": true,
-    "ANALYSIS_CUTOFF": "2026-08-31T00:00:00Z",
-    "cutoff_status": "LOCKED; Gate 0 PASS (C-0049); server cross-check re-confirmed at restart",
-    "query_mutation": "PROHIBITED until BASELINE_BATCH_SEALED and SAFE_TO_ROTATE",
-    "ratified_by_A": "A-0014 (LOCK/CUTOFF/B8 COMPLETE/bundle v2)"
+ "schema": "syncly-report-state/1.0.0",
+ "updated_utc": "2026-09-02T06:26:00Z",
+ "research_epoch": "RE-20260901-001",
+ "execution_run": "RUN-20260902-FULL-001",
+ "phase": "BATCH 0 SEALED (A-0048) → SAFE_TO_ROTATE (C-0083) — awaiting A spec ratification + Human UI rotation (HUR-009) → Batch 1 Affinity Discovery",
+ "reporter": "Claude C (single-writer)",
+ "authority": "Bundle Braun_NEVO_Syncly_MCP_First_Restart_Bundle_20260902 v2.1.0 (APPROVED_FOR_RESTART) > DPDD_MASTER_v2.1 > protocols; legacy: SSOT-INTERIM-20260902, FINAL-20260901",
+ "locks": {
+  "QUERY_SOURCE_LOCK": true,
+  "ANALYSIS_CUTOFF": "2026-08-31T00:00:00Z",
+  "cutoff_status": "LOCKED; Gate 0 PASS (C-0049); server cross-check re-confirmed at restart",
+  "query_mutation": "PROHIBITED until BASELINE_BATCH_SEALED and SAFE_TO_ROTATE",
+  "ratified_by_A": "A-0014 (LOCK/CUTOFF/B8 COMPLETE/bundle v2)"
+ },
+ "constructs": {
+  "T_S": "source-based category entry = A_SOURCE_PANEL ∩ M01",
+  "T_C": "content-based target-affinity subset of M01 (after full-details)",
+  "legacy_single_T": "DEPRECATED"
+ },
+ "approvals": [
+  "full-details retrieval (~857 calls)",
+  "promotion enumeration",
+  "language enumeration (manual precision QA required)",
+  "video-feature stratified pilot (~60 posts)"
+ ],
+ "gates": {
+  "gate0": "PASS",
+  "gate1": "CONDITIONAL PASS (C-0080) — registry exact; identity 24.1% unresolved; Panel v2 tiers after AD batch; T_C not built (design)",
+  "gate2": "CONDITIONAL PASS (C-0080) — M01 denominator; supply STABLE; membership trigger not observable; HUI-005 open",
+  "gate3": "CONDITIONAL (C-0080) — entity lower bounds (CIT-10); meaning NOT MEASURED; creative NOT MEASURED; VOC not observable",
+  "gate4": "CONDITIONAL — holds under the upper bound (C-0088): focal video gain 2/35 observed, CI 0-14.3%; extrapolation 27 point / 67 upper over 471; at the upper bound ≤4-6 shortform focal cells could reach the 10-19 descriptive tier only; \"≤27\" retired as a bare figure",
+  "gate5": "CONDITIONAL PASS (C-0080) — supply STABLE 0.5%; engagement UNSTABLE 68.3%; variants mandatory",
+  "gateM0": "CONDITIONAL PASS — ACCEPTED AND CLOSED (A-0036)",
+  "gateM1": "CONDITIONAL PASS (C-0078) — preview dependency removed; batch/aggregate/page enrichment complete & verified; targeted text 39 / features 72; d5 re-diagnosis accepted (0 TRUE_SYNCLY_LIMIT); COND: A 3,408 decision, HUI-007 label, lexicon v2 before Batch 2",
+  "gate6": "NOT_STARTED — business activation"
+ },
+ "holds": {
+  "HOLD-A0013": "Phase 2 platform-level quantitative product-comparison claims gated by Gate 4 reassessment after video pilot (narrowed per SSOT)",
+  "HOLD-C0014": "RELEASED",
+  "HOLD-C0016": "RELEASED"
+ },
+ "corpus_frozen_night": {
+  "A01": 1849,
+  "M01": 1271,
+  "P02": 64,
+  "P03": 179,
+  "D00_listable": 193,
+  "unique_substrate": 3503
+ },
+ "corpus_live_ui_20260902": {
+  "A01": 1892,
+  "M01": 1292,
+  "P02": 69,
+  "P03": 186
+ },
+ "ledger_rows": 231,
+ "last_reported_shas": {
+  "main": "7e030b0",
+  "claude-a/syncly-authority-governor": "44caae6",
+  "claude-b/syncly-production-data": "cd10ced",
+  "claude-c/syncly-assurance-fable": "9b4774f",
+  "claude-d/syncly-research-rnd": "14a8abe",
+  "bus/syncly-ledger": "dc62ae7",
+  "integration/syncly-current": "2c56155"
+ },
+ "report_cadence": {
+  "watchdog_seconds": 180,
+  "full_status_minutes": 30,
+  "last_full_report_utc": "2026-09-02T06:10:10Z"
+ },
+ "agent_notes": {
+  "A": "idle — obligations discharged; ALT-2 after HUI-006; 3,408 re-decision only if canary fails",
+  "B": "idle — 41 calls; rotation-window captures done",
+  "C": "waiting for Human rotation steps; canary ready",
+  "D": "idle — d1-d6 delivered"
+ },
+ "guards": {
+  "GUARD-C0047": "A_SOURCE_PANEL/T_S 구축은 B 재물질화+Gate0 통과 이후 (57키 증발 방지)"
+ },
+ "canonical_substrate": {
+  "records": 3435,
+  "sha256_prefix": "f8d130c2",
+  "per_query": {
+   "D00": 184,
+   "A01": 1816,
+   "M01": 1243,
+   "P02": 63,
+   "P03": 176
   },
-  "constructs": {
-    "T_S": "source-based category entry = A_SOURCE_PANEL ∩ M01",
-    "T_C": "content-based target-affinity subset of M01 (after full-details)",
-    "legacy_single_T": "DEPRECATED"
+  "rule": "EPOCH-CORPUS-RULE: 야간 동결 캡처 ∩ posted_at<=2026-08-31T00:00:00Z"
+ },
+ "panel_ts": {
+  "A_SOURCE_PANEL": 1574,
+  "T_S_entry_accounts": 6,
+  "T_S_entry_posts": 12,
+  "entry_rate": 0.0038,
+  "status": "CANONICAL"
+ },
+ "open_corrections": {
+  "C-0050→C-0052": "pilot 층 기준 full-caption으로 수정 완료; 60건 재판정 감사 대기",
+  "codebook_v2": "A_SOURCE_PANEL 코드북 §1 이름 매칭 의미론 고정 필요 (D)"
+ },
+ "verified_findings_count": 10,
+ "session_note": "C 세션 재시작 (2026-09-02 11:14 KST). RUN_RESUME_BASELINE_MCP_FIRST 발행. A/B/D는 bundle prompts로 순차 재개(C→A→B+D).",
+ "findings_registry": "10/10 VERIFIED + PRF-0011 VERIFIED + BRIDGE_CASEBOOK_6 VERIFIED(casebook); PRF-0010 construct-verified 60/60 (HUI-006 pending); PRF-0012, OBS-0003 EXPERIMENTAL",
+ "pilot": {
+  "status": "EXECUTED (D-0031) — 60/60 get_post_features calls, 0 failures",
+  "get_post_features_actual_calls": 72,
+  "result_label": "EXPERIMENTAL — C verification COMPLETE on 60/60 originals (arithmetic + construct + ordering); only HUI-006 human check remains",
+  "headline_upper_bound": "S2 sensitivity 15/15; S1 gain 20/35=57.1% CI[42.9,71.4]; PRIMARY-only 14/35=40.0%; electric-only 12/35=34.3% — all arms MATERIAL (upper bound only, SHORT-CAPTION-SCOPE)",
+  "capability_boundary": "FB/IG_POST return no video feature sets (10/10)",
+  "human_check": "HUI-006 gold spot-check of 20 posts (P1, non-blocking; >20% disagreement → HOLD)",
+  "citation_rule": "A-0031: ALT-2 reasoning figure = electric+PRIMARY 11/35 (31.4%, CI 17.1-48.6); pre-registered 20/35 reported alongside; 57.1% never cited alone; ALT-2 input 81.8% SUSPENDED (A-0030)",
+  "recall": "C 12-post assurance recall persisted verbatim (claude-c control/recall/), 0 disagreements",
+  "raw": "60/60 originals recovered from session transcript (D-0035), validated byte-identical to C independent recall on 12 overlap posts"
+ },
+ "event_backlog_note": "backlog 34 events (C-0055~C-0061 구간 포함) 재시작 세션에서 1:1 생성 완료",
+ "method_revision": "MCP_FIRST_DPDD_v2.1",
+ "methodology_correction": {
+  "source_corpus_invalidation": false,
+  "severity": "MAJOR",
+  "scope": "enrichment/preprocessing route",
+  "preview_203": "INDEX_TEXT only",
+  "bulk_835_details": "SUSPENDED_AS_DEFAULT_BULK_ROUTE",
+  "limitation_rule": "no Syncly limitation before MCP exhaustion"
+ },
+ "mcp_runtime_inventory": {
+  "server": "Syncly Social MCP",
+  "tools_discovered": 14,
+  "probed_by_c": 13,
+  "verdict_counts": {
+   "PRODUCTION_READY": 9,
+   "CONDITIONAL": 2,
+   "EXPLORATORY_ONLY": 2,
+   "PENDING_PILOT_VERDICT": 1
   },
-  "approvals": [
-    "full-details retrieval (~857 calls)",
-    "promotion enumeration",
-    "language enumeration (manual precision QA required)",
-    "video-feature stratified pilot (~60 posts)"
-  ],
-  "gates": {
-    "gate0": "PASS",
-    "gate1": "CONDITIONAL PASS (C-0080) — registry exact; identity 24.1% unresolved; Panel v2 tiers after AD batch; T_C not built (design)",
-    "gate2": "CONDITIONAL PASS (C-0080) — M01 denominator; supply STABLE; membership trigger not observable; HUI-005 open",
-    "gate3": "CONDITIONAL (C-0080) — entity lower bounds (CIT-10); meaning NOT MEASURED; creative NOT MEASURED; VOC not observable",
-    "gate4": "CONDITIONAL — holds under the upper bound (C-0088): focal video gain 2/35 observed, CI 0-14.3%; extrapolation 27 point / 67 upper over 471; at the upper bound ≤4-6 shortform focal cells could reach the 10-19 descriptive tier only; \"≤27\" retired as a bare figure",
-    "gate5": "CONDITIONAL PASS (C-0080) — supply STABLE 0.5%; engagement UNSTABLE 68.3%; variants mandatory",
-    "gateM0": "CONDITIONAL PASS — ACCEPTED AND CLOSED (A-0036)",
-    "gateM1": "CONDITIONAL PASS (C-0078) — preview dependency removed; batch/aggregate/page enrichment complete & verified; targeted text 39 / features 72; d5 re-diagnosis accepted (0 TRUE_SYNCLY_LIMIT); COND: A 3,408 decision, HUI-007 label, lexicon v2 before Batch 2",
-    "gate6": "NOT_STARTED — business activation"
-  },
-  "holds": {
-    "HOLD-A0013": "Phase 2 platform-level quantitative product-comparison claims gated by Gate 4 reassessment after video pilot (narrowed per SSOT)",
-    "HOLD-C0014": "RELEASED",
-    "HOLD-C0016": "RELEASED"
-  },
-  "corpus_frozen_night": {
-    "A01": 1849,
-    "M01": 1271,
-    "P02": 64,
-    "P03": 179,
-    "D00_listable": 193,
-    "unique_substrate": 3503
-  },
-  "corpus_live_ui_20260902": {
-    "A01": 1892,
-    "M01": 1292,
-    "P02": 69,
-    "P03": 186
-  },
-  "ledger_rows": 231,
-  "last_reported_shas": {
-    "main": "7e030b0",
-    "claude-a/syncly-authority-governor": "44caae6",
-    "claude-b/syncly-production-data": "cd10ced",
-    "claude-c/syncly-assurance-fable": "9b4774f",
-    "claude-d/syncly-research-rnd": "14a8abe",
-    "bus/syncly-ledger": "dc62ae7",
-    "integration/syncly-current": "2c56155"
-  },
-  "report_cadence": {
-    "watchdog_seconds": 180,
-    "full_status_minutes": 30,
-    "last_full_report_utc": "2026-09-02T06:10:10Z"
-  },
-  "agent_notes": {
-    "A": "idle — obligations discharged; ALT-2 after HUI-006; 3,408 re-decision only if canary fails",
-    "B": "idle — 41 calls; rotation-window captures done",
-    "C": "waiting for Human rotation steps; canary ready",
-    "D": "idle — d1-d6 delivered"
-  },
-  "guards": {
-    "GUARD-C0047": "A_SOURCE_PANEL/T_S 구축은 B 재물질화+Gate0 통과 이후 (57키 증발 방지)"
-  },
-  "canonical_substrate": {
-    "records": 3435,
-    "sha256_prefix": "f8d130c2",
-    "per_query": {
-      "D00": 184,
-      "A01": 1816,
-      "M01": 1243,
-      "P02": 63,
-      "P03": 176
-    },
-    "rule": "EPOCH-CORPUS-RULE: 야간 동결 캡처 ∩ posted_at<=2026-08-31T00:00:00Z"
-  },
-  "panel_ts": {
-    "A_SOURCE_PANEL": 1574,
-    "T_S_entry_accounts": 6,
-    "T_S_entry_posts": 12,
-    "entry_rate": 0.0038,
-    "status": "CANONICAL"
-  },
-  "open_corrections": {
-    "C-0050→C-0052": "pilot 층 기준 full-caption으로 수정 완료; 60건 재판정 감사 대기",
-    "codebook_v2": "A_SOURCE_PANEL 코드북 §1 이름 매칭 의미론 고정 필요 (D)"
-  },
-  "verified_findings_count": 10,
-  "session_note": "C 세션 재시작 (2026-09-02 11:14 KST). RUN_RESUME_BASELINE_MCP_FIRST 발행. A/B/D는 bundle prompts로 순차 재개(C→A→B+D).",
-  "findings_registry": "10/10 VERIFIED + PRF-0011 VERIFIED + BRIDGE_CASEBOOK_6 VERIFIED(casebook); PRF-0010 construct-verified 60/60 (HUI-006 pending); PRF-0012, OBS-0003 EXPERIMENTAL",
-  "pilot": {
-    "status": "EXECUTED (D-0031) — 60/60 get_post_features calls, 0 failures",
-    "get_post_features_actual_calls": 72,
-    "result_label": "EXPERIMENTAL — C verification COMPLETE on 60/60 originals (arithmetic + construct + ordering); only HUI-006 human check remains",
-    "headline_upper_bound": "S2 sensitivity 15/15; S1 gain 20/35=57.1% CI[42.9,71.4]; PRIMARY-only 14/35=40.0%; electric-only 12/35=34.3% — all arms MATERIAL (upper bound only, SHORT-CAPTION-SCOPE)",
-    "capability_boundary": "FB/IG_POST return no video feature sets (10/10)",
-    "human_check": "HUI-006 gold spot-check of 20 posts (P1, non-blocking; >20% disagreement → HOLD)",
-    "citation_rule": "A-0031: ALT-2 reasoning figure = electric+PRIMARY 11/35 (31.4%, CI 17.1-48.6); pre-registered 20/35 reported alongside; 57.1% never cited alone; ALT-2 input 81.8% SUSPENDED (A-0030)",
-    "recall": "C 12-post assurance recall persisted verbatim (claude-c control/recall/), 0 disagreements",
-    "raw": "60/60 originals recovered from session transcript (D-0035), validated byte-identical to C independent recall on 12 overlap posts"
-  },
-  "event_backlog_note": "backlog 34 events (C-0055~C-0061 구간 포함) 재시작 세션에서 1:1 생성 완료",
-  "method_revision": "MCP_FIRST_DPDD_v2.1",
-  "methodology_correction": {
-    "source_corpus_invalidation": false,
-    "severity": "MAJOR",
-    "scope": "enrichment/preprocessing route",
-    "preview_203": "INDEX_TEXT only",
-    "bulk_835_details": "SUSPENDED_AS_DEFAULT_BULK_ROUTE",
-    "limitation_rule": "no Syncly limitation before MCP exhaustion"
-  },
-  "mcp_runtime_inventory": {
-    "server": "Syncly Social MCP",
-    "tools_discovered": 14,
-    "probed_by_c": 13,
-    "verdict_counts": {
-      "PRODUCTION_READY": 9,
-      "CONDITIONAL": 2,
-      "EXPLORATORY_ONLY": 2,
-      "PENDING_PILOT_VERDICT": 1
-    },
-    "matrix_location": "operational repo claude-c branch control/mcp/ (private)",
-    "probed": "14/14 (get_post_features via D pilot)",
-    "gate_m0_blocker": "search_voc exhaustion (D d2)"
-  },
-  "next_milestones": [
-    "A GO_MCP_REBASELINE",
-    "D pilot finding (EXPERIMENTAL)",
-    "B MCP_ROUTE_PROBE",
-    "C Gate M0",
-    "C Gate M1",
-    "Gate 1-5 disposition",
-    "BASELINE_BATCH_SEALED",
-    "SAFE_TO_ROTATE",
-    "Affinity Discovery Batch (AD1-AD5)",
-    "Market Measurement Batch (MM1-MM5)"
-  ],
-  "method_revision_status": "RATIFIED by A-0023 (2026-09-02T02:26:00Z)",
-  "citation_constraints": {
-    "CIT-01": "WEEK boundary buckets are artefacts",
-    "CIT-02": "MONTH degenerate",
-    "CIT-03": "08-17 spike = campaign supply",
-    "CIT-04": "demographics server-base, vendor-inferred",
-    "CIT-05": "(A-0029)",
-    "CIT-06": "non-shortform: no video evidence route",
-    "CIT-07": "VOC/comment content = 0 → Observed Reception unobservable",
-    "CIT-08": "time buckets KST / filters UTC",
-    "CIT-09": "Response leg not claimable (content-blind + RFR 68.3%)",
-    "CIT-10": "codebook brand/language coverage (ko/en-only; Korean budget brands absent) is a Batch 2 design defect — Product Occupancy other-electric cell undercounted until lexicon v2",
-    "CIT-11": "BOUND — PROMOTION-LABEL-CONSTRUCT: label disagrees with itself on preview-equivalent same-source content up to 26.3% group-level (PREVIEW-LEVEL UPPER BOUND; content-level unmeasured) and demonstrably on byte-identical content (tapa_mondo); corpus shares bounded ≤0.73pp; fine-grained Paid/Organic contrasts need caveat + duplicate-family check",
-    "CIT-12": "No Korean-language basis for product comparison in Batch 0 (P02 0 / P03 5 ko posts; ko 555/3,435 overall, captured not licensed) — Batch 2 MM queries must acquire Korean-language content deliberately"
-  },
-  "alt2": {
-    "81.8%": "RETIRED",
-    "72.7% (8/11)": "REINSTATED as figure (A-0035); decision held — classifier-construction proposal for Gate 3",
-    "frame": "restated with interval (C-0088): NO-DECISION defensible on point + classifier/cost legs; upper bound makes it TEST-class; A decides"
-  },
-  "promotion_over_frozen_3435": {
-    "PAID": 2554,
-    "ORGANIC": 670,
-    "SUSPECTED": 211,
-    "supply_share_stable_RFR_pct": 0.5,
-    "engagement_share_unstable_RFR_pct": 68.3
-  },
-  "limitation_rediagnosis": {
-    "LIM-001 203-char preview": "RESOLVED_BY_MCP (availability)",
-    "LIM-002 product sparsity": "MEASUREMENT_DESIGN_LIMIT (lexicon brand/language; focal sparsity itself not text-limited)",
-    "LIM-003 T_C cost": "PARTIALLY_RESOLVED (depends on T_C definition)",
-    "LIM-004 creative": "PARTIALLY_RESOLVED (72.7% prose-reachable; timing unreachable; shortform-only)",
-    "LIM-005 VOC": "OPEN — TRUE_SYNCLY_LIMIT(narrow) vs MEASUREMENT_DESIGN_LIMIT pending HUI-007",
-    "LIM-006 source ecology": "MEASUREMENT_DESIGN_LIMIT (1-month keyword frame)",
-    "TRUE_SYNCLY_LIMIT_declared": 0
-  },
-  "decision_3408": "TARGETED EVIDENCE (A-0043) — no uniform full-text labelling in Batch 0; moves to Batch 2 with lexicon v2 + pre-registered classifier; targeted-evidence discipline bound",
-  "seal": {
-    "status": "SEALED",
-    "ticket": "A-0048 2026-09-02T03:42:35Z",
-    "safe_to_rotate": "C-0083",
-    "sealed_record": "substrate 3,435 f8d130c2 · manifest 32e57819 · 12 marts · CIT-01..11 · NOT-MEASURED declarations",
-    "human_next": "HUR-009 UI_MUTATION_REQUIRED (Archive Baseline 5; create AD1-AD5 after A AD3 decision)",
-    "rotation_sequence": "step1 B captures DONE (C-0086) → NOW: Human UI reads (HUR-007/008, HUI-005/007) → create AD1-AD5 (spec v1.1, A-0053 ratified, AD3 Option A) → archive P02 only → C canary → archive rest / HOLD"
-  },
-  "standing_rules_added": [
-    "THREE CLOCKS (publication / ingestion=ULID / bucket=KST) — every time artifact names its clock",
-    "INDEX_TEXT duplicate keys establish preview equivalence only; content identity requires full text"
-  ],
-  "open_A_decisions": [
-    "BASELINE_BATCH_SEALED (manifest verified C-0082)",
-    "AD3 seed option (C spec sheet v1: option A category-only recommended)",
-    "ALT-2 (expected NO-DECISION)"
-  ],
-  "baseline_not_produced": [
-    "meaning measurement (TA/Need/JTBD) — discovery only",
-    "creative measurement — prose reachable, no classifier",
-    "reception/VOC evidence — content 0",
-    "quantitative focal product comparison — Batch 2"
-  ],
-  "batch0_supplements": {
-    "d00_evidence_r2": "261 rows (77 beyond canonical D00; 68 new to substrate) — NON-DENOMINATOR",
-    "ko_language_membership": "555/3,435 (16.16%) captured, NOT licensed (manual QA pending); by query A01 251 / M01 213 / D00 112 / P03 5 / P02 0 — C-verified (C-0087)"
-  }
+  "matrix_location": "operational repo claude-c branch control/mcp/ (private)",
+  "probed": "14/14 (get_post_features via D pilot)",
+  "gate_m0_blocker": "search_voc exhaustion (D d2)"
+ },
+ "next_milestones": [
+  "A GO_MCP_REBASELINE",
+  "D pilot finding (EXPERIMENTAL)",
+  "B MCP_ROUTE_PROBE",
+  "C Gate M0",
+  "C Gate M1",
+  "Gate 1-5 disposition",
+  "BASELINE_BATCH_SEALED",
+  "SAFE_TO_ROTATE",
+  "Affinity Discovery Batch (AD1-AD5)",
+  "Market Measurement Batch (MM1-MM5)"
+ ],
+ "method_revision_status": "RATIFIED by A-0023 (2026-09-02T02:26:00Z)",
+ "citation_constraints": {
+  "CIT-01": "WEEK boundary buckets are artefacts",
+  "CIT-02": "MONTH degenerate",
+  "CIT-03": "08-17 spike = campaign supply",
+  "CIT-04": "demographics server-base, vendor-inferred",
+  "CIT-05": "(A-0029)",
+  "CIT-06": "non-shortform: no video evidence route",
+  "CIT-07": "VOC/comment content = 0 → Observed Reception unobservable",
+  "CIT-08": "time buckets KST / filters UTC",
+  "CIT-09": "Response leg not claimable (content-blind + RFR 68.3%)",
+  "CIT-10": "codebook brand/language coverage (ko/en-only; Korean budget brands absent) is a Batch 2 design defect — Product Occupancy other-electric cell undercounted until lexicon v2",
+  "CIT-11": "BOUND — PROMOTION-LABEL-CONSTRUCT: label disagrees with itself on preview-equivalent same-source content up to 26.3% group-level (PREVIEW-LEVEL UPPER BOUND; content-level unmeasured) and demonstrably on byte-identical content (tapa_mondo); corpus shares bounded ≤0.73pp; fine-grained Paid/Organic contrasts need caveat + duplicate-family check",
+  "CIT-12": "No Korean-language basis for product comparison in Batch 0 (P02 0 / P03 5 ko posts; ko 555/3,435 overall, captured not licensed) — Batch 2 MM queries must acquire Korean-language content deliberately"
+ },
+ "alt2": {
+  "expected_class": "TEST (A-0057; revised from NO-DECISION A-0040/43/46)",
+  "decision": "NOT TAKEN — HUI-006 blocks_scope",
+  "gate4": "CONDITIONAL holds (C-0088)",
+  "focal_extrapolation": "observed 2/35; over 471: point 27 / bootstrap upper 67 / Wilson upper 88; over 225: 13/32/42; estimator named; '<=27' retired",
+  "batch2_prereg": "ALT-2 bounded probe on MM1 after lexicon v2 + classifier (A-0057); C assurance reqs: prereg ticket before spend, lower-bound tier reading (C-0089)",
+  "open": "A to bind single upper-bound figure (C recommends bootstrap 67)"
+ },
+ "promotion_over_frozen_3435": {
+  "PAID": 2554,
+  "ORGANIC": 670,
+  "SUSPECTED": 211,
+  "supply_share_stable_RFR_pct": 0.5,
+  "engagement_share_unstable_RFR_pct": 68.3
+ },
+ "limitation_rediagnosis": {
+  "LIM-001 203-char preview": "RESOLVED_BY_MCP (availability)",
+  "LIM-002 product sparsity": "MEASUREMENT_DESIGN_LIMIT (lexicon brand/language; focal sparsity itself not text-limited)",
+  "LIM-003 T_C cost": "PARTIALLY_RESOLVED (depends on T_C definition)",
+  "LIM-004 creative": "PARTIALLY_RESOLVED (72.7% prose-reachable; timing unreachable; shortform-only)",
+  "LIM-005 VOC": "OPEN — TRUE_SYNCLY_LIMIT(narrow) vs MEASUREMENT_DESIGN_LIMIT pending HUI-007",
+  "LIM-006 source ecology": "MEASUREMENT_DESIGN_LIMIT (1-month keyword frame)",
+  "TRUE_SYNCLY_LIMIT_declared": 0
+ },
+ "decision_3408": "TARGETED EVIDENCE (A-0043) — no uniform full-text labelling in Batch 0; moves to Batch 2 with lexicon v2 + pre-registered classifier; targeted-evidence discipline bound",
+ "seal": {
+  "status": "SEALED",
+  "ticket": "A-0048 2026-09-02T03:42:35Z",
+  "safe_to_rotate": "C-0083",
+  "sealed_record": "substrate 3,435 f8d130c2 · manifest 32e57819 · 12 marts · CIT-01..11 · NOT-MEASURED declarations",
+  "human_next": "HUR-009 UI_MUTATION_REQUIRED (Archive Baseline 5; create AD1-AD5 after A AD3 decision)",
+  "rotation_sequence": "step1 B captures DONE (C-0086) → NOW: Human UI reads (HUR-007/008, HUI-005/007) → create AD1-AD5 (spec v1.1, A-0053 ratified, AD3 Option A) → archive P02 only → C canary → archive rest / HOLD"
+ },
+ "standing_rules_added": [
+  "THREE CLOCKS (publication / ingestion=ULID / bucket=KST) — every time artifact names its clock",
+  "INDEX_TEXT duplicate keys establish preview equivalence only; content identity requires full text"
+ ],
+ "open_A_decisions": [
+  "BASELINE_BATCH_SEALED (manifest verified C-0082)",
+  "AD3 seed option (C spec sheet v1: option A category-only recommended)",
+  "ALT-2 (expected NO-DECISION)"
+ ],
+ "baseline_not_produced": [
+  "meaning measurement (TA/Need/JTBD) — discovery only",
+  "creative measurement — prose reachable, no classifier",
+  "reception/VOC evidence — content 0",
+  "quantitative focal product comparison — Batch 2"
+ ],
+ "batch0_supplements": {
+  "d00_evidence_r2": "261 rows (77 beyond canonical D00; 68 new to substrate) — NON-DENOMINATOR",
+  "ko_language_membership": "555/3,435 (16.16%) captured, NOT licensed (manual QA pending); by query A01 251 / M01 213 / D00 112 / P03 5 / P02 0 — C-verified (C-0087)"
+ },
+ "bus_head": "6242c1a"
 }

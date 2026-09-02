@@ -53,3 +53,4 @@
 - pilot 인용 수치: electric+PRIMARY 11/35 + 사전등록 20/35 병기; 81.8% 폐기, 72.7% C 검증(A 복원 판단).
 - RAW-EQUIVALENCE-POINTER: held raw의 field-subset임이 증명된 응답은 포인터로 verbatim 요건 충족.
 - NEGATIVE-REQUIRES-A-COMMAND (A-0037): "없다/불가/복구 불가" 류 부정 단정은 확인 명령을 실행한 뒤에만 기재. TRANSCRIPT-RECOVERY (C-0073): inline MCP 결과도 세션 transcript에 timestamp와 함께 남는다 — 사전 명시 저장은 여전히 의무.
+- ALT-2 기대 등급 = **TEST**(A-0057, 결정 아님·HUI-006 후 결정). 조작적 정의: Batch 2에서 lexicon v2·classifier·MM1 분모 확보 후 사전등록 bounded probe — ≥2셀에서 focal n≥10(하한 기준, C-0089) → ALT-2 live 제안, 0~1셀 → NO-DECISION 종결. 인용 구속: focal 외삽은 추정량을 명시해 인용(관측 2/35; 471 기준 point 27·bootstrap 상한 67·Wilson 88), '≤27'은 폐기.
