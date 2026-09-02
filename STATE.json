@@ -1,6 +1,6 @@
 {
   "schema": "syncly-report-state/1.0.0",
-  "updated_utc": "2026-09-02T03:36:03Z",
+  "updated_utc": "2026-09-02T03:38:50Z",
   "research_epoch": "RE-20260901-001",
   "execution_run": "RUN-20260902-FULL-001",
   "phase": "PHASE R3 — Baseline Closure: all gates dispositioned (0 PASS; M0/M1/1/2/5 CONDITIONAL PASS; 3/4 CONDITIONAL); 3,408 decision = TARGETED EVIDENCE; awaiting B manifest → A BASELINE_BATCH_SEALED → C SAFE_TO_ROTATE",
@@ -54,14 +54,14 @@
     "P02": 69,
     "P03": 186
   },
-  "ledger_rows": 200,
+  "ledger_rows": 207,
   "last_reported_shas": {
     "main": "7e030b0",
-    "claude-a/syncly-authority-governor": "f35ccb1",
-    "claude-b/syncly-production-data": "c0406a9",
-    "claude-c/syncly-assurance-fable": "59fe682",
-    "claude-d/syncly-research-rnd": "2260b8f",
-    "bus/syncly-ledger": "c241fb5",
+    "claude-a/syncly-authority-governor": "eb71e14",
+    "claude-b/syncly-production-data": "4fbdb79",
+    "claude-c/syncly-assurance-fable": "83b8995",
+    "claude-d/syncly-research-rnd": "33f165f",
+    "bus/syncly-ledger": "20708dd",
     "integration/syncly-current": "2c56155"
   },
   "report_cadence": {
@@ -163,7 +163,7 @@
     "CIT-08": "time buckets KST / filters UTC",
     "CIT-09": "Response leg not claimable (content-blind + RFR 68.3%)",
     "CIT-10": "codebook brand/language coverage (ko/en-only; Korean budget brands absent) is a Batch 2 design defect — Product Occupancy other-electric cell undercounted until lexicon v2",
-    "CIT-11": "BOUND (A-0042): PROMOTION-LABEL-CONSTRUCT — vendor promotion label self-inconsistent (26.3% group / agreement 78.0% on caption-head families); corpus shares bounded ≤0.73pp; fine-grained Paid/Organic contrasts need caveat + duplicate-family check"
+    "CIT-11": "BOUND — PROMOTION-LABEL-CONSTRUCT: label disagrees with itself on preview-equivalent same-source content up to 26.3% group-level (PREVIEW-LEVEL UPPER BOUND; content-level unmeasured) and demonstrably on byte-identical content (tapa_mondo); corpus shares bounded ≤0.73pp; fine-grained Paid/Organic contrasts need caveat + duplicate-family check"
   },
   "alt2": {
     "81.8%": "RETIRED",
@@ -190,5 +190,14 @@
     "status": "PREPARING",
     "outstanding": "B QUERY_BATCH_MANIFEST (0 calls) → A BASELINE_BATCH_SEALED → C SAFE_TO_ROTATE",
     "human_items_block_seal": false
-  }
+  },
+  "standing_rules_added": [
+    "THREE CLOCKS (publication / ingestion=ULID / bucket=KST) — every time artifact names its clock",
+    "INDEX_TEXT duplicate keys establish preview equivalence only; content identity requires full text"
+  ],
+  "open_A_decisions": [
+    "PREREG-B-001 approve/decline (25 details calls; not seal-blocking)",
+    "BASELINE_BATCH_SEALED after B manifest",
+    "ALT-2 (expected NO-DECISION; inside HUI-006 scope)"
+  ]
 }

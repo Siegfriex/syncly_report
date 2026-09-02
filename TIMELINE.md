@@ -43,3 +43,4 @@
 - 03:25Z A-0040 Gate 4 CONDITIONAL 수용; B-0034 B-CV-01(promotion 라벨 26.3% 불일치) → C-0077 VERIFIED·CIT-11 후보 (BUS 189행)
 - 03:28Z~03:3xZ D d5 재진단·B-PROMO-QA·A CIT-11 구속 → **C-0078 GATE M1 CONDITIONAL PASS** (BUS 196행)
 - 03:32Z A-0043 3,408 = TARGETED EVIDENCE → **C-0080 Gates 1/2/3/5 최종 disposition** (모든 Baseline gate 완결; BUS 200행)
+- 03:33Z~03:4xZ CIT-11 스레드 종결: D OBS-0004(tapa_mondo 동일 콘텐츠 라벨 분기 확인; javiermonet 정정) → A P1 유지/P2 철회·THREE CLOCKS → B 26.3% preview 상한 재라벨+PREREG-B-001 → **C-0081**(C-0077 표본 철회 포함) (BUS 207행)
