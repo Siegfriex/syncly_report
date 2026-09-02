@@ -75,3 +75,4 @@
 - 07:34Z **A-0078 v2.1 비준**(+조건 2) · D-0055(36 토큰·범주 topicality·razor sharp 관용구) → 07:4xZ **C-0116 v2.2** (BUS f4aaff4)
 - 07:36Z A-0079 razor 관용구 비준 · 혼동 클래스별 검증 라벨 · parity NET은 post-level (BUS d2630a3)
 - 07:37Z D-0056 item 10(정밀도 0.983; 범주 경로 디자인 아이콘 누출; 회귀 세트) → 07:5xZ **C-0117** affinity 어휘 = AD v1.2 키워드 구속 + 회귀 세트 채택 (BUS efa4662)
+- 07:40Z B-0057(D-0056 확인: AD4 전용 어휘로는 Rams 누출) · D-0057 → 07:5xZ **C-0118** affinity 어휘 = 5 slot 전체 100 키워드 (BUS ea3289a)
