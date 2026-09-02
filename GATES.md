@@ -14,4 +14,4 @@
 | Gate 5 | robustness | **CONDITIONAL PASS** (C-0080) | supply RFR 0.5% STABLE; engagement RFR 68.3% UNSTABLE(CIT-09); top-date 67.3%; 변형 의무 |
 | Gate 6 | Business Activation | NOT_STARTED | Batch 1(AD)·Batch 2(MM) 이후 |
 
-Baseline seal 조건: M0 + M1 + Gate 1~5 최종 disposition(PASS/CONDITIONAL/NO-GO 모두 완결) → BASELINE_BATCH_SEALED → C SAFE_TO_ROTATE → Human만 UI Query 생성.
+**BASELINE_BATCH_SEALED (A-0048, 03:42Z) · SAFE_TO_ROTATE (C-0083).** Baseline seal 조건: M0 + M1 + Gate 1~5 최종 disposition(PASS/CONDITIONAL/NO-GO 모두 완결) → BASELINE_BATCH_SEALED → C SAFE_TO_ROTATE → Human만 UI Query 생성.

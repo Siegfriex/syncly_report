@@ -1,6 +1,6 @@
 # Human 확인 큐
 
-갱신: 2026-09-02T03:13:21Z
+갱신: 2026-09-02T03:45:18Z
 
 ## 완료
 | ID | 내용 | 결과 |
@@ -9,6 +9,11 @@
 | HUR-006 (부분) | Promotion/Language 필터 존재·의미론 | 부분 확인 (3분류 존재, 서비스 파생) — 표본 검증은 HUI-007/008로 승계 |
 
 ## 열림 (우선순위순)
+| ID | 우선 | 내용 | blocks_scope (이것만 막힘) |
+|---|---|---|---|
+| **HUR-009** | **P0** | **UI_MUTATION_REQUIRED** — SAFE_TO_ROTATE(C-0083) 이후: (1) Baseline 5개 Query Archive(Delete 금지, 스크린샷) (2) A의 AD3 옵션 결정 후 AD1~AD5를 claude-c 대로 생성 (3) query_id·tracking_since·keyword 캡처 → C. 요청서  | Batch 1 수집 시작만 |
+
+### 기존 열림
 | ID | 우선 | 내용 | blocks_scope (이것만 막힘) |
 |---|---|---|---|
 | HUR-007 | P0 | IG Post/Facebook의 views 부재가 상류 부재인지 MCP 미노출인지 UI 판별 | 해당 플랫폼 views 기반 클레임 문구 확정 |

@@ -3,13 +3,13 @@
 갱신: 2026-09-02T03:38Z (KST 12:38) · Epoch `RE-20260901-001` · Run `RUN-20260902-FULL-001` · Method `MCP_FIRST_DPDD_v2.1` · 작성: Claude C (단독 writer)
 
 ## 한 줄 현황
-**Baseline의 모든 gate가 disposition을 받았다** — 0 PASS, M0/M1/1/2/5 CONDITIONAL PASS, 3/4 CONDITIONAL. A는 3,408건 전문 labelling을 Batch 0에서 하지 않기로 결정(TARGETED EVIDENCE). 남은 것은 B의 batch manifest → A의 BASELINE_BATCH_SEALED → C의 SAFE_TO_ROTATE이며, 그 뒤 Human이 Affinity Discovery 5 Query를 생성한다. 상세: reports/30min/20260902/ 최신.
+**Baseline(Batch 0) SEALED → SAFE_TO_ROTATE.** 분모 3,435와 모든 enrichment·제약이 해시와 함께 봉인됐다. Baseline은 역량 지도·supply 구조·source universe·방법론 판정(vendor limit 0)을 확정했고, 사업 질문(WHERE/WHO/WHAT/HOW/PROOF)은 답하지 않았다(그럴 배치가 아니다). **이제 Human 차례**: Baseline 5개 Query Archive + AD1~AD5 생성(HUR-009). 상세: reports/30min/20260902/ 최신.
 
 ## Gate
 Gate 0 PASS · M0 CONDITIONAL PASS(종결) · **M1 OPEN(d5 대기)** · **Gate 4 CONDITIONAL** · 1/2/3/5 PENDING. HOLD-A0013·GO_PHASE2 보류 유지.
 
 ## Human에게
-비블로킹 확인 2건: HUI-006(pilot 20건 spot-check), HUI-007(댓글 수집 옵션 UI 확인, 설정 변경 금지). 그 외 요청 없음. Query 생성/수정/삭제 금지. MCP tool 선택 질문에는 답하지 않아도 됨(agent 책임). 재시작 순서 C→A→B+D.
+**HUR-009 (UI mutation, Batch 1 시작 조건)**: Baseline 5개 Query Archive(Delete 금지) → A의 AD3 옵션 결정 후 AD1~AD5 생성 → query_id/keyword 캡처 전달. 비블로킹: HUI-006, HUI-007, HUR-008. Query 생성/수정/삭제 금지. MCP tool 선택 질문에는 답하지 않아도 됨(agent 책임). 재시작 순서 C→A→B+D.
 
 ---
 ### (이하는 2026-09-02 08:51 KST 세션 종료 시점 스냅샷)
