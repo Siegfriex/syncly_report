@@ -56,3 +56,4 @@
 - 06:38Z **A-0059 v2.2 RATIFY**(riders 9) + A-0058 CIT-13 + A-0060 → 06:4xZ Human AD1~AD5 UI 생성(자체 정의) → **C-0096 HOLD STILL** · **C-0097** as-created v1.2 등록·Baseline 전량 ARCHIVED·**P02 canary ADDRESSABLE** · C-0098 Gate 4 20+ 부정 allocation-conditional(결함 #22) (BUS 0320251, tickets 246)
 - 06:47Z A-0061 **RECONCILE AD v1.2** + A-0062 allocation-conditional → 06:51Z **C-0099 REGIONAL_SCHEMA_FREEZE-2.2.0** · C-0100 B 활성 · C-0101 D 활성 · C-0102 격자 집중도(3 null) (BUS 83b129f, tickets 252)
 - 06:53Z A-0063 FREEZE ACK · Gate 4 부정 3-null 인용형 · ALT-2 probe 2문항(Q_A tier / Q_B allocation) 사전선언 의무 (BUS c9d7587)
+- 07:00Z B-0046 PREREG-B-002 실행(UNKNOWN 96.1%; HIGH/MEDIUM 134) + AD 인터페이스 + no-rewrite 재발행 → 07:06Z **C-0103 정확 재현 검증** + 판정 3(AD4 100%/수동검토, D demographics 행, PREREG-B-003)

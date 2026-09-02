@@ -43,3 +43,4 @@
 | VOC 가용성 | 미확정 (HUI-007) | 도구 정상·index 공백; vendor vs 수집설정 |
 | 소스 생태 | MEASUREMENT_DESIGN_LIMIT | 1개월 키워드 Query 프레임 |
 **TRUE_SYNCLY_LIMIT 확정 0건.**
+- **GATE_R1 입력(Batch 0 증거기반, 허용 경로)**: market_basis HIGH/MEDIUM 도달 134/3,435(3.9%); UNKNOWN 96.1%; OFFICIAL 8·RETAIL 127(상한)/51(floor)·COMMERCE 51; CAMPAIGN 관측불가; CREATOR_LOCATION은 집계 상한만(region 89.1% 공백). 이는 Batch 0 증거기반 기술이며 KMM/EMM 한계 판정이 아니다(A-0059 R8). B-0046 / C-0103 정확 재현.
