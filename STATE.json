@@ -1,6 +1,6 @@
 {
   "schema": "syncly-report-state/1.0.0",
-  "updated_utc": "2026-09-02T02:29:26Z",
+  "updated_utc": "2026-09-02T02:30:57Z",
   "research_epoch": "RE-20260901-001",
   "execution_run": "RUN-20260902-FULL-001",
   "phase": "PHASE R1 — MCP REBASELINE: GO_MCP_REBASELINE issued (A-0023); B/D released; D pilot GO standing; Gate M0 OPEN",
@@ -54,14 +54,14 @@
     "P02": 69,
     "P03": 186
   },
-  "ledger_rows": 148,
+  "ledger_rows": 149,
   "last_reported_shas": {
     "main": "7e030b0",
-    "claude-a/syncly-authority-governor": "549b706",
+    "claude-a/syncly-authority-governor": "a345b7c",
     "claude-b/syncly-production-data": "a46c878",
     "claude-c/syncly-assurance-fable": "0839a7b",
     "claude-d/syncly-research-rnd": "a501738",
-    "bus/syncly-ledger": "8c23200",
+    "bus/syncly-ledger": "0ed4ad6",
     "integration/syncly-current": "2c56155"
   },
   "report_cadence": {
