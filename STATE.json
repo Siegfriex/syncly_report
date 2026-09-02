@@ -1,9 +1,9 @@
 {
  "schema": "syncly-report-state/1.0.0",
- "updated_utc": "2026-09-02T13:15:58Z",
+ "updated_utc": "2026-09-02T13:20:00Z",
  "research_epoch": "RE-20260901-001",
- "execution_run": "RUN-20260902-V24-LOCAL-001",
- "phase": "SEALED — PRESENTATION_EVIDENCE_PACK_SEALED (C-V24-010); decision class NO-DECISION + targeted evidence",
+ "execution_run": "RUN-20260902-V24-RECOVERY-001 (prior RUN-20260902-V24-LOCAL-001 immutable)",
+ "phase": "RECOVERY: C-V24-010 HISTORICALLY_SEALED_BUT_SUSPENDED_PENDING_HARNESS_RECOVERY; FINAL_PRESENTATION_RELEASE=HOLD; GUARD-V24R-001 ACTIVE; B-V24R-001/D-V24R-001 released (ACK_PENDING)",
  "reporter": "Claude C (single-writer)",
  "authority": "Human latest instruction > main 8e8c74d Braun_NEVO_Presentation_First_Final_Bundle_v2.4_20260902/ (CURRENT_AUTHORITY.json) > C-sealed v2.4 control artifacts > v2.3 bundle (methodology/falsification lineage only) > legacy/",
  "locks": {
@@ -58,9 +58,9 @@
  "ledger_rows": 361,
  "last_reported_shas": {
   "main": "8e8c74d",
-  "claude-a/syncly-authority-governor": "f1a8ef2",
+  "claude-a/syncly-authority-governor": "78d8793",
   "claude-b/syncly-production-data": "68d97cd",
-  "claude-c/syncly-assurance-fable": "2a1dc18",
+  "claude-c/syncly-assurance-fable": "aae1a33",
   "claude-d/syncly-research-rnd": "e711b24",
   "bus/syncly-ledger": "bfb359d",
   "integration/syncly-current": "2c56155",
@@ -304,9 +304,8 @@
  },
  "corpus_live_ui_rule": "ARCHIVED-LIVE-COUNT-UNSTABLE (C-0107; ratified+extended A-0070): archived live counts observed 07:22Z — M01 1,020 / A01 1,043 / P02 69 / P03 186 / D00 277 — are NOT canonical; canonical window re-canary exact (A01 1,816 / M01 1,244 / P03 176); cause undetermined; 'archiving caused it' is itself unverified",
  "session": {
-  "status": "RUN SEALED 2026-09-02 ~22:05 KST",
-  "handoff": "claude-c control/v24/final/SESSION_HANDOFF_v2.4.md",
-  "c_head": "2a1dc18"
+  "status": "RECOVERY OPEN 2026-09-02 ~22:20 KST",
+  "c_head": "aae1a33"
  },
  "execution_mode": "SYNCLY_CLOSED_LOCAL_VALIDATION_ACTIVE",
  "v23": {
@@ -424,5 +423,26 @@
    "US same-date street price"
   ],
   "erratum_1": "C-V24-012 post-seal: CE-02 wording (never bare 24%), CE-08 reason (no featured offer), PN-020 guard, E re-pointed to b55a743; seal unchanged"
+ },
+ "v24_recovery": {
+  "triggers": [
+   "P03 176 → S9 entity 160 → S9 Tier A 2",
+   "B vs mart actor 11/40",
+   "Tier A 180/3435, gold 0"
+  ],
+  "questions": [
+   "R1 S9 collapse",
+   "R2 NEVO collapse (Brand 0, non-paid 1)",
+   "R3 actor 11/40 and effect on L4/L5"
+  ],
+  "a_release_gate": "R0 CLOSED; R1–R8 OPEN",
+  "control": "claude-c control/v24_recovery/*; BUS harness/recovery/",
+  "agent_states": {
+   "A": "HOLD_RECOVERY_PENDING",
+   "B": "SYNCLY CLOSED / FROZEN_DATA ELIGIBLE (B-V24R-001 ACK_PENDING)",
+   "C": "ACTIVE_RECOVERY_ORCHESTRATOR",
+   "D": "ELIGIBLE (D-V24R-001 ACK_PENDING)",
+   "E": "FROZEN"
+  }
  }
 }
