@@ -1,6 +1,6 @@
 {
   "schema": "syncly-report-state/1.0.0",
-  "updated_utc": "2026-09-02T03:50:05Z",
+  "updated_utc": "2026-09-02T03:51:18Z",
   "research_epoch": "RE-20260901-001",
   "execution_run": "RUN-20260902-FULL-001",
   "phase": "BATCH 0 SEALED (A-0048) → SAFE_TO_ROTATE (C-0083) — awaiting A spec ratification + Human UI rotation (HUR-009) → Batch 1 Affinity Discovery",
@@ -54,14 +54,14 @@
     "P02": 69,
     "P03": 186
   },
-  "ledger_rows": 221,
+  "ledger_rows": 222,
   "last_reported_shas": {
     "main": "7e030b0",
-    "claude-a/syncly-authority-governor": "798b03e",
+    "claude-a/syncly-authority-governor": "d71e5e2",
     "claude-b/syncly-production-data": "54b31e1",
     "claude-c/syncly-assurance-fable": "7f6545c",
     "claude-d/syncly-research-rnd": "33f165f",
-    "bus/syncly-ledger": "b233b41",
+    "bus/syncly-ledger": "6758cad",
     "integration/syncly-current": "2c56155"
   },
   "report_cadence": {
@@ -192,7 +192,7 @@
     "safe_to_rotate": "C-0083",
     "sealed_record": "substrate 3,435 f8d130c2 · manifest 32e57819 · 12 marts · CIT-01..11 · NOT-MEASURED declarations",
     "human_next": "HUR-009 UI_MUTATION_REQUIRED (Archive Baseline 5; create AD1-AD5 after A AD3 decision)",
-    "rotation_sequence": "C-0085: step0 B runs D00-EVIDENCE-R2 + ko membership (APPROVED A-0049) → step0b Human UI reads (HUR-007/008, HUI-005/007) → step1 create AD1-AD5 (after A ratifies spec + AD3) → step2a Archive P02 ONLY → step2b C canary (3-4 read-only calls: is an archived query still post_id-addressable?) → step2c ADDRESSABLE: archive rest / NOT: HOLD, A re-decides 3,408 → step3 C confirms"
+    "rotation_sequence": "RATIFIED (A-0052): 1 B captures (D00-R2, ko) → 2 Human UI reads (HUR-007/008, HUI-005/007) → 3 Archive P02 only → 4 C canary calls → 5 ADDRESSABLE: archive rest / NOT: HOLD → AD1-AD5 creation decoupled (after A spec ratification + AD3)"
   },
   "standing_rules_added": [
     "THREE CLOCKS (publication / ingestion=ULID / bucket=KST) — every time artifact names its clock",
