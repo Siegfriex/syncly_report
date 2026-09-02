@@ -1,6 +1,6 @@
 {
   "schema": "syncly-report-state/1.0.0",
-  "updated_utc": "2026-09-02T03:57:40Z",
+  "updated_utc": "2026-09-02T04:10:40Z",
   "research_epoch": "RE-20260901-001",
   "execution_run": "RUN-20260902-FULL-001",
   "phase": "BATCH 0 SEALED (A-0048) → SAFE_TO_ROTATE (C-0083) — awaiting A spec ratification + Human UI rotation (HUR-009) → Batch 1 Affinity Discovery",
@@ -67,13 +67,13 @@
   "report_cadence": {
     "watchdog_seconds": 180,
     "full_status_minutes": 30,
-    "last_full_report_utc": "2026-09-02T03:45:18Z"
+    "last_full_report_utc": "2026-09-02T04:10:40Z"
   },
   "agent_notes": {
-    "A": "owes spec sheet ratification + AD3 option; ALT-2 after HUI-006",
-    "B": "Batch 0 complete; standby for Batch 1 collection after C query confirmation",
-    "C": "SAFE_TO_ROTATE issued; will confirm created queries; Batch 0 sealed report",
-    "D": "Batch 0 complete; pre-register Batch 1 Breadth/Depth/Persistence rules"
+    "A": "idle — obligations discharged; ALT-2 after HUI-006; 3,408 re-decision only if canary fails",
+    "B": "idle — 41 calls; rotation-window captures done",
+    "C": "waiting for Human rotation steps; canary ready",
+    "D": "idle — d1-d6 delivered"
   },
   "guards": {
     "GUARD-C0047": "A_SOURCE_PANEL/T_S 구축은 B 재물질화+Gate0 통과 이후 (57키 증발 방지)"
