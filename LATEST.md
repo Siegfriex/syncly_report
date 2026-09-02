@@ -1,8 +1,10 @@
 # Syncly 연구 현황 — LATEST
 
-갱신: 2026-09-02T06:50Z (KST 15:50) · Epoch `RE-20260901-001` · Run `RUN-20260902-FULL-001` · Method `MCP_FIRST_DPDD_v2.1` · 작성: Claude C (단독 writer)
+갱신: 2026-09-02T06:56Z (KST 15:56) · Epoch `RE-20260901-001` · Run `RUN-20260902-FULL-001` · Method `MCP_FIRST_DPDD_v2.1` · 작성: Claude C (단독 writer)
 
 ## 한 줄 현황
+**(15:56) REGIONAL_SCHEMA_FREEZE-2.2.0 발행(C-0099).** A-0061이 AD spec v1.2(as-created)를 RECONCILE로 비준하고 AD4 규칙을 확장(shaving-only 소스는 패널 제외). B(C-0100)·D(C-0101) 활성 — 둘 다 0 MCP 콜, AD 데이터 접근은 C가 query_id를 서버에서 확인해 CONFIRMED 티켓을 낸 뒤. 지금 서버에는 AD 5개가 아직 미노출(수집 중) — C가 주기적으로 확인. Human 할 일 없음.
+
 **(15:50) v2.2 REGIONAL RATIFIED(A-0059, 06:38:33Z).** Human이 AD1~AD5를 **자체 정의로 UI 생성**(A-0053 v1.1 exact와 다름) → C가 as-created를 **AD spec v1.2**로 등록하고 A에 RECONCILE 요청. Baseline 5개 전량 Archive → C canary **ADDRESSABLE**. A/B/D는 C-0096으로 정지(C 지침 전 자발 행동 금지). 다음: C가 B-0045 검증 후 **REGIONAL_SCHEMA_FREEZE** 발행 → B/D 활성 → AD query_id 포착 시 spec 대조·오염 diff → Batch 1 수집.
 
 **(15:41) v2.2 REGIONAL DELTA가 Human 지정 유일 SSOT.** C intake 완료(C-0090), A 비준 요청(C-0091/0095) 대기 — 그 전까지 방법 권위는 v2.1. downstream만 바뀐다(Language/Market → KR mirrored MM → INTL_EN mirrored MM → market-conditioned Activation). **AD1~AD5는 재설계하지 않는다**: Human은 지금 `reports/HUR-009_AD1-AD5_UI_SHEET.md`(A-0053 exact)로 생성. B의 AD downstream 물질화만 A 비준+REGIONAL_SCHEMA_FREEZE 후. 상세: reports/30min/20260902/1540_v22_regional_delta_intake.md

@@ -16,4 +16,4 @@
 
 **BASELINE_BATCH_SEALED (A-0048, 03:42Z) · SAFE_TO_ROTATE (C-0083).** Baseline seal 조건: M0 + M1 + Gate 1~5 최종 disposition(PASS/CONDITIONAL/NO-GO 모두 완결) → BASELINE_BATCH_SEALED → C SAFE_TO_ROTATE → Human만 UI Query 생성.
 
-| Gate R0~R5 (v2.2) | Language Quality / Market Attribution / Mirrored Denominator / Reception Observability / Regional Robustness / Activation Readiness | **RATIFIED (A-0059) / NOT YET FROZEN** — C REGIONAL_SCHEMA_FREEZE 대기(B-0045 검증 후); riders R1~R9·A-0060 반영 예정 | R3 실패는 Supply/Translation을 막지 않음 → 'Syncly Observed Reception = NO-DECISION'; regional response RFR>25% → UNSTABLE → NO-DECISION; R1은 text/manual basis 기준(region 필드 89.1% 공백, 서버모집단 기준 B-0044) |
+| Gate R0~R5 (v2.2) | Language Quality / Market Attribution / Mirrored Denominator / Reception Observability / Regional Robustness / Activation Readiness | **BOUND — REGIONAL_SCHEMA_FREEZE-2.2.0 (C-0099, 06:51:44Z)**; PASS 조건은 C-0099 payload.gates; 모두 NOT_STARTED(측정 전) | R3 실패는 Supply/Translation을 막지 않음 → 'Syncly Observed Reception = NO-DECISION'; regional response RFR>25% → UNSTABLE → NO-DECISION; R1은 text/manual basis 기준(region 필드 89.1% 공백, 서버모집단 기준 B-0044) |
