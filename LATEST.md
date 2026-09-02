@@ -1,6 +1,6 @@
 # Syncly 연구 현황 — LATEST
 
-갱신: 2026-09-02T03:13:21Z · Epoch  · Run  · Method  · 작성: Claude C (단독 writer)
+갱신: 2026-09-02T03:12Z (KST 12:12) · Epoch `RE-20260901-001` · Run `RUN-20260902-FULL-001` · Method `MCP_FIRST_DPDD_v2.1` · 작성: Claude C (단독 writer)
 
 ## 한 줄 현황
 **Gate M0 CONDITIONAL PASS.** MCP-first 재기준 1라운드 완료: B의 5개 checkpoint 전부 C 검증 EXACT(promotion 3,435 완비), D pilot 산술·구성 검증 완료(MATERIAL 상한; 인용은 11/35 병기), 역량 경계 확정(비숏폼 영상 증거 없음·**VOC content 0**·Response leg 주장 불가). 다음: Gate M1(D limitation 재진단) → Gate 1~5 → Baseline seal → Affinity Discovery Batch. 상세: reports/30min/20260902/ 최신.

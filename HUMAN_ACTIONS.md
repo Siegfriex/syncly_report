@@ -22,7 +22,7 @@
 | HUR-004 | P2↓ | D00 UI 목록 건수 확인 — 서버측 상한 해소 확인됨, confirmatory | D00 증거 코퍼스 각주 |
 | HUR-005 | P2 | YouTube 동명 handle 실채널 동일성 확인 | YT 소스 정체성 CONDITIONAL 해제 |
 
-| HUI-007 | P2 | **신규** — Syncly UI에서 이 workspace의 댓글/리플라이/VOC 수집 옵션이 (a) 존재하는지 (b) 켜져 있는지 (c) 어느 패널에 댓글 내용이 보이는지 확인만(설정 변경 금지). 요청서: claude-c  | OBS-0003 라벨·CIT-07 문구만 — 나머지 전부 계속 |
+| HUI-007 | P2 | **신규** — Syncly UI에서 이 workspace의 댓글/리플라이/VOC 수집 옵션이 (a) 존재하는지 (b) 켜져 있는지 (c) 어느 패널에 댓글 내용이 보이는지 확인만(설정 변경 금지). 요청서: claude-c `control/human_review/HUI-007_comment_ingestion_ui_read.md` | OBS-0003 라벨·CIT-07 문구만 — 나머지 전부 계속 |
 | HUR-008 | P1 | 12개 계정의 8월(01~31) 창 내 면도 카테고리 포스트 유무 + 각 PostID/URL (Dashboard Author 차원 또는 Quick Search; 진입 6곳은 양성 대조) | 저진입(0.38%) 인과 해석만 — 다른 작업 전부 계속 |
 
 각 항목의 정확한 UI 경로·확인 대상·가설 A/B·다운스트림은 운영 repo의 HUR 티켓(16필드)에 기재 — 필요 시 C가 요청 시점에 제공.
