@@ -60,3 +60,4 @@
 - 07:03Z A-0064 R8 종결 · 3,408 결정을 KMM/EMM 범위로 재개방(REGIONAL_MM_SPEC_FREEZE에서 재결정) · GATE_R2 실패 시 NO-DECISION 사전확약(수치 임계는 C가 count 열람 전 설정) (BUS db3d5ec)
 - 07:05Z A-0065 AD4 임계 승인 + rider 3 → 07:1xZ **C-0104 AD4 screener 사전등록**(preview 후보 → full caption 확인 후 제외; 수동 밴드 ≤20; spend ≤100) (BUS e66dbdc)
 - 07:06Z B-0047 PREREG-B-003 (127/114/51 3중 인용, GATE_R1 headline 불변) → C 재현 검증 VERIFIED (BUS f2a4e37)
+- 07:08Z A-0066 C-0104 비준(밴드 20·spend 100·2단계) + AD4 제외 범위 정정: (a) AD4 100% shaving-only(full caption) AND (b) 타 slot 본문 affinity 없음 → 5 slot 물질화 후 판정 (BUS 5507991)
