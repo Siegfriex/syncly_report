@@ -1,9 +1,9 @@
 {
  "schema": "syncly-report-state/1.0.0",
- "updated_utc": "2026-09-02T14:12:21Z",
+ "updated_utc": "2026-09-02T14:32:52Z",
  "research_epoch": "RE-20260901-001",
- "execution_run": "RUN-20260902-V24-RECOVERY-001 (prior RUN-20260902-V24-LOCAL-001 immutable)",
- "phase": "FINAL_REPORT_SEALED (v2.4.1): recovery sealed; decision class NO-DECISION + targeted evidence; zero BH-significant local findings; report reports/final_v2.4.1/",
+ "execution_run": "RUN-20260902-V25-COMPARATOR-EXPANSION-001 (baseline v2.4.1 immutable @ 4f23c39)",
+ "phase": "CYCLE 2 (v2.5 comparator universe) OPEN — CU0 model-universe census: D-V25-001 ∥ B-V25-001 released, ACK pending; MCP NOT allowed; A HOLD",
  "reporter": "Claude C (single-writer)",
  "authority": "Human latest instruction > main 8e8c74d Braun_NEVO_Presentation_First_Final_Bundle_v2.4_20260902/ (CURRENT_AUTHORITY.json) > C-sealed v2.4 control artifacts > v2.3 bundle (methodology/falsification lineage only) > legacy/",
  "locks": {
@@ -464,5 +464,22 @@
   ],
   "outcome": "CASE 2 (bounded measurement-pipeline limit) + MIXED root cause (text acquisition unstratified by product); CH6 retracted as BH-significant (21/41 vs 18/68, p_BH .054; loose construct); Tier A 182; S9 cell 3 (one NEVO transliteration)"
  },
- "final_report": "reports/final_v2.4.1/FINAL_RUN_REPORT_v2.4.1.md (+ 01–10, QUALITY_GATE 13/13, MANIFEST_SHA256.csv)"
+ "final_report": "reports/final_v2.4.1/FINAL_RUN_REPORT_v2.4.1.md (+ 01–10, QUALITY_GATE 13/13, MANIFEST_SHA256.csv)",
+ "v25": {
+  "baseline": "4f23c39 reports/final_v2.4.1/",
+  "root_problem_verdicts": {
+   "COMPARATOR_UNIVERSE_TRUNCATION": "PENDING",
+   "POOLED_REFERENCE_HETEROGENEITY": "PENDING",
+   "DIFFERENTIAL_EVIDENCE_AVAILABILITY": "PENDING"
+  },
+  "gates": "CU0 OPEN; CU1/CU2/deficit/EM1/coverage/D/verify/A/seal LOCKED",
+  "control": "claude-c control/v25_comparator_universe/ (= bus harness/v25/)",
+  "agent_states": {
+   "A": "HOLD_COMPARATOR_CYCLE",
+   "B": "ACTIVE_WHEN_TICKETED",
+   "C": "ACTIVE_ORCHESTRATOR",
+   "D": "ACTIVE_LOCAL_CENSUS",
+   "E": "FROZEN (targeted alias fact-check eligible)"
+  }
+ }
 }
