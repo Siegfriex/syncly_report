@@ -46,3 +46,4 @@
 - 03:33Z~03:4xZ CIT-11 스레드 종결: D OBS-0004(tapa_mondo 동일 콘텐츠 라벨 분기 확인; javiermonet 정정) → A P1 유지/P2 철회·THREE CLOCKS → B 26.3% preview 상한 재라벨+PREREG-B-001 → **C-0081**(C-0077 표본 철회 포함) (BUS 207행)
 - 03:38Z A-0046 전 gate 완결·seal READY; B manifest → **C-0082 manifest VERIFIED 25/25** (BUS 210행) — 다음: A SEALED → C SAFE_TO_ROTATE
 - 03:42Z **A-0048 BASELINE_BATCH_SEALED** → **C-0083 SAFE_TO_ROTATE** (BUS 214행). Human UI rotation(HUR-009) 대기.
+- 03:43Z B-0040 rotation 만료 항목 플래그 → **C-0084 PRE-ARCHIVE HOLD**(UI read 4건 선행·AD 생성 분리) (BUS 216행)

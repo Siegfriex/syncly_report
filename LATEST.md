@@ -9,7 +9,7 @@
 Gate 0 PASS · M0 CONDITIONAL PASS(종결) · **M1 OPEN(d5 대기)** · **Gate 4 CONDITIONAL** · 1/2/3/5 PENDING. HOLD-A0013·GO_PHASE2 보류 유지.
 
 ## Human에게
-**HUR-009 (UI mutation, Batch 1 시작 조건)**: Baseline 5개 Query Archive(Delete 금지) → A의 AD3 옵션 결정 후 AD1~AD5 생성 → query_id/keyword 캡처 전달. 비블로킹: HUI-006, HUI-007, HUR-008. Query 생성/수정/삭제 금지. MCP tool 선택 질문에는 답하지 않아도 됨(agent 책임). 재시작 순서 C→A→B+D.
+**HUR-009 (C-0084 개정)**: ① Archive 전 UI 확인 4건(HUR-007/008, HUI-005/007) ② A 비준 후 AD1~AD5 생성·캡처 ③ 마지막에 Baseline 5 Archive(Delete 금지). A는 B-0040의 사전승인 2건(D00 77건·ko 언어) 실행 여부를 Archive 전에 결정. 비블로킹: HUI-006, HUI-007, HUR-008. Query 생성/수정/삭제 금지. MCP tool 선택 질문에는 답하지 않아도 됨(agent 책임). 재시작 순서 C→A→B+D.
 
 ---
 ### (이하는 2026-09-02 08:51 KST 세션 종료 시점 스냅샷)
