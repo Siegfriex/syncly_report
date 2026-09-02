@@ -52,3 +52,4 @@
 - MIDFLIGHT-RULE-4: 실행 중 규칙 변경은 구조 유래·사전 커밋·노출 공개·재계산 가능 4조건 충족 시에만.
 - pilot 인용 수치: electric+PRIMARY 11/35 + 사전등록 20/35 병기; 81.8% 폐기, 72.7% C 검증(A 복원 판단).
 - RAW-EQUIVALENCE-POINTER: held raw의 field-subset임이 증명된 응답은 포인터로 verbatim 요건 충족.
+- NEGATIVE-REQUIRES-A-COMMAND (A-0037): "없다/불가/복구 불가" 류 부정 단정은 확인 명령을 실행한 뒤에만 기재. TRANSCRIPT-RECOVERY (C-0073): inline MCP 결과도 세션 transcript에 timestamp와 함께 남는다 — 사전 명시 저장은 여전히 의무.

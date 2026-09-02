@@ -1,6 +1,6 @@
 {
   "schema": "syncly-report-state/1.0.0",
-  "updated_utc": "2026-09-02T03:19:38Z",
+  "updated_utc": "2026-09-02T03:20:12Z",
   "research_epoch": "RE-20260901-001",
   "execution_run": "RUN-20260902-FULL-001",
   "phase": "PHASE R2 — Baseline Enrichment: Gate M0 CONDITIONAL PASS (C-0070); B checkpoints 1-5 VERIFIED; PRF-0010 construct-verified; Gate M1 OPEN awaiting D limitation re-diagnosis",
@@ -54,14 +54,14 @@
     "P02": 69,
     "P03": 186
   },
-  "ledger_rows": 178,
+  "ledger_rows": 179,
   "last_reported_shas": {
     "main": "7e030b0",
-    "claude-a/syncly-authority-governor": "e61f6fd",
+    "claude-a/syncly-authority-governor": "8556594",
     "claude-b/syncly-production-data": "a514952",
     "claude-c/syncly-assurance-fable": "6227ade",
     "claude-d/syncly-research-rnd": "f634d5e",
-    "bus/syncly-ledger": "c3129d5",
+    "bus/syncly-ledger": "759a1e7",
     "integration/syncly-current": "2c56155"
   },
   "report_cadence": {
