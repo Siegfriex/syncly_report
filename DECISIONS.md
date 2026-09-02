@@ -37,3 +37,10 @@
 - T_S/T_C의 target consumers 해석 금지
 - 플랫폼 비교 불가 metric의 단일 스코어 통합 금지
 - 희소 셀 경쟁 우위 headline 금지
+
+## 2026-09-02 재시작 결정 (bundle v2.1, C-0062)
+- METHOD_REVISION = MCP_FIRST_DPDD_v2.1 (A 비준 대기) · SOURCE_CORPUS_INVALIDATION = FALSE · methodology correction MAJOR(enrichment route)
+- 203자 preview = INDEX_TEXT (decision-grade 아님) · 835 full-details bulk = SUSPENDED_AS_DEFAULT_BULK_ROUTE (frozen denominator classifier에 full text 필수 + 대체 불가 + A/C 승인 시에만 재개)
+- Syncly limitation 선언은 relevant MCP family 소진 후에만 · semantic/video/VOC 검색 건수 ≠ prevalence · MCP tool 선택은 agent 책임(Human 질문 금지)
+- C-0061 PILOT_GO는 재승인 불요(D 즉시 실행) · 결과는 EXPERIMENTAL/NON_CANONICAL → C 검증
+- Query mutation은 BASELINE_BATCH_SEALED + SAFE_TO_ROTATE 전 금지 · 직접 crawler/OCR/STT/CV는 MCP exhaustion + C fallback gate + A 승인 후에만

@@ -1,10 +1,18 @@
 # Syncly 연구 현황 — LATEST
 
-갱신: 2026-09-01T23:51Z (KST 2026-09-02 08:51) — 세션 종료 시점 · Epoch `RE-20260901-001` · Run `RUN-20260902-FULL-001` · 작성: Claude C (단독 writer)
+갱신: 2026-09-02T02:14:32Z — **C 재시작** · Epoch `RE-20260901-001` · Run `RUN-20260902-FULL-001` · Method `MCP_FIRST_DPDD_v2.1` · 작성: Claude C (단독 writer)
 
-## 한 줄 현황 (세션 종료 시점)
-**Gate 0 PASS · 분모 3,435 확정 · 발견 10/10 VERIFIED · PILOT_GO 발행.** C/A 세션은 핸드오프를 남기고 정상 종료, B/D는 사전승인 하 계속. 상세는 reports/30min/20260902/0900_session_close.md.
+## 한 줄 현황
+**C control plane 복원 완료 → `RUN_RESUME_BASELINE_MCP_FIRST` 발행(C-0062).** 분모 3,435·Query lock·cutoff·Gate 0 PASS·10/10 VERIFIED·C-0061 PILOT_GO 전부 불변. 바뀐 것은 enrichment route(MCP capability-first). 다음: A `GO_MCP_REBASELINE` → D pilot(즉시 가능) + B MCP_ROUTE_PROBE → C Gate M0/M1 → Baseline seal → Affinity Discovery Batch → Market Measurement Batch → 최종 activation decision. 상세: reports/30min/20260902/ 최신 재시작 보고.
 
+## 새 gate
+Gate M0 (MCP Capability Exhaustion) **OPEN** — runtime 14 tools/13 probe; get_post_features는 D pilot, search_voc는 exhaustion 후 판정. Gate M1 (Baseline Enrichment) NOT_STARTED.
+
+## Human에게
+지금 요청되는 UI 행동 없음. Query 생성/수정/삭제 금지. MCP tool 선택 질문에는 답하지 않아도 됨(agent 책임). 재시작 순서 C→A→B+D.
+
+---
+### (이하는 2026-09-02 08:51 KST 세션 종료 시점 스냅샷)
 ### (이하는 07:30 시점 스냅샷)
 Phase 0 마무리 단계 — Human의 SSOT 중간보고(20260902)로 **QUERY_SOURCE_LOCK=TRUE**와 **ANALYSIS_CUTOFF=2026-08-31T00:00:00Z**가 확정되었고, B의 cutoff 재물질화와 C의 Gate 0 독립검증만 남았다. 이후 Phase 1(소스 패널·T_S/T_C·full-details·video pilot) 진입.
 

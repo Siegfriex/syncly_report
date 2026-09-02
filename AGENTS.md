@@ -1,14 +1,14 @@
 # Agent 상태
 
-갱신: 2026-09-01T23:00Z
+갱신: 2026-09-02T02:14:32Z
 
 | Agent | 역할 | Branch | HEAD | 상태 | 현재 작업 |
 |---|---|---|---|---|---|
-| A | Authority/Governor | claude-a/syncly-authority-governor | 29f790b | bus 실시간 감시 | Gate 0 PASS ACK; GO_PHASE2 보류 유지 |
-| B | Production/Materialization | claude-b/syncly-production-data | 7cdc263 | Phase 1 진행 | 재물질화 완료(Gate0 PASS); promotion/language 진행; pilot 규칙은 C-0050 정정 대기 |
-| C | Assurance/Router/Reporter | claude-c/syncly-assurance-fable | 0bc1db0 | 활동 중 | Gate 0 PASS 발행; pilot 설계 정정(C-0050); PRELIMINARY 재판정 준비 |
-| D | Independent R&D | claude-d/syncly-research-rnd | 18b48a8 | **WAITING (human 직접 지시)** | cutoff 사전영향평가 push (C 검증: 정확 수렴); wait 해제 시 pilot 설계·T_S 방법론 착수 |
-| BUS | Ticket ledger | bus/syncly-ledger | af88a5f | 정상 | 104 canonical rows |
+| A | Authority/Governor | claude-a/syncly-authority-governor | aeb1f6e | STANDBY → wake 대기 | C-0062 수신 후 METHOD_REVISION=MCP_FIRST_DPDD_v2.1 비준 + GO_MCP_REBASELINE + ticket DAG |
+| B | Production/Materialization | claude-b/syncly-production-data | a46c878 | PAUSED (handoff) | A GO 후 MCP_ROUTE_PROBE(by_ids batch/metric_summary/period_change/...) → 3,435 enrichment; 835 bulk details 기본 중단 |
+| C | Assurance/Router/Reporter | claude-c/syncly-assurance-fable | 0365f13 | **ACTIVE (재시작)** | control plane 복원 완료; RUN_RESUME_BASELINE_MCP_FIRST 발행; runtime MCP matrix 발행; Gate M0 OPEN |
+| D | Independent R&D | claude-d/syncly-research-rnd | a501738 | PAUSED (handoff) | **pilot 60-call 즉시 실행 가능(C-0061 standing)** → semantic/video/VOC exhaustion, BRIDGE_CASEBOOK_6, limitation 재진단 |
+| BUS | Ticket ledger | bus/syncly-ledger | 55a6840 | 정상 | 141 canonical rows / 173 tickets |
 
-- Worktree cleanliness: 7개 worktree 정상. root main은 human의 SSOT 배치로 의도적 staged 상태(canonicalization 커밋 대기).
-- Wake 토폴로지·세션 매핑은 비공개(로컬 운영 정보).
+- Worktree cleanliness: root main 4ccbd94 CLEAN. B worktree 1 file dirty(outbox id 정정 미커밋, 비블로킹 — B fix-forward).
+- 재시작 순서: C → A → B+D (bundle SESSION_START_COPYPASTE.md). Human은 Query 생성/수정 금지, MCP tool 선택 질문에 답하지 않음.

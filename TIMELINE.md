@@ -19,3 +19,9 @@
 - 22:45Z B cutoff 재물질화 완료 (3,435) — C-0047 사전등록 기대치 5/5 정확 일치
 - 22:48Z **C GATE 0 = PASS** (C-0049) — canonical 분모 3,435 확정, EPOCH-CORPUS-RULE 신설, 패널(1,574)/T_S(6/12) canonical 승격
 - 22:58Z C-0050: video-pilot 규칙 구성개념 오류(sentiment 오독) 추출 전 차단 — 정정 #12, 소비 전 포착
+
+## 2026-09-02 2026-09-02T02:14:32Z (KST 11:14) — C 재시작, MCP-First v2.1
+- Human이 MCP-First Restart Bundle v2.1 배치 → C가 SHA 25/25 검증 후 main 4ccbd94 정본화
+- C control plane 복원: 7 worktree/branch 판독, BUS 138→141행(B-0026 미정본 1건 정본화), 핸드오프 4종 재판독, C-0061 PILOT_GO canonical 확인(get_post_features 0회 불변식)
+- runtime MCP inventory 재발견(14 tools/13 probe) → capability/field/coverage 매트릭스 발행; Gate M0 OPEN
+- **C-0062 `RUN_RESUME_BASELINE_MCP_FIRST` 발행** → A wake

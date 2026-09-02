@@ -1,16 +1,16 @@
 {
   "schema": "syncly-report-state/1.0.0",
-  "updated_utc": "2026-09-01T23:51:00Z",
+  "updated_utc": "2026-09-02T02:14:32Z",
   "research_epoch": "RE-20260901-001",
   "execution_run": "RUN-20260902-FULL-001",
-  "phase": "PHASE 1 EXECUTING — pilot GO issued; C/A sessions in orderly shutdown (handoffs on branches)",
+  "phase": "PHASE R1 — MCP REBASELINE (restart): C control plane restored; RUN_RESUME_BASELINE_MCP_FIRST issued (C-0062); awaiting A GO_MCP_REBASELINE",
   "reporter": "Claude C (single-writer)",
-  "authority": "SSOT BRAUN-NEVO-SYNCLY-SSOT-INTERIM-20260902",
+  "authority": "Bundle Braun_NEVO_Syncly_MCP_First_Restart_Bundle_20260902 v2.1.0 (APPROVED_FOR_RESTART) > DPDD_MASTER_v2.1 > protocols; legacy: SSOT-INTERIM-20260902, FINAL-20260901",
   "locks": {
     "QUERY_SOURCE_LOCK": true,
     "ANALYSIS_CUTOFF": "2026-08-31T00:00:00Z",
-    "cutoff_status": "LOCKED; awaiting B rematerialization + C assurance (Gate 0)",
-    "query_mutation": "PROHIBITED within current epoch",
+    "cutoff_status": "LOCKED; Gate 0 PASS (C-0049); server cross-check re-confirmed at restart",
+    "query_mutation": "PROHIBITED until BASELINE_BATCH_SEALED and SAFE_TO_ROTATE",
     "ratified_by_A": "A-0014 (LOCK/CUTOFF/B8 COMPLETE/bundle v2)"
   },
   "constructs": {
@@ -30,7 +30,10 @@
     "gate2": "PENDING — category validity",
     "gate3": "PENDING — entity/meaning reliability (after details/video pilot)",
     "gate4": "PROVISIONAL — n>=10 quantitative else qualitative; reassess after video pilot",
-    "gate5": "CONDITIONAL PASS — robust variants (Full / minus-top1 / minus-top1%) mandatory"
+    "gate5": "CONDITIONAL PASS — robust variants (Full / minus-top1 / minus-top1%) mandatory",
+    "gateM0": "OPEN — MCP capability exhaustion (get_post_features via D pilot + search_voc exhaustion pending)",
+    "gateM1": "NOT_STARTED — baseline MCP enrichment",
+    "gate6": "NOT_STARTED — business activation"
   },
   "holds": {
     "HOLD-A0013": "Phase 2 platform-level quantitative product-comparison claims gated by Gate 4 reassessment after video pilot (narrowed per SSOT)",
@@ -51,24 +54,26 @@
     "P02": 69,
     "P03": 186
   },
-  "ledger_rows": 138,
+  "ledger_rows": 141,
   "last_reported_shas": {
-    "main": "0cd7a9f",
-    "claude-a/syncly-authority-governor": "29f790b",
-    "claude-b/syncly-production-data": "72e12f5",
-    "claude-c/syncly-assurance-fable": "b85da61",
-    "claude-d/syncly-research-rnd": "ab30dae",
-    "bus/syncly-ledger": "7e78cff",
+    "main": "4ccbd94",
+    "claude-a/syncly-authority-governor": "aeb1f6e",
+    "claude-b/syncly-production-data": "a46c878",
+    "claude-c/syncly-assurance-fable": "0365f13",
+    "claude-d/syncly-research-rnd": "a501738",
+    "bus/syncly-ledger": "55a6840",
     "integration/syncly-current": "2c56155"
   },
   "report_cadence": {
     "watchdog_seconds": 180,
     "full_status_minutes": 30,
-    "last_full_report_utc": "2026-09-01T23:30:00Z"
+    "last_full_report_utc": "2026-09-02T02:14:32Z"
   },
   "agent_notes": {
-    "D": "ACTIVE (human WAIT 해제)",
-    "cutoff_preassessment": "VERIFIED: expected remat deltas 3435/-68/boundary0/keys57 (Gate 0 기준치)"
+    "A": "STANDBY → wake required (ratify METHOD_REVISION, issue GO_MCP_REBASELINE)",
+    "B": "PAUSED (handoff 307ab27); worktree dirty 1 file (fix-forward on resume); starts after A GO with MCP_ROUTE_PROBE",
+    "C": "ACTIVE (session restarted; C-0062 issued)",
+    "D": "PAUSED (handoff a501738); pilot GO standing — may execute immediately"
   },
   "guards": {
     "GUARD-C0047": "A_SOURCE_PANEL/T_S 구축은 B 재물질화+Gate0 통과 이후 (57키 증발 방지)"
@@ -97,13 +102,48 @@
     "codebook_v2": "A_SOURCE_PANEL 코드북 §1 이름 매칭 의미론 고정 필요 (D)"
   },
   "verified_findings_count": 10,
-  "session_note": "C 세션 정상 종료 (2026-09-02 08:51 KST). 핸드오프: claude-c branch audits/harness/C_SESSION_HANDOFF_20260902.md. A도 동시 정지 (A_HANDOFF_20260901T2340Z.md). B/D는 사전승인 하 계속.",
+  "session_note": "C 세션 재시작 (2026-09-02 11:14 KST). RUN_RESUME_BASELINE_MCP_FIRST 발행. A/B/D는 bundle prompts로 순차 재개(C→A→B+D).",
   "findings_registry": "10/10 VERIFIED, 0 PRELIMINARY (C-0058/0059)",
   "pilot": {
-    "status": "GO issued (C-0061)",
-    "sample": "video_pilot_sample_v3.csv 60건 (검증 PASS)",
-    "rule": "v1.1 (상한 독해, SHORT-CAPTION-SCOPE)",
-    "executor": "D"
+    "status": "GO standing (C-0061) — D executes without re-approval",
+    "sample": "video_pilot_sample_v3.csv 60 rows (C-verified; do not redraw)",
+    "rule": "v1.1 (upper-bound reading, SHORT-CAPTION-SCOPE, fixed-seed 2000 bootstrap)",
+    "get_post_features_actual_calls": 0,
+    "executor": "D",
+    "result_label": "EXPERIMENTAL/NON_CANONICAL until C verifies"
   },
-  "event_backlog_note": "C-0055~C-0061 구간 demo 커밋 event 파일 미생성 — 차기 C 세션이 STATE baseline 대비 1:1 생성 (핸드오프 §1-4)"
+  "event_backlog_note": "backlog 34 events (C-0055~C-0061 구간 포함) 재시작 세션에서 1:1 생성 완료",
+  "method_revision": "MCP_FIRST_DPDD_v2.1",
+  "methodology_correction": {
+    "source_corpus_invalidation": false,
+    "severity": "MAJOR",
+    "scope": "enrichment/preprocessing route",
+    "preview_203": "INDEX_TEXT only",
+    "bulk_835_details": "SUSPENDED_AS_DEFAULT_BULK_ROUTE",
+    "limitation_rule": "no Syncly limitation before MCP exhaustion"
+  },
+  "mcp_runtime_inventory": {
+    "server": "Syncly Social MCP",
+    "tools_discovered": 14,
+    "probed_by_c": 13,
+    "verdict_counts": {
+      "PRODUCTION_READY": 10,
+      "CONDITIONAL": 2,
+      "EXPLORATORY_ONLY": 1,
+      "PENDING_PILOT": 1
+    },
+    "matrix_location": "operational repo claude-c branch control/mcp/ (private)"
+  },
+  "next_milestones": [
+    "A GO_MCP_REBASELINE",
+    "D pilot finding (EXPERIMENTAL)",
+    "B MCP_ROUTE_PROBE",
+    "C Gate M0",
+    "C Gate M1",
+    "Gate 1-5 disposition",
+    "BASELINE_BATCH_SEALED",
+    "SAFE_TO_ROTATE",
+    "Affinity Discovery Batch (AD1-AD5)",
+    "Market Measurement Batch (MM1-MM5)"
+  ]
 }

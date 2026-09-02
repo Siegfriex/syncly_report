@@ -1,14 +1,17 @@
 # Gate 현황
 
-갱신: 2026-09-01T23:00Z · 근거: SSOT_MASTER §11, LOCKED_NEXT_PHASE_PLAN §P1-6
+갱신: 2026-09-02T02:14:32Z · 근거: DPDD_MASTER_v2.1 §21, bundle protocols/CLAIM_EVIDENCE_AND_GATES.md
 
 | Gate | 정의 | 상태 | 증거/블로커 |
 |---|---|---|---|
-| Gate 0 | cutoff 재물질화 + exact hash + C 독립검증 | **PASS** (C-0049, 22:48Z) | canonical substrate 3,435 (f8d130c2…); 사전등록 기대치 5/5 정확 일치; 서버 교차 Q1/Q3/Q4 EXACT; M01 Δ+1은 EPOCH-CORPUS-RULE로 기록 |
-| Gate 1 | 소스 유효성(A_SOURCE_PANEL/T_S) + 콘텐츠 유효성(T_C) 분리 판정 | PENDING | Phase 1 산출물 필요 |
-| Gate 2 | 카테고리 유효성 | PENDING | 바이럴 outlier 적합성 검토(HUI-005) 연동 |
-| Gate 3 | 엔티티/의미 신뢰성 | PENDING | full-details + video pilot 이후 |
-| Gate 4 | 비교 격자 최소 n | **PROVISIONAL** — n≥10 정량, 미만 정성 | 격자 23/30 셀 n<10 (검증됨); video pilot 후 재평가 |
-| Gate 5 | 바이럴 지배 robustness | **CONDITIONAL PASS** | 단일 포스트가 M01 공통코어 참여의 52.8% — Full/minus-top1/minus-top1% 변형 의무 |
+| Gate 0 | canonical substrate (cutoff 재물질화 + exact hash + C 독립검증) | **PASS** (C-0049) | 3,435 (f8d130c2…); 재시작 시 서버 교차 재확인(A01/P02/P03 EXACT, M01 +1 기지, D00 격차 기지) |
+| Gate M0 | MCP Capability Exhaustion | **OPEN** | runtime 14 tools/13 probed; get_post_features는 D pilot이 시험; search_voc는 D exhaustion 필요. relevant family untested 시 PASS 금지 |
+| Gate M1 | Baseline MCP Enrichment (3,435 재처리) | NOT_STARTED | B MCP_ROUTE_PROBE → aggregates/source/term/semantic/video/VOC/targeted details |
+| Gate 1 | 소스 유효성(A_SOURCE_PANEL/T_S) + 콘텐츠 유효성(T_C) | PENDING | M1 이후 재판정 |
+| Gate 2 | 카테고리 유효성 | PENDING | HUI-005 연동 |
+| Gate 3 | 엔티티/의미/크리에이티브 신뢰성 | PENDING | pilot + enrichment 이후 |
+| Gate 4 | 비교 격자 최소 n | PROVISIONAL (n≥10 정량, 미만 정성) | pilot 후 재평가; HOLD-A0013 |
+| Gate 5 | robustness | CONDITIONAL PASS | Full/minus-top1/minus-top1%/minus-top-source/promotion/source-type/format/platform split 의무; RFR>25% UNSTABLE |
+| Gate 6 | Business Activation | NOT_STARTED | Batch 1(AD)·Batch 2(MM) 이후 |
 
-Phase 2 개방 조건: C assurance 완료 + blocking integrity debt 없음 (HOLD-A0013 참조).
+Baseline seal 조건: M0 + M1 + Gate 1~5 최종 disposition(PASS/CONDITIONAL/NO-GO 모두 완결) → BASELINE_BATCH_SEALED → C SAFE_TO_ROTATE → Human만 UI Query 생성.
