@@ -48,3 +48,4 @@
 - **OBS (C-0107)**: Archive 후 M01/A01의 서버 'Collected'가 감소(1,292→1,020 / 1,892→1,043)했으나 cutoff(2026-08-31) 창 총계는 canonical과 일치(A01 1,816 / M01 1,244 / P03 176) → 감소는 cutoff 이후 구간에 한정, 봉인 substrate 무손상. 원인은 미단정. archived Query의 'Collected'는 canonical 수치가 아니다(ARCHIVED-LIVE-COUNT-UNSTABLE).
 - **screener 토큰 검증(D-0053, C 재현)**: held frame에서 bare '브라운' 85 hit 중 11이 면도 맥락 밖(색상 8·디자인 아이콘 3: 디터 람스/브라운 오디오) → 디자인 아이콘 포스트는 TA2 소스이므로 bare 토큰으로 screen하면 가장 전략적인 소스를 삭제. v2는 조합/동반 토큰만 허용. razor 199/shave 291(단어경계)의 맥락 밖 hit는 v1 목록 사각지대의 진짜 면도 콘텐츠.
 - **토큰 계층 역할 병합(B-0051/C-0111)**: 동결 토큰 's9'가 's9000'의 substring이라 Braun 내부 비교군 토큰이 Philips 포스트 70건 중 21건과 매치. 언어 편향이 아닌 entity 오염이며, KMM/EMM seeding에서 내부/외부 비교군 토큰은 substring을 공유하면 안 된다. 수정: S9·Series 9·시리즈 9는 숫자 비후행 경계.
+- **GATE_R1 입력 갱신(B-004, C 재현)**: 한글 소매처 토큰 추가로 LOCAL_COMMERCE 51→80, HIGH/MEDIUM reach FLOOR 134→163, UNKNOWN CEILING 96.1%→95.25%; 열 인용 127/114/51/80. 여전히 Batch 0 증거기반 기술이며 KMM 예측이 아님.
