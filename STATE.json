@@ -1,6 +1,6 @@
 {
  "schema": "syncly-report-state/1.0.0",
- "updated_utc": "2026-09-02T07:40:00Z",
+ "updated_utc": "2026-09-02T07:45:00Z",
  "research_epoch": "RE-20260901-001",
  "execution_run": "RUN-20260902-FULL-001",
  "phase": "v2.2 RATIFIED (A-0059) + REGIONAL_SCHEMA_FREEZE-2.2.0 (C-0099) → AD1~AD5 CREATED (spec v1.2 RECONCILED A-0061; collection in progress, not yet server-listed) → B/D ACTIVATED (C-0100/0101, 0 MCP) → awaiting AD query_ids → Batch 1 collection",
@@ -219,7 +219,7 @@
   "d00_evidence_r2": "261 rows (77 beyond canonical D00; 68 new to substrate) — NON-DENOMINATOR",
   "ko_language_membership": "555/3,435 (16.16%) captured, NOT licensed (manual QA pending); by query A01 251 / M01 213 / D00 112 / P03 5 / P02 0 — C-verified (C-0087)"
  },
- "bus_head": "7b535ad",
+ "bus_head": "b81726c",
  "method": {
   "current": "MCP_FIRST_DPDD_v2.2_REGIONAL",
   "proposed_successor": "MCP_FIRST_DPDD_v2.2_REGIONAL",
@@ -283,7 +283,8 @@
  "gate_r1_input": {
   "source": "PREREG-B-002 executed (B-0046), C exact replication (C-0103), 0 MCP calls",
   "batch0_held_evidence": "OFFICIAL_MARKET_ACCOUNT 8 · LOCAL_RETAIL_DESTINATION 127 upper / 51 domain floor · LOCAL_COMMERCE 51 · LOCAL_CAMPAIGN not observable by permitted route · CREATOR_LOCATION aggregate ceiling only (region 89.1% blank, server pop) · LANGUAGE_ONLY 555 separate · UNKNOWN 3,301/3,435 = 96.1% · HIGH/MEDIUM reach 134 (3.9%)",
-  "reading": "describes the Batch 0 evidence base under permitted routes; NOT a limitation finding for KMM/EMM (A-0059 R8); tool-surface table: region is the only structured creator-location field observed; get_post_features row → D (0 calls); search_voc UNDETERMINED"
+  "reading": "describes the Batch 0 evidence base under permitted routes; NOT a limitation finding for KMM/EMM (A-0059 R8); tool-surface table: region is the only structured creator-location field observed; get_post_features row → D (0 calls); search_voc UNDETERMINED",
+  "pending_correction": "PREREG-B-004 (Hangul retailer tokens) will restate LOCAL_COMMERCE/LOCAL_RETAIL as 127/114/51/B-004 and the 134 floor with both figures"
  },
  "ad4_screener": "C-0104 ratified (A-0066) with exclusion scope (a)+(b); token list under class-level supersession (C-0106) — stage 1 must not run until C-0104-v2 ratified",
  "batch2_prep": {
@@ -293,7 +294,7 @@
   "HR": "falsification memo (D-0048); min-n criterion pairing (floor 20 + 80%-power line); HR5 NO-DECISION unless mart_creative; HR6 needs comparator-seeding symmetry; effect sizes → A; effect size 0.20 frozen for HR1/2/3/4/6 (HR5 NO-DECISION; HR7 0.20 or NO-DECISION) at REGIONAL_MM_SPEC_FREEZE (A-0068)",
   "mm_spec_inputs": "KR Philips premium naming = i9000/프레스티지/SkinIQ/XP94 (S9000 only 2 in KR text); OneBlade excluded; Panasonic vocabulary frozen with KMM5 rule (D-0049, C recount exact)",
   "gate_r0_sample": "240-post stratified design pre-registered (D-0044); execution = C spend ticket after AD ids CONFIRMED",
-  "detection_parity": "A-0069 precondition on HR freeze: 4 components (screen tokens, 2AB criterion, lexicon v2, comparator seed) all carry KR_UNDER risk, residuals UNMEASURED; signs summed in one table before any HR reading; HR2-affirm / HR1,HR4-reject NO-DECISION until parity shown (ledger: claude-c control/lexicon/DETECTION_PARITY_LEDGER_20260902.json)"
+  "detection_parity": "A-0069 precondition on HR freeze: 5 components (P5 = KR retailer tokens Latin-only, measured 37 vs 51; PREREG-B-004 authorised C-0109) (screen tokens, 2AB criterion, lexicon v2, comparator seed) all carry KR_UNDER risk, residuals UNMEASURED; signs summed in one table before any HR reading; HR2-affirm / HR1,HR4-reject NO-DECISION until parity shown (ledger: claude-c control/lexicon/DETECTION_PARITY_LEDGER_20260902.json)"
  },
  "corpus_live_ui_rule": "ARCHIVED-LIVE-COUNT-UNSTABLE (C-0107; ratified+extended A-0070): archived live counts observed 07:22Z — M01 1,020 / A01 1,043 / P02 69 / P03 186 / D00 277 — are NOT canonical; canonical window re-canary exact (A01 1,816 / M01 1,244 / P03 176); cause undetermined; 'archiving caused it' is itself unverified"
 }
