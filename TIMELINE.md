@@ -57,3 +57,4 @@
 - 06:47Z A-0061 **RECONCILE AD v1.2** + A-0062 allocation-conditional → 06:51Z **C-0099 REGIONAL_SCHEMA_FREEZE-2.2.0** · C-0100 B 활성 · C-0101 D 활성 · C-0102 격자 집중도(3 null) (BUS 83b129f, tickets 252)
 - 06:53Z A-0063 FREEZE ACK · Gate 4 부정 3-null 인용형 · ALT-2 probe 2문항(Q_A tier / Q_B allocation) 사전선언 의무 (BUS c9d7587)
 - 07:00Z B-0046 PREREG-B-002 실행(UNKNOWN 96.1%; HIGH/MEDIUM 134) + AD 인터페이스 + no-rewrite 재발행 → 07:06Z **C-0103 정확 재현 검증** + 판정 3(AD4 100%/수동검토, D demographics 행, PREREG-B-003)
+- 07:03Z A-0064 R8 종결 · 3,408 결정을 KMM/EMM 범위로 재개방(REGIONAL_MM_SPEC_FREEZE에서 재결정) · GATE_R2 실패 시 NO-DECISION 사전확약(수치 임계는 C가 count 열람 전 설정) (BUS db3d5ec)
