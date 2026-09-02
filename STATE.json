@@ -1,6 +1,6 @@
 {
   "schema": "syncly-report-state/1.0.0",
-  "updated_utc": "2026-09-02T03:20:12Z",
+  "updated_utc": "2026-09-02T03:26:43Z",
   "research_epoch": "RE-20260901-001",
   "execution_run": "RUN-20260902-FULL-001",
   "phase": "PHASE R2 — Baseline Enrichment: Gate M0 CONDITIONAL PASS (C-0070); B checkpoints 1-5 VERIFIED; PRF-0010 construct-verified; Gate M1 OPEN awaiting D limitation re-diagnosis",
@@ -29,7 +29,7 @@
     "gate1": "PENDING — source validity (A_SOURCE_PANEL/T_S) + content validity (T_C)",
     "gate2": "PENDING — category validity",
     "gate3": "PENDING — entity/meaning reliability (after details/video pilot)",
-    "gate4": "PROVISIONAL — n>=10 quantitative else qualitative; reassess after video pilot",
+    "gate4": "CONDITIONAL (reassessed C-0074) — focal-product video gain 2/35 cannot lift PRF-0005 sparse cells; platform-level quantitative focal comparison → Batch 2; final with M1",
     "gate5": "CONDITIONAL PASS — robust variants (Full / minus-top1 / minus-top1%) mandatory",
     "gateM0": "CONDITIONAL PASS — ACCEPTED AND CLOSED (A-0036)",
     "gateM1": "OPEN — inputs: B checkpoints 1-5 verified, promotion complete, 3,408/3,435 lack full text; awaiting D d5 re-diagnosis",
@@ -54,14 +54,14 @@
     "P02": 69,
     "P03": 186
   },
-  "ledger_rows": 179,
+  "ledger_rows": 186,
   "last_reported_shas": {
     "main": "7e030b0",
-    "claude-a/syncly-authority-governor": "8556594",
-    "claude-b/syncly-production-data": "a514952",
-    "claude-c/syncly-assurance-fable": "6227ade",
-    "claude-d/syncly-research-rnd": "f634d5e",
-    "bus/syncly-ledger": "759a1e7",
+    "claude-a/syncly-authority-governor": "d69cddf",
+    "claude-b/syncly-production-data": "78c90e1",
+    "claude-c/syncly-assurance-fable": "9052c7b",
+    "claude-d/syncly-research-rnd": "cc5df8d",
+    "bus/syncly-ledger": "0b3223b",
     "integration/syncly-current": "2c56155"
   },
   "report_cadence": {
@@ -71,9 +71,9 @@
   },
   "agent_notes": {
     "A": "ACTIVE — A-0032/33/34 (CIT-07/08/09); awaiting M1",
-    "B": "ACTIVE — RECON step 1 done (12/12); awaiting A step-2 ruling (C recommends none); blocked on nothing",
-    "C": "ACTIVE — C-0069/0070/0071; Gate M1 pending D d5",
-    "D": "ACTIVE — d2/d3 done (OBS-0003, PRF-0011/0012); next d4 casebook, d5 re-diagnosis"
+    "B": "ACTIVE — RECON CLOSED 60/60; B-PROMO-QA (classifier self-consistency, 0 calls) routed",
+    "C": "ACTIVE — C-0074/0075/0076; awaiting d5 for Gate M1",
+    "D": "ACTIVE — d4 BRIDGE_CASEBOOK_6 VERIFIED; d5 limitation re-diagnosis next (Gate M1 input)"
   },
   "guards": {
     "GUARD-C0047": "A_SOURCE_PANEL/T_S 구축은 B 재물질화+Gate0 통과 이후 (57키 증발 방지)"
@@ -103,7 +103,7 @@
   },
   "verified_findings_count": 10,
   "session_note": "C 세션 재시작 (2026-09-02 11:14 KST). RUN_RESUME_BASELINE_MCP_FIRST 발행. A/B/D는 bundle prompts로 순차 재개(C→A→B+D).",
-  "findings_registry": "10/10 VERIFIED + PRF-0011 VERIFIED; PRF-0010 EXPERIMENTAL (C-verified, HUI-006 pending); PRF-0012, OBS-0003 EXPERIMENTAL",
+  "findings_registry": "10/10 VERIFIED + PRF-0011 VERIFIED + BRIDGE_CASEBOOK_6 VERIFIED(casebook); PRF-0010 construct-verified 60/60 (HUI-006 pending); PRF-0012, OBS-0003 EXPERIMENTAL",
   "pilot": {
     "status": "EXECUTED (D-0031) — 60/60 get_post_features calls, 0 failures",
     "get_post_features_actual_calls": 72,

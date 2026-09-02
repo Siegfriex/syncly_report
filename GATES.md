@@ -10,7 +10,7 @@
 | Gate 1 | 소스 유효성(A_SOURCE_PANEL/T_S) + 콘텐츠 유효성(T_C) | PENDING | M1 이후 재판정 |
 | Gate 2 | 카테고리 유효성 | PENDING | HUI-005 연동 |
 | Gate 3 | 엔티티/의미/크리에이티브 신뢰성 | PENDING | pilot + enrichment 이후 |
-| Gate 4 | 비교 격자 최소 n | PROVISIONAL (n≥10 정량, 미만 정성) | pilot 후 재평가; HOLD-A0013 |
+| Gate 4 | 비교 격자 최소 n | **CONDITIONAL** (C-0074 재평가) | pilot의 focal(NEVO/S9/S9000) video gain 2/35(상한 5.7%) → PRF-0005 희소셀 23/30 해소 불가; 플랫폼별 정량 focal 비교는 Batch 2(MM1~MM4)로; HOLD-A0013 유지; 최종 disposition은 M1과 함께 |
 | Gate 5 | robustness | CONDITIONAL PASS | Full/minus-top1/minus-top1%/minus-top-source/promotion/source-type/format/platform split 의무; RFR>25% UNSTABLE |
 | Gate 6 | Business Activation | NOT_STARTED | Batch 1(AD)·Batch 2(MM) 이후 |
 

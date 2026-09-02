@@ -25,6 +25,7 @@
 
 ## 검증된 역량 발견 (2026-09-02, VERIFIED)
 - **PRF-0011** — video-feature 검색이 get_post_features와 동일한 analyzer 문자열을 반환(표적 7/7 + C 1/1). discovery엔 우월, 전수 enrichment엔 결정성 부재(랭킹 비결정·post_id 주소 불가).
+- **BRIDGE_CASEBOOK_6** — T_S 6계정 12건 전문(details 12 calls): 독립 unit 7; Braun을 담은 유일한 소스는 팬계정의 보도자료 재유통; 전문가 1(미국 바버·Andis); 나머지 커머스/EDC. 203자 preview가 shaver 리뷰를 테크 채널로 오독시키는 실물 표본 1건. 벤더 promotion 분류기가 구조적 동등 포스트에 다른 라벨(3/6 계정) — B가 자기일관성 측정 예정. (WINDOW-BOUND, n=12 정성)
 - **PRF-0007 REBASE** — ALT-2 도달 특징 8/11=72.7%(81.8% 폐기). 도달=prose(이진 라벨 아님), 숏폼 전용, timing 미도달.
 
 ## EXPERIMENTAL (C 검증 완료 · 사람 확인 대기 · 인용 시 caveat 필수)
