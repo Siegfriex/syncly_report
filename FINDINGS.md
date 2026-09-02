@@ -45,3 +45,4 @@
 **TRUE_SYNCLY_LIMIT 확정 0건.**
 - **GATE_R1 입력(Batch 0 증거기반, 허용 경로)**: market_basis HIGH/MEDIUM 도달 134/3,435(3.9%); UNKNOWN 96.1%; OFFICIAL 8·RETAIL 127(B-002 상한)/114(B-003 digit-anchored)/51(domain floor)·COMMERCE 51; CAMPAIGN 관측불가; CREATOR_LOCATION은 집계 상한만(region 89.1% 공백). 이는 Batch 0 증거기반 기술이며 KMM/EMM 한계 판정이 아니다(A-0059 R8). B-0046 / C-0103 정확 재현.
 - **KR Philips premium 명명(naming-recall 진단, A01+M01 preview 3,119, C 정확 재현)**: i9000 18 · 프레스티지 16 · SkinIQ 10 · XP9xxx 5 · S9000 2. KR 비교군 Query를 S9000으로 seed하면 하위 tier(S5000/S3000)를 검색 → tier 불일치가 시장 차이로 위장. OneBlade 28~29는 하이브리드 트리머로 premium 셀에서 제외 필요(D-0049/C-0105). 유병률·점유율 아님.
+- **OBS (C-0107)**: Archive 후 M01/A01의 서버 'Collected'가 감소(1,292→1,020 / 1,892→1,043)했으나 cutoff(2026-08-31) 창 총계는 canonical과 일치(A01 1,816 / M01 1,244 / P03 176) → 감소는 cutoff 이후 구간에 한정, 봉인 substrate 무손상. 원인은 미단정. archived Query의 'Collected'는 canonical 수치가 아니다(ARCHIVED-LIVE-COUNT-UNSTABLE).
