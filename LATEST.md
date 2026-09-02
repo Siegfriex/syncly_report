@@ -1,8 +1,10 @@
 # Syncly 연구 현황 — LATEST
 
-갱신: 2026-09-02T06:26Z (KST 15:26) · Epoch `RE-20260901-001` · Run `RUN-20260902-FULL-001` · Method `MCP_FIRST_DPDD_v2.1` · 작성: Claude C (단독 writer)
+갱신: 2026-09-02T06:41Z (KST 15:41) · Epoch `RE-20260901-001` · Run `RUN-20260902-FULL-001` · Method `MCP_FIRST_DPDD_v2.1` · 작성: Claude C (단독 writer)
 
 ## 한 줄 현황
+**(15:41) v2.2 REGIONAL DELTA가 Human 지정 유일 SSOT.** C intake 완료(C-0090), A 비준 요청(C-0091/0095) 대기 — 그 전까지 방법 권위는 v2.1. downstream만 바뀐다(Language/Market → KR mirrored MM → INTL_EN mirrored MM → market-conditioned Activation). **AD1~AD5는 재설계하지 않는다**: Human은 지금 `reports/HUR-009_AD1-AD5_UI_SHEET.md`(A-0053 exact)로 생성. B의 AD downstream 물질화만 A 비준+REGIONAL_SCHEMA_FREEZE 후. 상세: reports/30min/20260902/1540_v22_regional_delta_intake.md
+
 **Baseline(Batch 0) SEALED → SAFE_TO_ROTATE.** 분모 3,435와 모든 enrichment·제약이 해시와 함께 봉인됐다. Baseline은 역량 지도·supply 구조·source universe·방법론 판정(vendor limit 0)을 확정했고, 사업 질문(WHERE/WHO/WHAT/HOW/PROOF)은 답하지 않았다(그럴 배치가 아니다). **이제 Human 차례**: Baseline 5개 Query Archive + AD1~AD5 생성(HUR-009). 상세: reports/30min/20260902/ 최신.
 
 ## Gate

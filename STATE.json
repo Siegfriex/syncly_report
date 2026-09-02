@@ -1,11 +1,11 @@
 {
  "schema": "syncly-report-state/1.0.0",
- "updated_utc": "2026-09-02T06:26:00Z",
+ "updated_utc": "2026-09-02T06:41:00Z",
  "research_epoch": "RE-20260901-001",
  "execution_run": "RUN-20260902-FULL-001",
- "phase": "BATCH 0 SEALED (A-0048) → SAFE_TO_ROTATE (C-0083) — awaiting A spec ratification + Human UI rotation (HUR-009) → Batch 1 Affinity Discovery",
+ "phase": "BATCH 0 SEALED (A-0048) → SAFE_TO_ROTATE (C-0083) → v2.2 REGIONAL DELTA intake (C-0090; A ratification pending C-0091) → HUR-009 AD1~AD5 creation (exact A-0053) → Batch 1",
  "reporter": "Claude C (single-writer)",
- "authority": "Bundle Braun_NEVO_Syncly_MCP_First_Restart_Bundle_20260902 v2.1.0 (APPROVED_FOR_RESTART) > DPDD_MASTER_v2.1 > protocols; legacy: SSOT-INTERIM-20260902, FINAL-20260901",
+ "authority": "Human latest instruction > v2.2 REGIONAL DELTA (sole SSOT per Human; PROPOSED until A ratifies; PDF normative) > CURRENT_AUTHORITY.json v2.1 > DPDD_MASTER_v2.1 > protocols; legacy lineage",
  "locks": {
   "QUERY_SOURCE_LOCK": true,
   "ANALYSIS_CUTOFF": "2026-08-31T00:00:00Z",
@@ -218,5 +218,45 @@
   "d00_evidence_r2": "261 rows (77 beyond canonical D00; 68 new to substrate) — NON-DENOMINATOR",
   "ko_language_membership": "555/3,435 (16.16%) captured, NOT licensed (manual QA pending); by query A01 251 / M01 213 / D00 112 / P03 5 / P02 0 — C-verified (C-0087)"
  },
- "bus_head": "6242c1a"
+ "bus_head": "5c90336",
+ "method": {
+  "current": "MCP_FIRST_DPDD_v2.1",
+  "proposed_successor": "MCP_FIRST_DPDD_v2.2_REGIONAL",
+  "status": "PROPOSED_UNTIL_A_RATIFICATION (C-0091)",
+  "effective_point": "AFTER_RATIFICATION; BEFORE_AD_DOWNSTREAM_MATERIALIZATION",
+  "bundle": "main 88908a0 (11/11 SHA)",
+  "addendum_pdf_sha256": "6102e181d223a0b5534b781ad6c281a83c563f6e03b6b9b788b90e3e4fdd9be6",
+  "addendum_md_sha256": "cbb02933b9944c77347030446d4ae29f489b5505a34901e2515cd5d3406cc0e4",
+  "representation": "PDF ⊃ MD, no contradiction; CORR-V22-MD-SYNC open",
+  "preserved": [
+   "3435/f8d130c2",
+   "A-0048",
+   "C-0083",
+   "cutoff",
+   "CIT-01..12",
+   "gates",
+   "TA1-5",
+   "2A-2E",
+   "AD1-AD5 exact A-0053"
+  ],
+  "new": [
+   "Language×Market attribution (9 fields)",
+   "2AB_TRADEOFF_RESOLUTION",
+   "VALUE_ROLE",
+   "HR1-HR7",
+   "Gate R0-R5",
+   "KMM1-5→EMM1-5",
+   "regional marts (build order)",
+   "GLOBAL CORE + KR + INTL_EN boards"
+  ],
+  "c_bindings_at_freeze": [
+   "actor_type 7 (PDF §19.2)",
+   "upgrade_reason 7 (PDF §19.4)",
+   "KMM/EMM role labels canonical",
+   "mart_reception_voc / mart_term_vocabulary",
+   "regional marts = BUILD ORDER",
+   "Gate R1 on text/manual bases; LANGUAGE_ONLY excluded"
+  ]
+ },
+ "human_open": "HUR-009: create AD1~AD5 now from reports/HUR-009_AD1-AD5_UI_SHEET.md (A-0053 exact); capture query_id/tracking_since/keywords/relevance/platforms/backfill/screenshot → C; then P02-first archive canary"
 }

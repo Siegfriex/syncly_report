@@ -15,3 +15,5 @@
 | Gate 6 | Business Activation | NOT_STARTED | Batch 1(AD)·Batch 2(MM) 이후 |
 
 **BASELINE_BATCH_SEALED (A-0048, 03:42Z) · SAFE_TO_ROTATE (C-0083).** Baseline seal 조건: M0 + M1 + Gate 1~5 최종 disposition(PASS/CONDITIONAL/NO-GO 모두 완결) → BASELINE_BATCH_SEALED → C SAFE_TO_ROTATE → Human만 UI Query 생성.
+
+| Gate R0~R5 (v2.2) | Language Quality / Market Attribution / Mirrored Denominator / Reception Observability / Regional Robustness / Activation Readiness | **NOT_BOUND** — A 비준(C-0091) 후 C REGIONAL_SCHEMA_FREEZE에서 구속 | R3 실패는 Supply/Translation을 막지 않음 → 'Syncly Observed Reception = NO-DECISION'; regional response RFR>25% → UNSTABLE → NO-DECISION; R1은 text/manual basis 기준(region 필드 89.1% 공백, 서버모집단 기준 B-0044) |

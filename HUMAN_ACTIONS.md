@@ -1,6 +1,6 @@
 # Human 확인 큐
 
-갱신: 2026-09-02T03:57:40Z
+갱신: 2026-09-02T06:41:00Z
 
 ## 완료
 | ID | 내용 | 결과 |
@@ -11,9 +11,10 @@
 ## 열림 (우선순위순)
 | ID | 우선 | 내용 | blocks_scope (이것만 막힘) |
 |---|---|---|---|
-| **HUR-009** | **P0** | **UI_MUTATION_REQUIRED (C-0084 개정)** — **지금 순서**: ① HUR-007·HUR-008·HUI-005·HUI-007 UI 확인(Baseline Query 존재 중; 설정 변경 금지) → ② AD1~AD5를 (A-0053 비준·AD3=옵션 A) claude-c `control/rotation/AD_BATCH_QUERY_SPEC_SHEET_v1.md`대로 생성 (3) query_id·tracking_since·keyword 캡처 → C. (참고: UI가 6번째 이후 Query 생성을 거부하면 변경 없이 중단하고 C에 알려주세요 — 그 경우 P02 Archive→canary 후 생성으로 순서가 바뀝니다.) (4) **Archive는 단계적(C-0085)**: P02 하나만 먼저 Archive → C가 접근성 canary 검정 → 결과 통보 후 나머지 4개 Archive(또는 중단). Delete 금지, 스크린샷. 요청서 `control/human_review/HUR-009_baseline_rotation_ui_mutation.md` | Batch 1 수집 시작만 |
+| **HUR-009** | **P0** | **v2.2 개정(C-0094)** — **지금 AD1~AD5 생성**: `reports/HUR-009_AD1-AD5_UI_SHEET.md` (A-0053 RATIFIED spec v1.1 exact · P03 화면 필드 순서 · v2.2로 Query 정의 변경 없음 · KR/EN 분할·용어 추가 금지). Baseline Query(P03 등) 재생성 금지, Delete 금지. 생성 후 query_id·tracking_since·keyword 화면·relevance 저장본·platforms·backfill·스크린샷 → C. UI가 6번째 생성을 거부하면 변경 없이 중단·통보(P02 Archive→canary 선행으로 순서 변경). Archive는 단계적(C-0085): P02 하나만 → C canary → 나머지 4개. UI read 4건(HUR-007/008·HUI-005/007)은 비차단. | Batch 1 수집 시작만 (B 물질화는 A 비준+REGIONAL_SCHEMA_FREEZE 후) |
 
 ### 기존 열림
+| CORR-V22-MD-SYNC | P2 | v2.2 Addendum MD(cbb02933…, 25절 'PROPOSED')를 PDF(6102e181…, 34절 'Revised Final', normative)에서 재생성해 표현을 동기화 — A 비준 비차단, FULLY ratified 표기 전 필요 | 방법 상태 'FULLY RATIFIED' 표기만 |
 | ID | 우선 | 내용 | blocks_scope (이것만 막힘) |
 |---|---|---|---|
 | HUR-007 | P0 | IG Post/Facebook의 views 부재가 상류 부재인지 MCP 미노출인지 UI 판별 | 해당 플랫폼 views 기반 클레임 문구 확정 |
