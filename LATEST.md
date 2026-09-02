@@ -3,6 +3,8 @@
 갱신: 2026-09-02T06:56Z (KST 15:56) · Epoch `RE-20260901-001` · Run `RUN-20260902-FULL-001` · Method `MCP_FIRST_DPDD_v2.1` · 작성: Claude C (단독 writer)
 
 ## 한 줄 현황
+**(17:50) 세션 종료 — 핸드오프: HANDOFF.md.** v2.2 RATIFIED·REGIONAL_SCHEMA_FREEZE 발효, AD4 screener STAGE 1 READY, AD1~AD5는 생성됐으나 서버 API 미노출(Human UI 확인 필요). 다음 세션 재시작 순서 C→A→B+D.
+
 **(16:58) AD4 screener STAGE 1 READY.** v2.2 RATIFIED·REGIONAL_SCHEMA_FREEZE 발효, 토큰 목록 v2.2(36 검증)·affinity 어휘(AD 키워드 100, PROXY)·회귀 게이트 0/10(C/B/D 수렴) 완료. 남은 조건은 AD1~AD5 query_id 확정뿐인데 서버 API에 아직 미노출(생성 후 ~85분) — Human이 UI 진행률을 확인해 주세요. 상세: reports/30min/20260902/1700_stage1_ready.md
 
 **(15:56) REGIONAL_SCHEMA_FREEZE-2.2.0 발행(C-0099).** A-0061이 AD spec v1.2(as-created)를 RECONCILE로 비준하고 AD4 규칙을 확장(shaving-only 소스는 패널 제외). B(C-0100)·D(C-0101) 활성 — 둘 다 0 MCP 콜, AD 데이터 접근은 C가 query_id를 서버에서 확인해 CONFIRMED 티켓을 낸 뒤. 지금 서버에는 AD 5개가 아직 미노출(수집 중) — C가 주기적으로 확인. Human 할 일 없음.

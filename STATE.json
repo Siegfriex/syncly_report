@@ -1,9 +1,9 @@
 {
  "schema": "syncly-report-state/1.0.0",
- "updated_utc": "2026-09-02T08:07:00Z",
+ "updated_utc": "2026-09-02T08:50:00Z",
  "research_epoch": "RE-20260901-001",
  "execution_run": "RUN-20260902-FULL-001",
- "phase": "v2.2 RATIFIED (A-0059) + REGIONAL_SCHEMA_FREEZE-2.2.0 (C-0099) → AD1~AD5 CREATED (spec v1.2 RECONCILED A-0061; collection in progress, not yet server-listed) → B/D ACTIVATED (C-0100/0101, 0 MCP) → awaiting AD query_ids → Batch 1 collection",
+ "phase": "SESSION CLOSED — v2.2 RATIFIED + SCHEMA FROZEN; AD1~AD5 created (v1.2) but not yet server-listed; AD4 screener STAGE 1 READY pending AD ids; Batch 1 collection not started",
  "reporter": "Claude C (single-writer)",
  "authority": "Human latest instruction > v2.2 REGIONAL DELTA (sole SSOT per Human; PROPOSED until A ratifies; PDF normative) > CURRENT_AUTHORITY.json v2.1 > DPDD_MASTER_v2.1 > protocols; legacy lineage",
  "locks": {
@@ -219,7 +219,7 @@
   "d00_evidence_r2": "261 rows (77 beyond canonical D00; 68 new to substrate) — NON-DENOMINATOR",
   "ko_language_membership": "555/3,435 (16.16%) captured, NOT licensed (manual QA pending); by query A01 251 / M01 213 / D00 112 / P03 5 / P02 0 — C-verified (C-0087)"
  },
- "bus_head": "1b9fa99",
+ "bus_head": "07c44d5",
  "method": {
   "current": "MCP_FIRST_DPDD_v2.2_REGIONAL",
   "proposed_successor": "MCP_FIRST_DPDD_v2.2_REGIONAL",
@@ -300,5 +300,12 @@
   "token_containment": "TOKEN_CONTAINMENT_PAIRS freeze artifact (C-0113, A-0075 R1 extension): cross-entity pairs S9⊂S9000, Series 9⊂Series 9000, 시리즈 9⊂시리즈 9000 handled by bounding the contained token at every matching site",
   "gate_r0_amendment": "LATIN SCRIPT ≠ ENGLISH; language_detected ≠ script (D-0055 multiscript observation) → D-0044 QA design adds a script-vs-language confusion row"
  },
- "corpus_live_ui_rule": "ARCHIVED-LIVE-COUNT-UNSTABLE (C-0107; ratified+extended A-0070): archived live counts observed 07:22Z — M01 1,020 / A01 1,043 / P02 69 / P03 186 / D00 277 — are NOT canonical; canonical window re-canary exact (A01 1,816 / M01 1,244 / P03 176); cause undetermined; 'archiving caused it' is itself unverified"
+ "corpus_live_ui_rule": "ARCHIVED-LIVE-COUNT-UNSTABLE (C-0107; ratified+extended A-0070): archived live counts observed 07:22Z — M01 1,020 / A01 1,043 / P02 69 / P03 186 / D00 277 — are NOT canonical; canonical window re-canary exact (A01 1,816 / M01 1,244 / P03 176); cause undetermined; 'archiving caused it' is itself unverified",
+ "session": {
+  "status": "CLOSED 2026-09-02 ~17:50 KST by Human instruction",
+  "handoff": "HANDOFF.md (= claude-c audits/harness/C_SESSION_HANDOFF_20260902.md)",
+  "restart_order": "C → A → B+D",
+  "c_head": "d87c86e",
+  "agent_handoffs": "requested by C-0122; see BUS ledger for arrival"
+ }
 }
