@@ -1,8 +1,10 @@
 # Syncly 연구 현황 — LATEST
 
-갱신: 2026-09-02T06:56Z (KST 15:56) · Epoch `RE-20260901-001` · Run `RUN-20260902-FULL-001` · Method `MCP_FIRST_DPDD_v2.1` · 작성: Claude C (단독 writer)
+갱신: 2026-09-02T11:10Z (KST 20:10) · Epoch `RE-20260901-001` · Run `RUN-20260902-V23-001` · Method `MCP_FIRST_DPDD_v2.3_FROZEN_CORPUS_HYPOTHESIS_LOOP` · 작성: Claude C (단독 writer)
 
 ## 한 줄 현황
+**(20:10) v2.3 RUN START — `RUN_START_V23_FROZEN_HYPOTHESIS_LOOP`(C-V23-000).** 유일 권위 = main 68f1ad3 v2.3 Final Execution Bundle; v2.1/v2.2/과거 handoff/AD 대기/Batch 1·2 DAG 전부 legacy. Gate V0 PASS(3,435/f8d130c2 등 12/12 재계산 일치, MCP 0콜). P1/P2/P3 사전등록 동결(α=.05, BH q=.05, |h|≥.20, TOST/ROPE, loop 2). A release(C-V23-006) — **Human이 A 세션을 시작해 주세요**; B/D/E는 A ACK 검증 후 HOLD 해제. E lane branch 신설은 Human 결정. 상세: reports/30min/20260902/2010_v23_run_start.md
+
 **(17:50) 세션 종료 — 핸드오프: HANDOFF.md.** v2.2 RATIFIED·REGIONAL_SCHEMA_FREEZE 발효, AD4 screener STAGE 1 READY, AD1~AD5는 생성됐으나 서버 API 미노출(Human UI 확인 필요). 다음 세션 재시작 순서 C→A→B+D.
 
 **(16:58) AD4 screener STAGE 1 READY.** v2.2 RATIFIED·REGIONAL_SCHEMA_FREEZE 발효, 토큰 목록 v2.2(36 검증)·affinity 어휘(AD 키워드 100, PROXY)·회귀 게이트 0/10(C/B/D 수렴) 완료. 남은 조건은 AD1~AD5 query_id 확정뿐인데 서버 API에 아직 미노출(생성 후 ~85분) — Human이 UI 진행률을 확인해 주세요. 상세: reports/30min/20260902/1700_stage1_ready.md

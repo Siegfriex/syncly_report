@@ -1,11 +1,11 @@
 {
  "schema": "syncly-report-state/1.0.0",
- "updated_utc": "2026-09-02T08:55:00Z",
+ "updated_utc": "2026-09-02T11:06:56Z",
  "research_epoch": "RE-20260901-001",
- "execution_run": "RUN-20260902-FULL-001",
- "phase": "SESSION CLOSED — v2.2 RATIFIED + SCHEMA FROZEN; AD1~AD5 created (v1.2) but not yet server-listed; AD4 screener STAGE 1 READY pending AD ids; Batch 1 collection not started",
+ "execution_run": "RUN-20260902-V23-001",
+ "phase": "v2.3 RUN STARTED (RUN_START_V23_FROZEN_HYPOTHESIS_LOOP, C-V23-000) — Gate V0 PASS; P1/P2/P3 prereg FROZEN; A released (C-V23-006), awaiting A-V23-ACK; B/D/E HOLD",
  "reporter": "Claude C (single-writer)",
- "authority": "Human latest instruction > v2.2 REGIONAL DELTA (sole SSOT per Human; PROPOSED until A ratifies; PDF normative) > CURRENT_AUTHORITY.json v2.1 > DPDD_MASTER_v2.1 > protocols; legacy lineage",
+ "authority": "Human latest instruction > main 68f1ad3 Braun_NEVO_Syncly_v2.3_Final_Execution_Bundle_20260902/ (state/CURRENT_AUTHORITY_v2.3.json > DPDD_MASTER_v2.3.md > protocols) > C-sealed v2.3 artifacts > INHERITED_FROZEN_CHECKPOINT > legacy/ (v2.1, v2.2, prior handoffs: lineage only)",
  "locks": {
   "QUERY_SOURCE_LOCK": true,
   "ANALYSIS_CUTOFF": "2026-08-31T00:00:00Z",
@@ -55,14 +55,14 @@
   "P03": 186,
   "RULE": "ARCHIVED-LIVE-COUNT-UNSTABLE (C-0107, A-0070): no figure read from an archived query's live 'Collected' is canonical; only date-filtered totals against the sealed manifest are"
  },
- "ledger_rows": 231,
+ "ledger_rows": 337,
  "last_reported_shas": {
-  "main": "7e030b0",
-  "claude-a/syncly-authority-governor": "44caae6",
-  "claude-b/syncly-production-data": "cd10ced",
-  "claude-c/syncly-assurance-fable": "9b4774f",
-  "claude-d/syncly-research-rnd": "14a8abe",
-  "bus/syncly-ledger": "dc62ae7",
+  "main": "68f1ad3",
+  "claude-a/syncly-authority-governor": "9e315aa",
+  "claude-b/syncly-production-data": "7533ef6",
+  "claude-c/syncly-assurance-fable": "8a27ba4",
+  "claude-d/syncly-research-rnd": "eb77c4c",
+  "bus/syncly-ledger": "43b4734",
   "integration/syncly-current": "2c56155"
  },
  "report_cadence": {
@@ -71,10 +71,11 @@
   "last_full_report_utc": "2026-09-02T06:10:10Z"
  },
  "agent_notes": {
-  "A": "idle — obligations discharged; ALT-2 after HUI-006; 3,408 re-decision only if canary fails",
-  "B": "idle — 41 calls; rotation-window captures done",
-  "C": "waiting for Human rotation steps; canary ready",
-  "D": "idle — d1-d6 delivered"
+  "A": "RELEASED (C-V23-006) — awaiting A-V23-ACK",
+  "B": "HOLD until A ACK verified",
+  "C": "v2.3 intake done; waiting for A ACK; then B/D/E independent releases",
+  "D": "HOLD until A ACK verified",
+  "E": "HOLD (new lane) until A ACK verified"
  },
  "guards": {
   "GUARD-C0047": "A_SOURCE_PANEL/T_S 구축은 B 재물질화+Gate0 통과 이후 (57키 증발 방지)"
@@ -117,7 +118,7 @@
   "raw": "60/60 originals recovered from session transcript (D-0035), validated byte-identical to C independent recall on 12 overlap posts"
  },
  "event_backlog_note": "backlog 34 events (C-0055~C-0061 구간 포함) 재시작 세션에서 1:1 생성 완료",
- "method_revision": "MCP_FIRST_DPDD_v2.1",
+ "method_revision": "MCP_FIRST_DPDD_v2.3_FROZEN_CORPUS_HYPOTHESIS_LOOP",
  "methodology_correction": {
   "source_corpus_invalidation": false,
   "severity": "MAJOR",
@@ -302,16 +303,42 @@
  },
  "corpus_live_ui_rule": "ARCHIVED-LIVE-COUNT-UNSTABLE (C-0107; ratified+extended A-0070): archived live counts observed 07:22Z — M01 1,020 / A01 1,043 / P02 69 / P03 186 / D00 277 — are NOT canonical; canonical window re-canary exact (A01 1,816 / M01 1,244 / P03 176); cause undetermined; 'archiving caused it' is itself unverified",
  "session": {
-  "status": "CLOSED 2026-09-02 ~17:50 KST by Human instruction",
-  "handoff": "HANDOFF.md (= claude-c audits/harness/C_SESSION_HANDOFF_20260902.md)",
-  "restart_order": "C → A → B+D",
-  "c_head": "ce5ca9a",
-  "agent_handoffs": {
-   "A": "A-0087 @ 9e315aa",
-   "B": "B-0061 @ 7533ef6",
-   "D": "D-0060 @ eb77c4c",
-   "copies": "bus/syncly-ledger harness/handoff/"
+  "status": "OPEN — v2.3 run started 2026-09-02 ~20:05 KST",
+  "previous_close": "C-0123 (legacy lineage)",
+  "restart_order": "C → A → B+D+E",
+  "c_head": "8a27ba4"
+ },
+ "execution_mode": "FROZEN_CORPUS_ONLY",
+ "v23": {
+  "run_start_ticket": "TCK-20260902110458-C-V23-000",
+  "gate_V0_frozen_integrity": "PASS (C-V23-001): 3,435/f8d130c2, cutoff, 5 membership hashes, 2,856 sources, A_SOURCE_PANEL 1,574, promotion 2554/670/211, enrichment hash — all recomputed and matched; 0 MCP calls",
+  "prereg": {
+   "ticket": "TCK-20260902110458-C-V23-002",
+   "PREREG_FREEZE_v2.3.md": "4a76817be48ca0128ce32c2369ab279721c707690c2c5e37b71c237bc07322e1",
+   "status": "FROZEN result-blind; P1=RQ1 H0-1.0..1.3; P2=RQ2 H0-2.0..2.4; P3=overlay",
+   "rules": "α=.05; BH q=.05 (F1..F4); |h|>=.20+pp; TOST h±.20/ROPE; sparse <10/10-19/20-49/50+; robustness 5/5; loop=2"
   },
-  "close_ticket": "C-0123"
+  "dag": "TCK-20260902110458-C-V23-003 (PAGE_DAG_v2.3.json c7596f06…)",
+  "bindings": {
+   "local_master_schema": "C-V23-004",
+   "desk_independence": "C-V23-005"
+  },
+  "release_state": {
+   "A": "RELEASED C-V23-006 (Human starts A session; ACK expected A-0088 = A-V23-ACK)",
+   "B": "HOLD (reserved C-V23-007)",
+   "D": "HOLD (reserved C-V23-008)",
+   "E": "HOLD (reserved C-V23-009)"
+  },
+  "superseded_legacy_next_actions": [
+   "AD1~AD5 query_id wait / list_data_queries CONFIRMED",
+   "AD4 screener stage 1 release",
+   "HUR-009 as Run blocker",
+   "GATE_R0 sample spend",
+   "LEXICON_V2_FREEZE / REGIONAL_MM_SPEC_FREEZE / HR1~7",
+   "KMM/EMM/JP acquisition",
+   "Batch 1/2 acquisition DAG"
+  ],
+  "open_for_A": "text-coverage priority (a/b/c) for classifier labels: 3,408 posts (99.2%) lack local full text",
+  "consumer_reception": "NO-DECISION (VOC not observed)"
  }
 }
