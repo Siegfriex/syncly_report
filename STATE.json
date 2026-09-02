@@ -1,6 +1,6 @@
 {
   "schema": "syncly-report-state/1.0.0",
-  "updated_utc": "2026-09-02T03:13:21Z",
+  "updated_utc": "2026-09-02T03:14:28Z",
   "research_epoch": "RE-20260901-001",
   "execution_run": "RUN-20260902-FULL-001",
   "phase": "PHASE R2 — Baseline Enrichment: Gate M0 CONDITIONAL PASS (C-0070); B checkpoints 1-5 VERIFIED; PRF-0010 construct-verified; Gate M1 OPEN awaiting D limitation re-diagnosis",
@@ -54,14 +54,14 @@
     "P02": 69,
     "P03": 186
   },
-  "ledger_rows": 172,
+  "ledger_rows": 173,
   "last_reported_shas": {
     "main": "7e030b0",
-    "claude-a/syncly-authority-governor": "b48dee9",
+    "claude-a/syncly-authority-governor": "04fa502",
     "claude-b/syncly-production-data": "1bd738d",
     "claude-c/syncly-assurance-fable": "58ba989",
     "claude-d/syncly-research-rnd": "64065aa",
-    "bus/syncly-ledger": "049e78d",
+    "bus/syncly-ledger": "4c35c3b",
     "integration/syncly-current": "2c56155"
   },
   "report_cadence": {
@@ -160,11 +160,12 @@
     "CIT-06": "non-shortform: no video evidence route",
     "CIT-07": "VOC/comment content = 0 → Observed Reception unobservable",
     "CIT-08": "time buckets KST / filters UTC",
-    "CIT-09": "Response leg not claimable (content-blind + RFR 68.3%)"
+    "CIT-09": "Response leg not claimable (content-blind + RFR 68.3%)",
+    "CIT-10": "codebook brand/language coverage (ko/en-only; Korean budget brands absent) is a Batch 2 design defect — Product Occupancy other-electric cell undercounted until lexicon v2"
   },
   "alt2": {
     "81.8%": "RETIRED",
-    "72.7% (8/11)": "C-verified (C-0069); reinstatement is A's call; prose-not-labels, shortform-only"
+    "72.7% (8/11)": "REINSTATED as figure (A-0035); decision held — classifier-construction proposal for Gate 3"
   },
   "promotion_over_frozen_3435": {
     "PAID": 2554,
