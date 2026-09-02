@@ -1,6 +1,6 @@
 {
   "schema": "syncly-report-state/1.0.0",
-  "updated_utc": "2026-09-02T03:40:44Z",
+  "updated_utc": "2026-09-02T03:42:37Z",
   "research_epoch": "RE-20260901-001",
   "execution_run": "RUN-20260902-FULL-001",
   "phase": "PHASE R3 — Baseline Closure: all gates dispositioned & accepted; manifest VERIFIED; awaiting A BASELINE_BATCH_SEALED → C SAFE_TO_ROTATE → Human creates AD1-AD5",
@@ -54,14 +54,14 @@
     "P02": 69,
     "P03": 186
   },
-  "ledger_rows": 210,
+  "ledger_rows": 211,
   "last_reported_shas": {
     "main": "7e030b0",
-    "claude-a/syncly-authority-governor": "1dc3d23",
+    "claude-a/syncly-authority-governor": "d9f62d3",
     "claude-b/syncly-production-data": "2efd157",
-    "claude-c/syncly-assurance-fable": "b7b881f",
+    "claude-c/syncly-assurance-fable": "e96e423",
     "claude-d/syncly-research-rnd": "33f165f",
-    "bus/syncly-ledger": "14be8ec",
+    "bus/syncly-ledger": "17a6983",
     "integration/syncly-current": "2c56155"
   },
   "report_cadence": {
@@ -190,16 +190,17 @@
     "status": "READY — checklist DONE (C-0082)",
     "manifest": "QUERY_BATCH_MANIFEST_20260902.csv sha 32e57819… verified 25/25",
     "outstanding": "A BASELINE_BATCH_SEALED → C SAFE_TO_ROTATE (+ AD1-AD5 spec sheet for Human)",
-    "human_items_block_seal": false
+    "human_items_block_seal": false,
+    "rotation_payload_ready": "claude-c control/rotation/: BASELINE_CONTAMINATION_CHECKLIST_20260902.csv + AD_BATCH_QUERY_SPEC_SHEET_v1.md"
   },
   "standing_rules_added": [
     "THREE CLOCKS (publication / ingestion=ULID / bucket=KST) — every time artifact names its clock",
     "INDEX_TEXT duplicate keys establish preview equivalence only; content identity requires full text"
   ],
   "open_A_decisions": [
-    "PREREG-B-001 approve/decline (25 details calls; not seal-blocking)",
-    "BASELINE_BATCH_SEALED after B manifest",
-    "ALT-2 (expected NO-DECISION; inside HUI-006 scope)"
+    "BASELINE_BATCH_SEALED (manifest verified C-0082)",
+    "AD3 seed option (C spec sheet v1: option A category-only recommended)",
+    "ALT-2 (expected NO-DECISION)"
   ],
   "baseline_not_produced": [
     "meaning measurement (TA/Need/JTBD) — discovery only",
