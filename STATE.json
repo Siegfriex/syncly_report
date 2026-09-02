@@ -1,9 +1,9 @@
 {
  "schema": "syncly-report-state/1.0.0",
- "updated_utc": "2026-09-02T13:58:35Z",
+ "updated_utc": "2026-09-02T14:12:21Z",
  "research_epoch": "RE-20260901-001",
  "execution_run": "RUN-20260902-V24-RECOVERY-001 (prior RUN-20260902-V24-LOCAL-001 immutable)",
- "phase": "RECOVERY R0–R8 CLOSED; after repair NO BH-significant local finding (CH6 h=.51 p_BH=.054); L1–L5 unchanged; decision class NO-DECISION unchanged; A delta review released; GUARD-V24R-001 stays active as content bar",
+ "phase": "FINAL_REPORT_SEALED (v2.4.1): recovery sealed; decision class NO-DECISION + targeted evidence; zero BH-significant local findings; report reports/final_v2.4.1/",
  "reporter": "Claude C (single-writer)",
  "authority": "Human latest instruction > main 8e8c74d Braun_NEVO_Presentation_First_Final_Bundle_v2.4_20260902/ (CURRENT_AUTHORITY.json) > C-sealed v2.4 control artifacts > v2.3 bundle (methodology/falsification lineage only) > legacy/",
  "locks": {
@@ -304,8 +304,8 @@
  },
  "corpus_live_ui_rule": "ARCHIVED-LIVE-COUNT-UNSTABLE (C-0107; ratified+extended A-0070): archived live counts observed 07:22Z — M01 1,020 / A01 1,043 / P02 69 / P03 186 / D00 277 — are NOT canonical; canonical window re-canary exact (A01 1,816 / M01 1,244 / P03 176); cause undetermined; 'archiving caused it' is itself unverified",
  "session": {
-  "status": "RECOVERY OPEN 2026-09-02 ~22:20 KST",
-  "c_head": "aae1a33"
+  "status": "FINAL_REPORT_SEALED 2026-09-02 ~23:12 KST",
+  "handoff": "reports/final_v2.4.1/08_HARNESS_ORCHESTRATION_AND_TRACEABILITY.md + claude-c control/v24_recovery/RUN_STATE.json"
  },
  "execution_mode": "SYNCLY_CLOSED_LOCAL_VALIDATION_ACTIVE",
  "v23": {
@@ -463,5 +463,6 @@
    "Tier A 180 → ≤182 after materializing 2 canonical raw captions (repair)"
   ],
   "outcome": "CASE 2 (bounded measurement-pipeline limit) + MIXED root cause (text acquisition unstratified by product); CH6 retracted as BH-significant (21/41 vs 18/68, p_BH .054; loose construct); Tier A 182; S9 cell 3 (one NEVO transliteration)"
- }
+ },
+ "final_report": "reports/final_v2.4.1/FINAL_RUN_REPORT_v2.4.1.md (+ 01–10, QUALITY_GATE 13/13, MANIFEST_SHA256.csv)"
 }

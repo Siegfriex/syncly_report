@@ -3,6 +3,8 @@
 갱신: 2026-09-02T13:06Z (KST 22:06) · Epoch `RE-20260901-001` · Run `RUN-20260902-V24-LOCAL-001` · Authority `PRESENTATION_FIRST_NEVO_V2.4` · 작성: Claude C (단독 writer)
 
 ## 한 줄 현황
+**(23:12) FINAL REPORT SEALED (v2.4.1).** Recovery 봉인 후 R&D/전략 case study 형식의 최종 보고서 10종 + master(`reports/final_v2.4.1/FINAL_RUN_REPORT_v2.4.1.md`)를 산출, 품질 게이트 Q1~Q13 13/13. 결론: 초기 차별점은 카테고리 공통 문법; 수리 후 BH-유의 로컬 발견 0; NEVO는 메커니즘은 말하지만 문제는 덜 말함; Brand 밖 생존은 텍스트 미수집으로 판정 불가; 결정 = NO-DECISION + targeted evidence; 처방 = '덜 괴롭히면서 깔끔한' 사용 경험 소유. Human 항목: CORR-V24-SLIDE2, gold, 제품층화 텍스트 취득, US street price.
+
 **(23:00) RECOVERY R0~R8 CLOSED → A delta review.** CASE 2 repair(raw caption 2건 물질화, Tier A 182) 후 **CH6가 BH 유의성을 잃음**(21/41 vs 18/68, h=.51, p_BH=.054). 수리 후 로컬 BH-유의 발견은 0건이며 CH6 토큰의 2/3는 '디자인' 등 느슨한 어휘였음 → Slide 1 C3 문구를 "디자인/프리미엄/플래그십 어휘가 더 자주 보인다(방향성, 비유의)"로 강등. L1~L5·decision class(NO-DECISION) 불변. 근본 원인: verbatim 텍스트 180건이 전부 M01 회원으로 제품별 층화 없이 수집됨. A는 delta만 검토.
 
 **(22:58) RECOVERY R0~R5 CLOSED.** 160→2 붕괴는 entity/actor가 아니라 **텍스트 수집**(verbatim 180건 전부 M01, 제품 층화 없음) 때문 → MIXED. actor 11/40은 B 자체 오류(mart 정확). Brand-authored NEVO 0은 evidence-tier artifact. **CH6는 산술은 정확하나 21건 중 14건이 '디자인' 등 느슨 토큰** → material-only는 7/40 vs 6/68(ns), Slide 1 문구 수정 필요. 남은 것: CASE 2 repair(raw caption 2건 물질화 → 표적 재계산) → R7/R8 → A delta review.
