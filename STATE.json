@@ -1,6 +1,6 @@
 {
   "schema": "syncly-report-state/1.0.0",
-  "updated_utc": "2026-09-02T06:16:41Z",
+  "updated_utc": "2026-09-02T06:20:37Z",
   "research_epoch": "RE-20260901-001",
   "execution_run": "RUN-20260902-FULL-001",
   "phase": "BATCH 0 SEALED (A-0048) → SAFE_TO_ROTATE (C-0083) — awaiting A spec ratification + Human UI rotation (HUR-009) → Batch 1 Affinity Discovery",
@@ -29,7 +29,7 @@
     "gate1": "CONDITIONAL PASS (C-0080) — registry exact; identity 24.1% unresolved; Panel v2 tiers after AD batch; T_C not built (design)",
     "gate2": "CONDITIONAL PASS (C-0080) — M01 denominator; supply STABLE; membership trigger not observable; HUI-005 open",
     "gate3": "CONDITIONAL (C-0080) — entity lower bounds (CIT-10); meaning NOT MEASURED; creative NOT MEASURED; VOC not observable",
-    "gate4": "CONDITIONAL — ACCEPTED by A (A-0040); HOLD-A0013 stays; final with M1",
+    "gate4": "CONDITIONAL — holds under the upper bound (C-0088): focal video gain 2/35 observed, CI 0-14.3%; extrapolation 27 point / 67 upper over 471; at the upper bound ≤4-6 shortform focal cells could reach the 10-19 descriptive tier only; \"≤27\" retired as a bare figure",
     "gate5": "CONDITIONAL PASS (C-0080) — supply STABLE 0.5%; engagement UNSTABLE 68.3%; variants mandatory",
     "gateM0": "CONDITIONAL PASS — ACCEPTED AND CLOSED (A-0036)",
     "gateM1": "CONDITIONAL PASS (C-0078) — preview dependency removed; batch/aggregate/page enrichment complete & verified; targeted text 39 / features 72; d5 re-diagnosis accepted (0 TRUE_SYNCLY_LIMIT); COND: A 3,408 decision, HUI-007 label, lexicon v2 before Batch 2",
@@ -54,14 +54,14 @@
     "P02": 69,
     "P03": 186
   },
-  "ledger_rows": 229,
+  "ledger_rows": 231,
   "last_reported_shas": {
     "main": "7e030b0",
-    "claude-a/syncly-authority-governor": "a6f07d8",
+    "claude-a/syncly-authority-governor": "44caae6",
     "claude-b/syncly-production-data": "cd10ced",
-    "claude-c/syncly-assurance-fable": "e7d6391",
+    "claude-c/syncly-assurance-fable": "9b4774f",
     "claude-d/syncly-research-rnd": "14a8abe",
-    "bus/syncly-ledger": "e8af29d",
+    "bus/syncly-ledger": "dc62ae7",
     "integration/syncly-current": "2c56155"
   },
   "report_cadence": {
@@ -168,7 +168,8 @@
   },
   "alt2": {
     "81.8%": "RETIRED",
-    "72.7% (8/11)": "REINSTATED as figure (A-0035); decision held — classifier-construction proposal for Gate 3"
+    "72.7% (8/11)": "REINSTATED as figure (A-0035); decision held — classifier-construction proposal for Gate 3",
+    "frame": "restated with interval (C-0088): NO-DECISION defensible on point + classifier/cost legs; upper bound makes it TEST-class; A decides"
   },
   "promotion_over_frozen_3435": {
     "PAID": 2554,
