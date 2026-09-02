@@ -1,6 +1,6 @@
 {
   "schema": "syncly-report-state/1.0.0",
-  "updated_utc": "2026-09-02T03:54:58Z",
+  "updated_utc": "2026-09-02T03:56:30Z",
   "research_epoch": "RE-20260901-001",
   "execution_run": "RUN-20260902-FULL-001",
   "phase": "BATCH 0 SEALED (A-0048) → SAFE_TO_ROTATE (C-0083) — awaiting A spec ratification + Human UI rotation (HUR-009) → Batch 1 Affinity Discovery",
@@ -54,14 +54,14 @@
     "P02": 69,
     "P03": 186
   },
-  "ledger_rows": 225,
+  "ledger_rows": 227,
   "last_reported_shas": {
     "main": "7e030b0",
-    "claude-a/syncly-authority-governor": "47cc855",
-    "claude-b/syncly-production-data": "a9efcf5",
-    "claude-c/syncly-assurance-fable": "8124d1d",
+    "claude-a/syncly-authority-governor": "4d7205a",
+    "claude-b/syncly-production-data": "cd10ced",
+    "claude-c/syncly-assurance-fable": "cf29fe5",
     "claude-d/syncly-research-rnd": "33f165f",
-    "bus/syncly-ledger": "c121093",
+    "bus/syncly-ledger": "bcda551",
     "integration/syncly-current": "2c56155"
   },
   "report_cadence": {
@@ -163,7 +163,8 @@
     "CIT-08": "time buckets KST / filters UTC",
     "CIT-09": "Response leg not claimable (content-blind + RFR 68.3%)",
     "CIT-10": "codebook brand/language coverage (ko/en-only; Korean budget brands absent) is a Batch 2 design defect — Product Occupancy other-electric cell undercounted until lexicon v2",
-    "CIT-11": "BOUND — PROMOTION-LABEL-CONSTRUCT: label disagrees with itself on preview-equivalent same-source content up to 26.3% group-level (PREVIEW-LEVEL UPPER BOUND; content-level unmeasured) and demonstrably on byte-identical content (tapa_mondo); corpus shares bounded ≤0.73pp; fine-grained Paid/Organic contrasts need caveat + duplicate-family check"
+    "CIT-11": "BOUND — PROMOTION-LABEL-CONSTRUCT: label disagrees with itself on preview-equivalent same-source content up to 26.3% group-level (PREVIEW-LEVEL UPPER BOUND; content-level unmeasured) and demonstrably on byte-identical content (tapa_mondo); corpus shares bounded ≤0.73pp; fine-grained Paid/Organic contrasts need caveat + duplicate-family check",
+    "CIT-12": "No Korean-language basis for product comparison in Batch 0 (P02 0 / P03 5 ko posts; ko 555/3,435 overall, captured not licensed) — Batch 2 MM queries must acquire Korean-language content deliberately"
   },
   "alt2": {
     "81.8%": "RETIRED",
@@ -211,6 +212,6 @@
   ],
   "batch0_supplements": {
     "d00_evidence_r2": "261 rows (77 beyond canonical D00; 68 new to substrate) — NON-DENOMINATOR",
-    "ko_language_membership": "555/3,435 (16.2%) captured, NOT licensed (manual QA pending); P02 0 / P03 5 ko posts"
+    "ko_language_membership": "555/3,435 (16.16%) captured, NOT licensed (manual QA pending); by query A01 251 / M01 213 / D00 112 / P03 5 / P02 0 — C-verified (C-0087)"
   }
 }

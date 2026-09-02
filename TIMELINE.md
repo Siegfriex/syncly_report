@@ -49,3 +49,4 @@
 - 03:43Z B-0040 rotation 만료 항목 플래그 → **C-0084 PRE-ARCHIVE HOLD**(UI read 4건 선행·AD 생성 분리) (BUS 216행)
 - 03:46Z A-0049 2건 승인·addressability 우려; B-0041/C-0085 자기정정 → **canary(P02 선행 Archive) 설계** (BUS 219행)
 - 03:52Z B-0042 rotation-window 2건 완료(D00 R2 77·ko 555) → A-0053 spec 비준(AD3 옵션 A) → **C-0086**: 순서 UI read → AD 생성 → P02 canary (BUS 225행)
+- 03:54Z A-0054 **CIT-12**(Korea-market 비교 불가) → C-0087 ko replay 자기정정·concur (BUS 227행)
