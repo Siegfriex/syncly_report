@@ -1,8 +1,10 @@
 # Syncly 연구 현황 — LATEST
 
-갱신: 2026-09-02T12:42Z (KST 21:42) · Epoch `RE-20260901-001` · Run `RUN-20260902-V24-LOCAL-001` · Authority `PRESENTATION_FIRST_NEVO_V2.4` · 작성: Claude C (단독 writer)
+갱신: 2026-09-02T13:06Z (KST 22:06) · Epoch `RE-20260901-001` · Run `RUN-20260902-V24-LOCAL-001` · Authority `PRESENTATION_FIRST_NEVO_V2.4` · 작성: Claude C (단독 writer)
 
 ## 한 줄 현황
+**(22:05) RUN SEALED — PRESENTATION_EVIDENCE_PACK_SEALED.** A 최종 해석(A-0089) C 검증 6/6 PASS. **Decision class = NO-DECISION + targeted evidence** (Y축 Brand→External이 로컬에서 계산 불가). 발표는 정성 arc로 운반: ① 초기 차별점(closeness+comfort)은 카테고리 공통 문법(USE) ② 유일 로컬 수치 CH6 기능·소재 프리미엄 52.5% vs 26.5%(h=.54, CONDITIONAL) ③ 반례: NEVO는 메커니즘을 말하지만 문제를 말하지 않음 ④ Brand 밖 검증은 evidence gap. **Human 항목**: Slide 2 초안 headline 교체 비준(CORR-V24-SLIDE2), gold 평정, targeted evidence 7항. 산출: claude-c control/v24/final/*, 보고서 reports/30min/20260902/2205_final_findings.md · 2205_evidence_pack.md
+
 **(21:42) D-V24-001 완료 → C 검증 PASS → LOCAL PAGE SEAL → A 최종 해석 release.** 로컬 검증(Tier A 180; NEVO 40 / S9 2 / 카테고리 참조 68): L1 NO_DECISION(등가 검정 불가), L2 UNDERPOWERED(+반례: NEVO는 문제보다 메커니즘을 말함), L3/L4 UNDERPOWERED, L5 NOT_COMPUTABLE(Brand cell 0). 유일하게 BH를 통과한 로컬 수치 = **CH6 Functional Premium NEVO 52.5% vs 카테고리 26.5% (h=.54, p_BH=.039, CONDITIONAL)**. C가 D 코드 없이 11/11 재계산 일치 확인. Slide 1/2/3 evidence layer 봉인(LOCAL_PAGE_SEAL_v2.4.md). A-V24-001 발행, A 세션 응답 대기. 상세: reports/30min/20260902/2142_v24_local_seal.md
 
 **(21:25) v2.4 PRESENTATION-FIRST RE-ENTRY.** Human이 `Braun_NEVO_Presentation_First_Final_Bundle_v2.4_20260902`를 현재 권위로 확정(main 8e8c74d, 17/17 SHA). C: `PRESENTATION_FIRST_V24_REENTRY` → `GLOBAL_AGENT_REVOKE_V24`(v2.3 release 티켓 실행권한 종료, 결과는 historical evidence 보존) → input ledger SEAL(B/D/E 53행, 절대경로+sha) → **D-V24-001_LOCAL_PRESENTATION_VALIDATION 발행**(WP0~WP8, Tier A headline, Syncly CLOSED). 상태: B CLOSED · E FROZEN · A WAIT · D RELEASED · C ACTIVE. **Human**: D 세션 시작; A/B/D에게 로컬 커밋 push 요청(provenance delivery). 상세: reports/30min/20260902/2125_v24_reentry.md

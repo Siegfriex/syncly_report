@@ -1,9 +1,9 @@
 {
  "schema": "syncly-report-state/1.0.0",
- "updated_utc": "2026-09-02T12:42:21Z",
+ "updated_utc": "2026-09-02T13:06:28Z",
  "research_epoch": "RE-20260901-001",
  "execution_run": "RUN-20260902-V24-LOCAL-001",
- "phase": "v2.4 LOCAL PAGE SEALED (C-V24-006) — D-V24-001 verified PASS; A-V24-001 released; awaiting A final interpretation",
+ "phase": "SEALED — PRESENTATION_EVIDENCE_PACK_SEALED (C-V24-010); decision class NO-DECISION + targeted evidence",
  "reporter": "Claude C (single-writer)",
  "authority": "Human latest instruction > main 8e8c74d Braun_NEVO_Presentation_First_Final_Bundle_v2.4_20260902/ (CURRENT_AUTHORITY.json) > C-sealed v2.4 control artifacts > v2.3 bundle (methodology/falsification lineage only) > legacy/",
  "locks": {
@@ -55,12 +55,12 @@
   "P03": 186,
   "RULE": "ARCHIVED-LIVE-COUNT-UNSTABLE (C-0107, A-0070): no figure read from an archived query's live 'Collected' is canonical; only date-filtered totals against the sealed manifest are"
  },
- "ledger_rows": 355,
+ "ledger_rows": 361,
  "last_reported_shas": {
   "main": "8e8c74d",
-  "claude-a/syncly-authority-governor": "d603955 (local)",
-  "claude-b/syncly-production-data": "c948444",
-  "claude-c/syncly-assurance-fable": "98ce5b3",
+  "claude-a/syncly-authority-governor": "f1a8ef2",
+  "claude-b/syncly-production-data": "13befe8",
+  "claude-c/syncly-assurance-fable": "2a1dc18",
   "claude-d/syncly-research-rnd": "e711b24",
   "bus/syncly-ledger": "bfb359d",
   "integration/syncly-current": "2c56155",
@@ -72,11 +72,11 @@
   "last_full_report_utc": "2026-09-02T06:10:10Z"
  },
  "agent_notes": {
-  "A": "RUNNING A-V24-001 (live session)",
-  "B": "CLOSED",
-  "C": "awaiting A-V24-001-RESULT → 6-point final verification → FINAL SEAL",
-  "D": "WAIT — complete",
-  "E": "FROZEN"
+  "A": "complete",
+  "B": "closed",
+  "C": "sealed; loop stopped",
+  "D": "complete",
+  "E": "frozen"
  },
  "guards": {
   "GUARD-C0047": "A_SOURCE_PANEL/T_S 구축은 B 재물질화+Gate0 통과 이후 (57키 증발 방지)"
@@ -304,10 +304,9 @@
  },
  "corpus_live_ui_rule": "ARCHIVED-LIVE-COUNT-UNSTABLE (C-0107; ratified+extended A-0070): archived live counts observed 07:22Z — M01 1,020 / A01 1,043 / P02 69 / P03 186 / D00 277 — are NOT canonical; canonical window re-canary exact (A01 1,816 / M01 1,244 / P03 176); cause undetermined; 'archiving caused it' is itself unverified",
  "session": {
-  "status": "OPEN — v2.3 run started 2026-09-02 ~20:05 KST",
-  "previous_close": "C-0123 (legacy lineage)",
-  "restart_order": "C → A → B+D+E",
-  "c_head": "98ce5b3"
+  "status": "RUN SEALED 2026-09-02 ~22:05 KST",
+  "handoff": "claude-c control/v24/final/SESSION_HANDOFF_v2.4.md",
+  "c_head": "2a1dc18"
  },
  "execution_mode": "SYNCLY_CLOSED_LOCAL_VALIDATION_ACTIVE",
  "v23": {
@@ -389,11 +388,11 @@
    ]
   },
   "agent_states": {
-   "A": "RELEASED A-V24-001",
+   "A": "SESSION_COMPLETE",
    "B": "CLOSED",
-   "D": "WAIT (complete, verified)",
+   "D": "WAIT (complete)",
    "E": "FROZEN",
-   "C": "ACTIVE"
+   "C": "SEALED"
   },
   "provenance_gaps": [
    "claude-a d603955 not pushed",
@@ -413,6 +412,16 @@
    "L5": "NOT_COMPUTABLE (Brand cells 0/0)"
   },
   "surviving_local_finding": "CH6 Functional Premium NEVO 21/40 (52.5%) vs category 18/68 (26.5%), h=.54, p_BH=.039, CONDITIONAL (4/4 evaluable rungs; non-paid rung absent)",
-  "a_ticket": "A-V24-001_FINAL_BUSINESS_INTERPRETATION RELEASED"
+  "a_ticket": "A-V24-001_FINAL_BUSINESS_INTERPRETATION RELEASED",
+  "a_result": "A-0089 @ claude-a e8d253b; verified PASS 6/6 (C-V24-009)",
+  "final_seal": "C-V24-010 PRESENTATION_EVIDENCE_PACK_SEALED",
+  "final_artifacts": "claude-c control/v24/final/ (8) = bus harness/final/v24/",
+  "b_markup": "control/v24/B_EVIDENCE_MARKUP.csv (48 rows)",
+  "human_items": [
+   "CORR-V24-SLIDE2 headline ratification",
+   "gold labeling",
+   "targeted evidence (7)",
+   "US same-date street price"
+  ]
  }
 }
