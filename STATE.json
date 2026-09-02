@@ -1,6 +1,6 @@
 {
  "schema": "syncly-report-state/1.0.0",
- "updated_utc": "2026-09-02T07:45:00Z",
+ "updated_utc": "2026-09-02T07:52:00Z",
  "research_epoch": "RE-20260901-001",
  "execution_run": "RUN-20260902-FULL-001",
  "phase": "v2.2 RATIFIED (A-0059) + REGIONAL_SCHEMA_FREEZE-2.2.0 (C-0099) → AD1~AD5 CREATED (spec v1.2 RECONCILED A-0061; collection in progress, not yet server-listed) → B/D ACTIVATED (C-0100/0101, 0 MCP) → awaiting AD query_ids → Batch 1 collection",
@@ -219,7 +219,7 @@
   "d00_evidence_r2": "261 rows (77 beyond canonical D00; 68 new to substrate) — NON-DENOMINATOR",
   "ko_language_membership": "555/3,435 (16.16%) captured, NOT licensed (manual QA pending); by query A01 251 / M01 213 / D00 112 / P03 5 / P02 0 — C-verified (C-0087)"
  },
- "bus_head": "b81726c",
+ "bus_head": "813a59c",
  "method": {
   "current": "MCP_FIRST_DPDD_v2.2_REGIONAL",
   "proposed_successor": "MCP_FIRST_DPDD_v2.2_REGIONAL",
@@ -284,9 +284,10 @@
   "source": "PREREG-B-002 executed (B-0046), C exact replication (C-0103), 0 MCP calls",
   "batch0_held_evidence": "OFFICIAL_MARKET_ACCOUNT 8 · LOCAL_RETAIL_DESTINATION 127 upper / 51 domain floor · LOCAL_COMMERCE 51 · LOCAL_CAMPAIGN not observable by permitted route · CREATOR_LOCATION aggregate ceiling only (region 89.1% blank, server pop) · LANGUAGE_ONLY 555 separate · UNKNOWN 3,301/3,435 = 96.1% · HIGH/MEDIUM reach 134 (3.9%)",
   "reading": "describes the Batch 0 evidence base under permitted routes; NOT a limitation finding for KMM/EMM (A-0059 R8); tool-surface table: region is the only structured creator-location field observed; get_post_features row → D (0 calls); search_voc UNDETERMINED",
-  "pending_correction": "PREREG-B-004 (Hangul retailer tokens) will restate LOCAL_COMMERCE/LOCAL_RETAIL as 127/114/51/B-004 and the 134 floor with both figures"
+  "pending_correction": "PREREG-B-004 (Hangul retailer tokens) will restate LOCAL_COMMERCE/LOCAL_RETAIL as 127/114/51/B-004 and the 134 floor with both figures",
+  "citation_form_A0071": "96.1% = CEILING on unreachability; 134 = FLOOR on reachability; instrument under-detects Korean (37 additional posts measured on one basis); neither is a point estimate of coverage"
  },
- "ad4_screener": "C-0104 ratified (A-0066) with exclusion scope (a)+(b); token list under class-level supersession (C-0106) — stage 1 must not run until C-0104-v2 ratified",
+ "ad4_screener": "C-0104 ratified (A-0066) with scope (a)+(b); token list v2 pre-registered (C-0110: +20 validated forms, razor/shave word-boundary, 브라운 combination-only) pending A ratification → B load → stage 1",
  "batch2_prep": {
   "lexicon_v2": "88 candidates (D-0045), audit re-run identical (C-0105); KO_STEM mode licensed; re-audit on AD/KMM corpus before LEXICON_V2_FREEZE",
   "value_role_codebook": "v0 with counterexamples (D-0046)",

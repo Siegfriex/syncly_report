@@ -66,3 +66,4 @@
 - 07:17Z **A-0069** 한국어 과소검출 4건 동일 부호 → HR freeze 선결조건(DETECTION-PARITY) → 07:3xZ **C-0108** 2AB JOINT ASSERTION 채택(C 결함 #23)·parity 원장 계기화·교차언어 보정 사전등록 (BUS fbbf6c7)
 - 07:18~19Z D-0052(2AB 코드북 재단·가짜 ULID 발행 전 차단 자기보고) · **A-0070**(A-0061 정정: 손실은 canonical 창 밖; ARCHIVED-LIVE-COUNT-UNSTABLE 비준·STATE에도 부착) (BUS 7b535ad)
 - 07:19Z B-0050 패턴 5번째 사례 자기보고(KR 소매처 토큰 라틴 전용, 37/51) → 07:4xZ **C-0109** PREREG-B-004 승인 + parity P5 (BUS b81726c)
+- 07:21Z A-0071(5번째 사례 실측·96.1%/134 인용 정정) · D-0053(토큰 검증: 브라운 bare 기각) → 07:5xZ **C-0110 AD4 screen 토큰 v2 사전등록**(A 비준 대기) (BUS 813a59c)
