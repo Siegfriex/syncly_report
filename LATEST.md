@@ -3,7 +3,7 @@
 갱신: 2026-09-02T03:38Z (KST 12:38) · Epoch `RE-20260901-001` · Run `RUN-20260902-FULL-001` · Method `MCP_FIRST_DPDD_v2.1` · 작성: Claude C (단독 writer)
 
 ## 한 줄 현황
-**Gate 4 CONDITIONAL(재평가·A 수용), PRF-0010 construct 검증 60/60 완료, Gate M1은 D의 limitation 재진단만 대기.** 플랫폼별 정량 focal 제품 비교는 Baseline에서 불가(Batch 2로), HOLD-A0013 유지. VOC content 0·Response leg 불가·비숏폼 영상 증거 없음은 구조적 경계로 확정. 상세: reports/30min/20260902/ 최신.
+**Baseline의 모든 gate가 disposition을 받았다** — 0 PASS, M0/M1/1/2/5 CONDITIONAL PASS, 3/4 CONDITIONAL. A는 3,408건 전문 labelling을 Batch 0에서 하지 않기로 결정(TARGETED EVIDENCE). 남은 것은 B의 batch manifest → A의 BASELINE_BATCH_SEALED → C의 SAFE_TO_ROTATE이며, 그 뒤 Human이 Affinity Discovery 5 Query를 생성한다. 상세: reports/30min/20260902/ 최신.
 
 ## Gate
 Gate 0 PASS · M0 CONDITIONAL PASS(종결) · **M1 OPEN(d5 대기)** · **Gate 4 CONDITIONAL** · 1/2/3/5 PENDING. HOLD-A0013·GO_PHASE2 보류 유지.

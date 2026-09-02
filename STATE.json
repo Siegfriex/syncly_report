@@ -1,9 +1,9 @@
 {
   "schema": "syncly-report-state/1.0.0",
-  "updated_utc": "2026-09-02T03:32:00Z",
+  "updated_utc": "2026-09-02T03:36:03Z",
   "research_epoch": "RE-20260901-001",
   "execution_run": "RUN-20260902-FULL-001",
-  "phase": "PHASE R2→R3 — Gate M1 CONDITIONAL PASS (C-0078); awaiting A 3,408 decision → Gate 1/2/3/5 final dispositions → Baseline seal",
+  "phase": "PHASE R3 — Baseline Closure: all gates dispositioned (0 PASS; M0/M1/1/2/5 CONDITIONAL PASS; 3/4 CONDITIONAL); 3,408 decision = TARGETED EVIDENCE; awaiting B manifest → A BASELINE_BATCH_SEALED → C SAFE_TO_ROTATE",
   "reporter": "Claude C (single-writer)",
   "authority": "Bundle Braun_NEVO_Syncly_MCP_First_Restart_Bundle_20260902 v2.1.0 (APPROVED_FOR_RESTART) > DPDD_MASTER_v2.1 > protocols; legacy: SSOT-INTERIM-20260902, FINAL-20260901",
   "locks": {
@@ -26,11 +26,11 @@
   ],
   "gates": {
     "gate0": "PASS",
-    "gate1": "PENDING — source validity (A_SOURCE_PANEL/T_S) + content validity (T_C)",
-    "gate2": "PENDING — category validity",
-    "gate3": "PENDING — entity/meaning reliability (after details/video pilot)",
+    "gate1": "CONDITIONAL PASS (C-0080) — registry exact; identity 24.1% unresolved; Panel v2 tiers after AD batch; T_C not built (design)",
+    "gate2": "CONDITIONAL PASS (C-0080) — M01 denominator; supply STABLE; membership trigger not observable; HUI-005 open",
+    "gate3": "CONDITIONAL (C-0080) — entity lower bounds (CIT-10); meaning NOT MEASURED; creative NOT MEASURED; VOC not observable",
     "gate4": "CONDITIONAL — ACCEPTED by A (A-0040); HOLD-A0013 stays; final with M1",
-    "gate5": "CONDITIONAL PASS — robust variants (Full / minus-top1 / minus-top1%) mandatory",
+    "gate5": "CONDITIONAL PASS (C-0080) — supply STABLE 0.5%; engagement UNSTABLE 68.3%; variants mandatory",
     "gateM0": "CONDITIONAL PASS — ACCEPTED AND CLOSED (A-0036)",
     "gateM1": "CONDITIONAL PASS (C-0078) — preview dependency removed; batch/aggregate/page enrichment complete & verified; targeted text 39 / features 72; d5 re-diagnosis accepted (0 TRUE_SYNCLY_LIMIT); COND: A 3,408 decision, HUI-007 label, lexicon v2 before Batch 2",
     "gate6": "NOT_STARTED — business activation"
@@ -54,14 +54,14 @@
     "P02": 69,
     "P03": 186
   },
-  "ledger_rows": 196,
+  "ledger_rows": 200,
   "last_reported_shas": {
     "main": "7e030b0",
-    "claude-a/syncly-authority-governor": "e750c82",
-    "claude-b/syncly-production-data": "0b48898",
-    "claude-c/syncly-assurance-fable": "f019381",
+    "claude-a/syncly-authority-governor": "f35ccb1",
+    "claude-b/syncly-production-data": "c0406a9",
+    "claude-c/syncly-assurance-fable": "59fe682",
     "claude-d/syncly-research-rnd": "2260b8f",
-    "bus/syncly-ledger": "ee38a43",
+    "bus/syncly-ledger": "c241fb5",
     "integration/syncly-current": "2c56155"
   },
   "report_cadence": {
@@ -184,5 +184,11 @@
     "LIM-005 VOC": "OPEN — TRUE_SYNCLY_LIMIT(narrow) vs MEASUREMENT_DESIGN_LIMIT pending HUI-007",
     "LIM-006 source ecology": "MEASUREMENT_DESIGN_LIMIT (1-month keyword frame)",
     "TRUE_SYNCLY_LIMIT_declared": 0
+  },
+  "decision_3408": "TARGETED EVIDENCE (A-0043) — no uniform full-text labelling in Batch 0; moves to Batch 2 with lexicon v2 + pre-registered classifier; targeted-evidence discipline bound",
+  "seal": {
+    "status": "PREPARING",
+    "outstanding": "B QUERY_BATCH_MANIFEST (0 calls) → A BASELINE_BATCH_SEALED → C SAFE_TO_ROTATE",
+    "human_items_block_seal": false
   }
 }
