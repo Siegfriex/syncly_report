@@ -51,3 +51,4 @@
 - **GATE_R1 입력 갱신(B-004, C 재현)**: 한글 소매처 토큰 추가로 LOCAL_COMMERCE 51→80, HIGH/MEDIUM reach FLOOR 134→163, UNKNOWN CEILING 96.1%→95.25%; 열 인용 127/114/51/80. 여전히 Batch 0 증거기반 기술이며 KMM 예측이 아님.
 - **Braun 토큰 모호성은 양 문자 공통(D-0054/B-0053)**: Latin Braun 399건 중 디자인 아이콘 4~5(1.1%), Hangul 브라운 69건 중 디자인 3·색상 10. 디자인 아이콘 포스트는 TA2 bridge 소스이므로 양 문자 모두 동반 토큰 규칙. '동일 검출'이 대칭의 정의.
 - **범주 토큰 topicality(D-0055, C 재현)**: 단독 매치 포스트 표본 48 중 47 topical. 유일한 결함은 'razor sharp' 관용구가 EDC 나이프(프리미엄 오브젝트 소스)를 shaving-only로 잡는 것 → 관용구 제외. 토큰 단위 substring 차이는 OR-screen의 post 커버리지로 전이되지 않는다(면도 45 → 0 posts).
+- **디자인 아이콘 누출은 토큰 측으로 못 막는다(D-0056/C-0117)**: 디터 람스 디자인 책 포스트가 '전기면도기' 범주 토큰으로만 매치. 범주 토큰은 동반 규칙 불가. 보호는 stage 1의 affinity 측(AD v1.2 키워드 100개를 본문에 적용)과 stage 2(full caption)에 있으며, Rams/Braun-design 10건이 회귀 세트로 고정됐다.

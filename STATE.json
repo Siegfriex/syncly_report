@@ -1,6 +1,6 @@
 {
  "schema": "syncly-report-state/1.0.0",
- "updated_utc": "2026-09-02T07:50:00Z",
+ "updated_utc": "2026-09-02T07:53:00Z",
  "research_epoch": "RE-20260901-001",
  "execution_run": "RUN-20260902-FULL-001",
  "phase": "v2.2 RATIFIED (A-0059) + REGIONAL_SCHEMA_FREEZE-2.2.0 (C-0099) → AD1~AD5 CREATED (spec v1.2 RECONCILED A-0061; collection in progress, not yet server-listed) → B/D ACTIVATED (C-0100/0101, 0 MCP) → awaiting AD query_ids → Batch 1 collection",
@@ -219,7 +219,7 @@
   "d00_evidence_r2": "261 rows (77 beyond canonical D00; 68 new to substrate) — NON-DENOMINATOR",
   "ko_language_membership": "555/3,435 (16.16%) captured, NOT licensed (manual QA pending); by query A01 251 / M01 213 / D00 112 / P03 5 / P02 0 — C-verified (C-0087)"
  },
- "bus_head": "d2630a3",
+ "bus_head": "efa4662",
  "method": {
   "current": "MCP_FIRST_DPDD_v2.2_REGIONAL",
   "proposed_successor": "MCP_FIRST_DPDD_v2.2_REGIONAL",
@@ -288,7 +288,7 @@
   "citation_form_A0071": "96.1% = CEILING on unreachability; 134 = FLOOR on reachability; instrument under-detects Korean (37 additional posts measured on one basis); neither is a point estimate of coverage",
   "after_B004": "LOCAL_RETAIL/COMMERCE sequence 127 (B-002 upper) / 114 (B-003 digit-anchored) / 51 (domain floor) / 80 (B-004 Hangul retailers, 11 ambiguous held out); HIGH/MEDIUM reach FLOOR 163 (was 134); UNKNOWN CEILING 95.25% (was 96.1%); C replicated"
  },
- "ad4_screener": "token list v2.1 RATIFIED (A-0078; A-0074 condition discharged); v2.2 pre-registered (C-0116): Braun trimmer inactive, razor idiom exclusion, Series 9 companion, category tokens validated by topicality (47/48) — pending A ratification → B load → stage 1 (needs AD ids CONFIRMED)",
+ "ad4_screener": "token list v2.1 RATIFIED (A-0078; A-0074 condition discharged); v2.2 pre-registered (C-0116): Braun trimmer inactive, razor idiom exclusion, Series 9 companion, category tokens validated by topicality (47/48) — pending A ratification → B load → stage 1 (needs AD ids CONFIRMED); stage-1 AFFINITY vocabulary bound = AD v1.2 keywords (C-0117); 10-post Rams/Braun-design REGRESSION SET adopted as stage-1 acceptance test (B runs on held rows, 0 calls)",
  "batch2_prep": {
   "lexicon_v2": "88 candidates (D-0045), audit re-run identical (C-0105); KO_STEM mode licensed; re-audit on AD/KMM corpus before LEXICON_V2_FREEZE",
   "value_role_codebook": "v0 with counterexamples (D-0046)",
