@@ -1,6 +1,6 @@
 {
   "schema": "syncly-report-state/1.0.0",
-  "updated_utc": "2026-09-02T03:16:28Z",
+  "updated_utc": "2026-09-02T03:19:38Z",
   "research_epoch": "RE-20260901-001",
   "execution_run": "RUN-20260902-FULL-001",
   "phase": "PHASE R2 — Baseline Enrichment: Gate M0 CONDITIONAL PASS (C-0070); B checkpoints 1-5 VERIFIED; PRF-0010 construct-verified; Gate M1 OPEN awaiting D limitation re-diagnosis",
@@ -31,7 +31,7 @@
     "gate3": "PENDING — entity/meaning reliability (after details/video pilot)",
     "gate4": "PROVISIONAL — n>=10 quantitative else qualitative; reassess after video pilot",
     "gate5": "CONDITIONAL PASS — robust variants (Full / minus-top1 / minus-top1%) mandatory",
-    "gateM0": "CONDITIONAL PASS (C-0070) — 14/14 families probed; conditions: OBS-0003 label via HUI-007, mention local route, PROVENANCE-BEFORE-SPEND",
+    "gateM0": "CONDITIONAL PASS — ACCEPTED AND CLOSED (A-0036)",
     "gateM1": "OPEN — inputs: B checkpoints 1-5 verified, promotion complete, 3,408/3,435 lack full text; awaiting D d5 re-diagnosis",
     "gate6": "NOT_STARTED — business activation"
   },
@@ -54,14 +54,14 @@
     "P02": 69,
     "P03": 186
   },
-  "ledger_rows": 175,
+  "ledger_rows": 178,
   "last_reported_shas": {
     "main": "7e030b0",
-    "claude-a/syncly-authority-governor": "04fa502",
+    "claude-a/syncly-authority-governor": "e61f6fd",
     "claude-b/syncly-production-data": "a514952",
-    "claude-c/syncly-assurance-fable": "59887c7",
-    "claude-d/syncly-research-rnd": "64065aa",
-    "bus/syncly-ledger": "b816b1a",
+    "claude-c/syncly-assurance-fable": "6227ade",
+    "claude-d/syncly-research-rnd": "f634d5e",
+    "bus/syncly-ledger": "c3129d5",
     "integration/syncly-current": "2c56155"
   },
   "report_cadence": {
@@ -107,12 +107,13 @@
   "pilot": {
     "status": "EXECUTED (D-0031) — 60/60 get_post_features calls, 0 failures",
     "get_post_features_actual_calls": 72,
-    "result_label": "EXPERIMENTAL — C verification COMPLETE (arithmetic 60/60 + construct recall 12/12); awaiting only HUI-006",
+    "result_label": "EXPERIMENTAL — C verification COMPLETE on 60/60 originals (arithmetic + construct + ordering); only HUI-006 human check remains",
     "headline_upper_bound": "S2 sensitivity 15/15; S1 gain 20/35=57.1% CI[42.9,71.4]; PRIMARY-only 14/35=40.0%; electric-only 12/35=34.3% — all arms MATERIAL (upper bound only, SHORT-CAPTION-SCOPE)",
     "capability_boundary": "FB/IG_POST return no video feature sets (10/10)",
     "human_check": "HUI-006 gold spot-check of 20 posts (P1, non-blocking; >20% disagreement → HOLD)",
     "citation_rule": "A-0031: ALT-2 reasoning figure = electric+PRIMARY 11/35 (31.4%, CI 17.1-48.6); pre-registered 20/35 reported alongside; 57.1% never cited alone; ALT-2 input 81.8% SUSPENDED (A-0030)",
-    "recall": "C 12-post assurance recall persisted verbatim (claude-c control/recall/), 0 disagreements"
+    "recall": "C 12-post assurance recall persisted verbatim (claude-c control/recall/), 0 disagreements",
+    "raw": "60/60 originals recovered from session transcript (D-0035), validated byte-identical to C independent recall on 12 overlap posts"
   },
   "event_backlog_note": "backlog 34 events (C-0055~C-0061 구간 포함) 재시작 세션에서 1:1 생성 완료",
   "method_revision": "MCP_FIRST_DPDD_v2.1",

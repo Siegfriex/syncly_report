@@ -38,3 +38,4 @@
 - 02:54Z B: checkpoints 4-5 (promotion complement 3,435 완비, partition test), B-0029 자기정정, B-RB-01 robustness(supply STABLE/engagement UNSTABLE)
 - 02:55Z C: 12건 assurance recall 실행·raw 보존; 02:56Z~03:01Z A: CIT-07/08/09, PROVENANCE-BEFORE-SPEND, sequenced lift
 - 03:11Z **C-0069 PRF-0010 CONSTRUCT-VERIFIED · C-0070 Gate M0 CONDITIONAL PASS · C-0071 B 2-5 VERIFIED** (BUS 172행)
+- 03:15Z~03:2xZ D-0035 raw 60건 transcript 복구 → **C-0073 PRF-0010 construct 60/60 검증·timestamp 복원**; A-0036 Gate M0 종결 (BUS 178행)
