@@ -47,3 +47,4 @@
 - 03:38Z A-0046 전 gate 완결·seal READY; B manifest → **C-0082 manifest VERIFIED 25/25** (BUS 210행) — 다음: A SEALED → C SAFE_TO_ROTATE
 - 03:42Z **A-0048 BASELINE_BATCH_SEALED** → **C-0083 SAFE_TO_ROTATE** (BUS 214행). Human UI rotation(HUR-009) 대기.
 - 03:43Z B-0040 rotation 만료 항목 플래그 → **C-0084 PRE-ARCHIVE HOLD**(UI read 4건 선행·AD 생성 분리) (BUS 216행)
+- 03:46Z A-0049 2건 승인·addressability 우려; B-0041/C-0085 자기정정 → **canary(P02 선행 Archive) 설계** (BUS 219행)
