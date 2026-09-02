@@ -1,9 +1,9 @@
 {
  "schema": "syncly-report-state/1.0.0",
- "updated_utc": "2026-09-02T13:20:00Z",
+ "updated_utc": "2026-09-02T13:47:30Z",
  "research_epoch": "RE-20260901-001",
  "execution_run": "RUN-20260902-V24-RECOVERY-001 (prior RUN-20260902-V24-LOCAL-001 immutable)",
- "phase": "RECOVERY: C-V24-010 HISTORICALLY_SEALED_BUT_SUSPENDED_PENDING_HARNESS_RECOVERY; FINAL_PRESENTATION_RELEASE=HOLD; GUARD-V24R-001 ACTIVE; B-V24R-001/D-V24R-001 released (ACK_PENDING)",
+ "phase": "RECOVERY: R0–R5 CLOSED (160→2 = MIXED: pipeline first-order, structural second-order; actor 11/40 = B classifier error, mart governs; Brand-authored 0 = evidence-tier artifact; CH6 construct loose); CASE 2 repair B-V24R-002 → D-V24R-002 in progress; R6–R8 open; A HOLD",
  "reporter": "Claude C (single-writer)",
  "authority": "Human latest instruction > main 8e8c74d Braun_NEVO_Presentation_First_Final_Bundle_v2.4_20260902/ (CURRENT_AUTHORITY.json) > C-sealed v2.4 control artifacts > v2.3 bundle (methodology/falsification lineage only) > legacy/",
  "locks": {
@@ -443,6 +443,24 @@
    "C": "ACTIVE_RECOVERY_ORCHESTRATOR",
    "D": "ELIGIBLE (D-V24R-001 ACK_PENDING)",
    "E": "FROZEN"
-  }
+  },
+  "gates": {
+   "R0": "CLOSED",
+   "R1": "CLOSED (CP1 converged after 3-row R1)",
+   "R2": "CLOSED (MIXED)",
+   "R3": "CLOSED (B classifier error; no L4/L5 effect)",
+   "R4": "CLOSED (Tier A prereg; ≤3 unmaterialized → repair)",
+   "R5": "CLOSED (WP 6F/2P/1S declared gates)",
+   "R6": "IN PROGRESS (B-V24R-002 → D-V24R-002)",
+   "R7": "OPEN",
+   "R8": "OPEN"
+  },
+  "key_findings": [
+   "S9 Tier A = 2 because verbatim text was collected for only 180 posts, all M01-member, unstratified by product — not entity/actor",
+   "Brand-authored NEVO Tier A 0 = evidence-tier artifact (7 Brand NEVO posts exist, all preview-only)",
+   "B Loop-1 actor labels wrong (28/40 mart right); mart ACTOR_v2.3.0 governs; L4/L5 unaffected",
+   "CH6 52.5% vs 26.5% reproduces arithmetically but 14/21 NEVO hits are loose tokens (디자인); material-only 7/40 vs 6/68 h=.26 ns → wording must change",
+   "Tier A 180 → ≤182 after materializing 2 canonical raw captions (repair)"
+  ]
  }
 }
