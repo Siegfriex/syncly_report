@@ -1,6 +1,6 @@
 {
   "schema": "syncly-report-state/1.0.0",
-  "updated_utc": "2026-09-02T05:12:15Z",
+  "updated_utc": "2026-09-02T05:44:11Z",
   "research_epoch": "RE-20260901-001",
   "execution_run": "RUN-20260902-FULL-001",
   "phase": "BATCH 0 SEALED (A-0048) → SAFE_TO_ROTATE (C-0083) — awaiting A spec ratification + Human UI rotation (HUR-009) → Batch 1 Affinity Discovery",
@@ -67,7 +67,7 @@
   "report_cadence": {
     "watchdog_seconds": 180,
     "full_status_minutes": 30,
-    "last_full_report_utc": "2026-09-02T05:12:15Z"
+    "last_full_report_utc": "2026-09-02T05:44:11Z"
   },
   "agent_notes": {
     "A": "idle — obligations discharged; ALT-2 after HUI-006; 3,408 re-decision only if canary fails",
