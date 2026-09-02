@@ -3,6 +3,8 @@
 갱신: 2026-09-02T13:06Z (KST 22:06) · Epoch `RE-20260901-001` · Run `RUN-20260902-V24-LOCAL-001` · Authority `PRESENTATION_FIRST_NEVO_V2.4` · 작성: Claude C (단독 writer)
 
 ## 한 줄 현황
+**(23:47) v2.5 CU0 PASS → CU1 FROZEN.** 3,435 안의 면도기 model universe 전수 census(D 31 family / B 920 posts / C 독립) 수렴. 판정: comparator truncation **MATERIAL**(Philips S9000/Prestige 71건이 REF에 묶여 있었음), pooled REF heterogeneity **MATERIAL**(REF 68 = Philips+수동+저가전기+클리퍼+adjacent), differential coverage **SEVERE**(verbatim NEVO 16.7% / S9 1.9% / Philips 5.6% / Panasonic 0%). Panasonic은 코퍼스에 family 자체가 없음. Comparator role 동결(outcome 미사용): S9 primary, Philips S9000/Prestige secondary, Laifen sensitivity. 다음: CU2 codebook fairness → evidence deficit matrix → EM1(MCP batch 1).
+
 **(23:32) CYCLE 2 OPEN — v2.5 COMPARATOR UNIVERSE.** v2.4.1은 4f23c39에서 immutable(폴더 무변경 검증). 진단: Cycle 1은 comparator universe census 없이 NEVO vs S9 vs pooled REF로 좁혀졌고, Philips/Panasonic이 REF에 흡수됐을 가능성. 첫 gate CU0 = 3,435 안의 전기면도기 brand→family→model 전수 census(D) ∥ 기존 evidence 인벤토리(B). **MCP 호출은 CU0 PASS 전 금지.** A HOLD.
 
 **(23:12) FINAL REPORT SEALED (v2.4.1).** Recovery 봉인 후 R&D/전략 case study 형식의 최종 보고서 10종 + master(`reports/final_v2.4.1/FINAL_RUN_REPORT_v2.4.1.md`)를 산출, 품질 게이트 Q1~Q13 13/13. 결론: 초기 차별점은 카테고리 공통 문법; 수리 후 BH-유의 로컬 발견 0; NEVO는 메커니즘은 말하지만 문제는 덜 말함; Brand 밖 생존은 텍스트 미수집으로 판정 불가; 결정 = NO-DECISION + targeted evidence; 처방 = '덜 괴롭히면서 깔끔한' 사용 경험 소유. Human 항목: CORR-V24-SLIDE2, gold, 제품층화 텍스트 취득, US street price.
