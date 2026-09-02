@@ -3,6 +3,8 @@
 갱신: 2026-09-02T13:06Z (KST 22:06) · Epoch `RE-20260901-001` · Run `RUN-20260902-V24-LOCAL-001` · Authority `PRESENTATION_FIRST_NEVO_V2.4` · 작성: Claude C (단독 writer)
 
 ## 한 줄 현황
+**(00:05) v2.5 CU2 PASS → EM1 실행.** 코드북 감사(D + C 교차검증 17/19): CB_v2.4.0은 comparator-neutral이 아님 — CH4·PMO 메커니즘·PG1이 Braun 기술명(NEVO Sense·SilkGlide·실크)에 편향, Philips 기술명(리프트앤컷·ComfortCut·SkinProtect) 7행은 사전에 없어 "Philips 0"은 사전 artifact. → CB_v2.5.1 수정·ENTITY_DET_v2.5.0(D). Evidence deficit matrix 확정(23 cell) → **B MCP batch 1 = get_post_details 89콜**(frozen id만; S9·Philips External×PAID를 DIRECTIONAL로 올리는 것이 목표). PF-C1: v2.3 수집 시 D00 68건이 로컬 index에서 유실(raw에 보존) → 분모 보충은 Human 결정(HUM-V25-001). Prereg v2.5 초안 68 families 채택(freeze는 coverage gate 후).
+
 **(23:47) v2.5 CU0 PASS → CU1 FROZEN.** 3,435 안의 면도기 model universe 전수 census(D 31 family / B 920 posts / C 독립) 수렴. 판정: comparator truncation **MATERIAL**(Philips S9000/Prestige 71건이 REF에 묶여 있었음), pooled REF heterogeneity **MATERIAL**(REF 68 = Philips+수동+저가전기+클리퍼+adjacent), differential coverage **SEVERE**(verbatim NEVO 16.7% / S9 1.9% / Philips 5.6% / Panasonic 0%). Panasonic은 코퍼스에 family 자체가 없음. Comparator role 동결(outcome 미사용): S9 primary, Philips S9000/Prestige secondary, Laifen sensitivity. 다음: CU2 codebook fairness → evidence deficit matrix → EM1(MCP batch 1).
 
 **(23:32) CYCLE 2 OPEN — v2.5 COMPARATOR UNIVERSE.** v2.4.1은 4f23c39에서 immutable(폴더 무변경 검증). 진단: Cycle 1은 comparator universe census 없이 NEVO vs S9 vs pooled REF로 좁혀졌고, Philips/Panasonic이 REF에 흡수됐을 가능성. 첫 gate CU0 = 3,435 안의 전기면도기 brand→family→model 전수 census(D) ∥ 기존 evidence 인벤토리(B). **MCP 호출은 CU0 PASS 전 금지.** A HOLD.

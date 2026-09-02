@@ -1,9 +1,9 @@
 {
  "schema": "syncly-report-state/1.0.0",
- "updated_utc": "2026-09-02T14:44:25Z",
+ "updated_utc": "2026-09-02T15:03:25Z",
  "research_epoch": "RE-20260901-001",
  "execution_run": "RUN-20260902-V25-COMPARATOR-EXPANSION-001 (baseline v2.4.1 immutable @ 4f23c39)",
- "phase": "v2.5: CU0 PASS; CU1 comparator roles FROZEN (S9 primary, Philips S9000/Prestige secondary, Laifen sensitivity, REF decomposed, Panasonic absent); CU2 codebook fairness running (D-V25-002); B local materialization (B-V25-002); MCP still NOT allowed",
+ "phase": "v2.5: CU2 PASS (CB_v2.4.0 not comparator-neutral); EM1 RELEASED (B get_post_details batch 1, 89 calls, frozen ids only); D-V25-003 CB_v2.5.1 + ENTITY_DET_v2.5.0; prereg v2.5 draft adopted (68 families, not frozen); PF-C1 substrate finding → HUM-V25-001",
  "reporter": "Claude C (single-writer)",
  "authority": "Human latest instruction > main 8e8c74d Braun_NEVO_Presentation_First_Final_Bundle_v2.4_20260902/ (CURRENT_AUTHORITY.json) > C-sealed v2.4 control artifacts > v2.3 bundle (methodology/falsification lineage only) > legacy/",
  "locks": {
@@ -472,7 +472,7 @@
    "POOLED_REFERENCE_HETEROGENEITY": "MATERIAL",
    "DIFFERENTIAL_EVIDENCE_AVAILABILITY": "SEVERE"
   },
-  "gates": "CU0 PASS · CU1 FROZEN · CU2 OPEN · deficit/EM1/… LOCKED",
+  "gates": "CU0 PASS · CU1 FROZEN · CU2 PASS · DEFICIT FINALIZED · EM1 RUNNING · coverage/D/verify/A/seal LOCKED",
   "control": "claude-c control/v25_comparator_universe/ (= bus harness/v25/)",
   "agent_states": {
    "A": "HOLD_COMPARATOR_CYCLE",
@@ -481,6 +481,14 @@
    "D": "ACTIVE_LOCAL_CENSUS",
    "E": "FROZEN (targeted alias fact-check eligible)"
   },
-  "baseline_doc": "claude-c control/v25_comparator_universe/MODEL_UNIVERSE_BASELINE_v2.5.md"
+  "baseline_doc": "claude-c control/v25_comparator_universe/MODEL_UNIVERSE_BASELINE_v2.5.md",
+  "cu2_finding": "CH4, PMO-mechanism, PG1 brand-alias-biased; CH6 loose; 7 Tier A rows carry Philips mechanism names invisible to v2.4 alias table",
+  "pf_c1": "68 NEVO D00 posts lost at local indexing in v2.3 (raw payload 100 vs indexed 23); preview-only; kept OFF_DENOMINATOR; Human decision on supplemented epoch",
+  "human_items": [
+   "HUM-V25-001 supplemented epoch (3,435 vs 3,503)",
+   "HUM-V25-002 PMO d≥.20 threshold confirm at freeze",
+   "HUM-V25-003 CB_v2.5.1 ratification"
+  ],
+  "orchestration": "C-side QA/drafts via 4 parallel subagents (QA-1 coverage 919/920; QA-2 CU2 17/19; deficit matrix 23 cells; prereg 68 families)"
  }
 }
