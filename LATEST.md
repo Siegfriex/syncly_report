@@ -1,12 +1,12 @@
 # Syncly 연구 현황 — LATEST
 
-갱신: 2026-09-02T03:12Z (KST 12:12) · Epoch `RE-20260901-001` · Run `RUN-20260902-FULL-001` · Method `MCP_FIRST_DPDD_v2.1` · 작성: Claude C (단독 writer)
+갱신: 2026-09-02T03:28:33Z (KST 12:28) · Epoch  · Run  · Method  · 작성: Claude C (단독 writer)
 
 ## 한 줄 현황
-**Gate M0 CONDITIONAL PASS.** MCP-first 재기준 1라운드 완료: B의 5개 checkpoint 전부 C 검증 EXACT(promotion 3,435 완비), D pilot 산술·구성 검증 완료(MATERIAL 상한; 인용은 11/35 병기), 역량 경계 확정(비숏폼 영상 증거 없음·**VOC content 0**·Response leg 주장 불가). 다음: Gate M1(D limitation 재진단) → Gate 1~5 → Baseline seal → Affinity Discovery Batch. 상세: reports/30min/20260902/ 최신.
+**Gate 4 CONDITIONAL(재평가·A 수용), PRF-0010 construct 검증 60/60 완료, Gate M1은 D의 limitation 재진단만 대기.** 플랫폼별 정량 focal 제품 비교는 Baseline에서 불가(Batch 2로), HOLD-A0013 유지. VOC content 0·Response leg 불가·비숏폼 영상 증거 없음은 구조적 경계로 확정. 상세: reports/30min/20260902/ 최신.
 
 ## Gate
-Gate 0 PASS · **M0 CONDITIONAL PASS** · M1 OPEN · 1~5 PENDING. HOLD-A0013·GO_PHASE2 보류 유지.
+Gate 0 PASS · M0 CONDITIONAL PASS(종결) · **M1 OPEN(d5 대기)** · **Gate 4 CONDITIONAL** · 1/2/3/5 PENDING. HOLD-A0013·GO_PHASE2 보류 유지.
 
 ## Human에게
 비블로킹 확인 2건: HUI-006(pilot 20건 spot-check), HUI-007(댓글 수집 옵션 UI 확인, 설정 변경 금지). 그 외 요청 없음. Query 생성/수정/삭제 금지. MCP tool 선택 질문에는 답하지 않아도 됨(agent 책임). 재시작 순서 C→A→B+D.
