@@ -1,4 +1,4 @@
-# NEVO LAUNCH CAMPAIGN — SOCIAL PERFORMANCE READOUT (FINAL · numbers frozen 14:48 KST · private commit 2d999d0)
+# NEVO LAUNCH CAMPAIGN — SOCIAL PERFORMANCE READOUT (FINAL · numbers frozen 14:48 KST · private commit 8353224)
 
 Run `PRESENTATION_RESULT_MAX_SPRINT_20260903_1500` · 작성 Claude C · 근거 sealed `FINAL_CLOSEOUT_20260903` (private, content 27535fb) + sprint artifacts (private `runs/v25/FINAL_ALIGNMENT_90MIN/PRESENTATION_RESULT_SPRINT_20260903/`)
 
@@ -78,7 +78,7 @@ NEVO 런칭은 Series 9보다 61–70% 비싼 제품의 프리미엄을 소셜�
 | B 소셜 성과·증거 | snapshot, coverage, cohort 127 (dbc9892) | cohort content/timeline/examples (64f1cb3) | ACCEPT (0 MCP; frozen denominators untouched) |
 | D 결과 시각화 | S1–S3 + 4 tables (f65291a) | S4–S6 + final manifest (7ca9634) | ACCEPT (C visual QA; S2 CL02 fix) |
 
-## PRIVATE ARTIFACT POINTERS + HASHES (syncly_demo, commit 2d999d0; A denominator-label audit 9a96ace included)
+## PRIVATE ARTIFACT POINTERS + HASHES (syncly_demo, commit 8353224; A denominator-label audit 9a96ace included)
 | path | sha256[:16] |
 |---|---|
 | runs/v25/FINAL_ALIGNMENT_90MIN/PRESENTATION_RESULT_SPRINT_20260903/00_RUN_STATE.json | 7f96027b6dd33260 |
