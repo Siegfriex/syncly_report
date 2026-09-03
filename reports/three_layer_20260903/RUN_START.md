@@ -1,0 +1,2 @@
+# THREE_LAYER_CAMPAIGN_DIAGNOSIS_1515 — RUN START (15:02 KST, STOP 15:15)
+Hypothesis under falsification: Layer 1 campaign image (Gong Yoo cohort: 12년 만의 플래그십·실크·새로움) → Layer 2 social product message reverted to functions (저마찰·가격 정당화·24%·센서·소재) → Layer 3 consumer decision reality (가격·피부·유지관리·고장/AS) not reached. Authority: sealed closeout 27535fb + sealed sprint 2d999d0, read-only. Tickets TCK-20260903055300-{A,B,D}-3LAYER-001 released 15:02. Ledger: private 01_THREE_LAYER_HYPOTHESIS_LEDGER.csv (6 claims, all PENDING).
