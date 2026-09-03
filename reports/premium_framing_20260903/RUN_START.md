@@ -1,0 +1,5 @@
+# PREMIUM_FRAMING_RETENTION_AUDIT_20260903 — RUN START (15:23 KST; results 15:35, freeze 15:41, STOP 15:48)
+Question: did the premium meaning made by launch creative (Gong Yoo / flagship / lifestyle) persist through social distribution, or was it compressed into functional RTB (low friction / 24% / sensor / material), and did that functional proof translate to consumer benefit without creating a NEVO-only premium reason vs Series 9? Falsification run.
+Frames (C draft v0, A to approve): F1 IDENTITY_LIFESTYLE_PREMIUM · F2 FLAGSHIP_NOVELTY · F3 FUNCTIONAL_PREMIUM_RTB · F4 ECONOMIC_VALUE_PROOF (literal tokens + semantic via gold claim_ids; multi-label, shares per own denominator).
+Populations: P1 Gong Yoo launch cohort (127) · P2 NEVO social product message set (69 unique posts; 117 families). Mandatory: silk 34/69 and Gong Yoo 19/69 are already inside P2 → test RELATIVE representation, never "imagery disappeared".
+Tickets TCK-PFR-{A,B,D}-001 released 15:23. Authority read-only: closeout 27535fb, sprint 8353224, three-layer 51fc63e.
