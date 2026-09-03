@@ -3,6 +3,8 @@
 갱신: 2026-09-03T05:36Z (KST 14:36) · Run `PRESENTATION_RESULT_MAX_SPRINT_20260903_1500` · Authority sealed `FINAL_CLOSEOUT_20260903` (27535fb) · 작성: Claude C
 
 ## 한 줄 현황
+**(14:50) SPRINT COMPLETE — FINAL READOUT published.** 성과 정의 = 공급·화자·번역(응답 metric은 69건 기준 coverage 0.60 미달). NEVO eligible 69 unique posts, W34 34; MEDIA_EVENT 33/69, Brand 3/69; 번역 PARAPHRASE 10/INSUFFICIENT 11; Gong Yoo cohort 127(PAID 114·Creator 100·REELS 82) = 실크 35%·12년 19%·프리미엄 3% → 인지도는 샀고 가격 근거는 못 샀다; 13 claims 중 S9 분리 0. 판정·슬라이드·한계: `reports/presentation_sprint_20260903/FINAL_READOUT.md`
+
 **(14:36) PRESENTATION RESULT-MAX SPRINT START (STOP 15:00).** 봉인된 최종 결합(KEEP 0 / OWN 0 / REPOSITION 2 / REDUCE 3 / TEST 8; 13 claims 중 NEVO를 S9에서 분리하는 claim 0; Media/Event가 10개 claim 중 8개의 dominant actor, Brand 직접 4건)에서 NEVO 런칭 캠페인 소셜 성과 리포트용 결과를 추출. A/B/D 첫 티켓 발행. 상세: `reports/presentation_sprint_20260903/RUN_START.md`
 
 **(00:05) v2.5 CU2 PASS → EM1 실행.** 코드북 감사(D + C 교차검증 17/19): CB_v2.4.0은 comparator-neutral이 아님 — CH4·PMO 메커니즘·PG1이 Braun 기술명(NEVO Sense·SilkGlide·실크)에 편향, Philips 기술명(리프트앤컷·ComfortCut·SkinProtect) 7행은 사전에 없어 "Philips 0"은 사전 artifact. → CB_v2.5.1 수정·ENTITY_DET_v2.5.0(D). Evidence deficit matrix 확정(23 cell) → **B MCP batch 1 = get_post_details 89콜**(frozen id만; S9·Philips External×PAID를 DIRECTIONAL로 올리는 것이 목표). PF-C1: v2.3 수집 시 D00 68건이 로컬 index에서 유실(raw에 보존) → 분모 보충은 Human 결정(HUM-V25-001). Prereg v2.5 초안 68 families 채택(freeze는 coverage gate 후).
