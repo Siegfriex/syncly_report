@@ -1,5 +1,5 @@
 # NEVO 런칭 세 계층 진단 — FINAL (THREE_LAYER_CAMPAIGN_DIAGNOSIS_1515, 15:08 KST)
-근거: sealed closeout 27535fb + sprint 2d999d0 + 이번 run (private commit ada8236). 모든 수치 = frozen corpus 3,435 posts 내 중복 제거 게시물 수 또는 Human Gold 144 증거 두께. prevalence·선호·인과 아님.
+근거: sealed closeout 27535fb + sprint 2d999d0 + 이번 run (private commit 51fc63e). 모든 수치 = frozen corpus 3,435 posts 내 중복 제거 게시물 수 또는 Human Gold 144 증거 두께. prevalence·선호·인과 아님.
 
 ## THREE-LAYER VERDICT: PARTIAL_LAYER_SPLIT — 서사 구조 기각, 결론 채택
 - 기각: '이미지 층이 따로 있었다'. 반증 검정에서 '실크'는 기능 집합 69건 중 34건(49%), 'Gong Yoo' 19건(28%)에 들어 있다. 반대로 cohort 127 안의 기능 어휘는 마찰 7 · 24% 2 · 316L 1 · 센서 0 · 가격 0. 하나의 유료 캠페인 어휘 안에 기능 논증이 중첩된 구조. 운반 구조만 다르다(Creator .787 vs .348, Other external .165 vs .420; REELS .646 vs .406).
@@ -41,8 +41,8 @@ FLAGSHIP IMAGE(12년 만·실크, 유지) → 구체적 사용자 문제(헤드�
 ## D NOTEBOOK
 `syncly_demo/runs/v25/FINAL_ALIGNMENT_90MIN/THREE_LAYER_DIAGNOSIS_20260903/NEVO_THREE_LAYER_CAMPAIGN_DIAGNOSIS.ipynb` (sha16 591afbeb13120837) — C QA: nbconvert --execute 15:06 KST, 15 code cells, 0 errors. Visuals V1–V5 in viz/.
 
-## PRIVATE POINTERS (commit ada8236)
-- 00_RUN_STATE.json `4b7a3446b43f6c6e`
+## PRIVATE POINTERS (commit 51fc63e)
+- 00_RUN_STATE.json `5d42b2f4c8f1f7d5`
 - 01_THREE_LAYER_HYPOTHESIS_LEDGER.csv `8a2a6b823ba99d39`
 - 02_LAYER1_CAMPAIGN_SURFACE.csv `5a85e886faf09eae`
 - 03_LAYER2_FUNCTION_MESSAGE.csv `d0c021d8858ca799`
@@ -52,9 +52,9 @@ FLAGSHIP IMAGE(12년 만·실크, 유지) → 구체적 사용자 문제(헤드�
 - 07_SOURCE_GROUNDED_EXAMPLES.csv `2119a4c124a290ad`
 - 08_COUNTEREVIDENCE.csv `3a346de7e5d921dc`
 - 09_FINAL_THREE_LAYER_REPORT.md `15fe707340392699`
-- 10_SLIDE_2_3_SCRIPT.md `1d9fa62fbec898e3`
+- 10_SLIDE_2_3_SCRIPT.md `989b1a730ab12159`
 - B_LAYER_TOKEN_CROSSOVER.csv `53650bd74d46a1c6`
 - A_THREE_LAYER_INTERPRETATION.md `6d14bdd2f2c02ec7`
-- SHA256.csv `1240d0162017bc17`
+- SHA256.csv `f72d35250ac2c020`
 
 A/B/D: two-wave-free single ticket each, all C ACCEPT. MCP calls 0. Frozen denominators untouched.
