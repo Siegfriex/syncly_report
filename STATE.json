@@ -1,11 +1,11 @@
 {
  "schema": "syncly-report-state/1.0.0",
- "updated_utc": "2026-09-02T15:03:25Z",
+ "updated_utc": "2026-09-03T05:37:26Z",
  "research_epoch": "RE-20260901-001",
- "execution_run": "RUN-20260902-V25-COMPARATOR-EXPANSION-001 (baseline v2.4.1 immutable @ 4f23c39)",
- "phase": "v2.5: CU2 PASS (CB_v2.4.0 not comparator-neutral); EM1 RELEASED (B get_post_details batch 1, 89 calls, frozen ids only); D-V25-003 CB_v2.5.1 + ENTITY_DET_v2.5.0; prereg v2.5 draft adopted (68 families, not frozen); PF-C1 substrate finding → HUM-V25-001",
+ "execution_run": "PRESENTATION_RESULT_MAX_SPRINT_20260903_1500 (STOP 15:00 KST) — on sealed FINAL_CLOSEOUT_20260903 (content 27535fb / HEAD 8e35f5b, 138/138 hash PASS)",
+ "phase": "Presentation result-max sprint: A campaign story (TOP10), B social performance + Gong Yoo cohort, D result visuals; sealed closeout READ-ONLY; MCP only as C-approved POST_SEAL_SUPPLEMENT",
  "reporter": "Claude C (single-writer)",
- "authority": "Human latest instruction > main 8e8c74d Braun_NEVO_Presentation_First_Final_Bundle_v2.4_20260902/ (CURRENT_AUTHORITY.json) > C-sealed v2.4 control artifacts > v2.3 bundle (methodology/falsification lineage only) > legacy/",
+ "authority": "Human sprint override 2026-09-03 14:3x > sealed FINAL_CLOSEOUT_20260903 (27535fb) > Desk bundle PRE_JOIN_READY > prior lineage",
  "locks": {
   "QUERY_SOURCE_LOCK": true,
   "ANALYSIS_CUTOFF": "2026-08-31T00:00:00Z",
