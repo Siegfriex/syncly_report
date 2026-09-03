@@ -1,5 +1,5 @@
 # NEVO Premium Framing Retention Audit — FINAL (PREMIUM_FRAMING_RETENTION_AUDIT_20260903)
-근거: sealed closeout 27535fb · sprint 8353224 · three-layer 51fc63e · 이번 run private commit d2ca99d. 프레임 F1 IDENTITY_LIFESTYLE_PREMIUM / F2 FLAGSHIP_NOVELTY / F3 FUNCTIONAL_PREMIUM_RTB / F4 ECONOMIC_VALUE_PROOF (C_FRAME_TOKENS_v1, A 승인, 기존 label 재사용). 비교는 literal 토큰 대칭(semantic은 P2 전용 별표, 순환성 차단). 모든 수치 n/N. prevalence·선호·인과 아님.
+근거: sealed closeout 27535fb · sprint 8353224 · three-layer 51fc63e · 이번 run private commit 16ce673. 프레임 F1 IDENTITY_LIFESTYLE_PREMIUM / F2 FLAGSHIP_NOVELTY / F3 FUNCTIONAL_PREMIUM_RTB / F4 ECONOMIC_VALUE_PROOF (C_FRAME_TOKENS_v1, A 승인, 기존 label 재사용). 비교는 literal 토큰 대칭(semantic은 P2 전용 별표, 순환성 차단). 모든 수치 n/N. prevalence·선호·인과 아님.
 
 ## VERDICTS
 | 검정 | 판정 | 근거 |
@@ -32,8 +32,8 @@ P1: Creator 100/127 (.787), REELS 82/127, PAID 114/127; F1 within Creator 100/10
 plain F1(127/127) 비교 금지 · silk_campaign+silk_glide_rtb 합산 금지 · F2 share를 포지셔닝으로 읽지 말 것 · actor 수치는 v1 04 기준(Other F3 19/29, Commerce F4 3/6).
 ## NOTEBOOK
 `syncly_demo/runs/v25/FINAL_ALIGNMENT_90MIN/PREMIUM_FRAMING_RETENTION_20260903/NEVO_PREMIUM_FRAMING_RETENTION_AUDIT.ipynb` sha16 a672641763d31408 — C nbconvert QA: nbconvert --execute 15:32 KST, 22 cells / 12 code, 0 errors, PASS
-## PRIVATE POINTERS (commit d2ca99d)
-- 00_RUN_STATE.json `f1422380e3aebfe1`
+## PRIVATE POINTERS (commit 16ce673)
+- 00_RUN_STATE.json `2448317dad8889a7`
 - 01_COHORT_DEFINITIONS.csv `4ea348b7b70c76f7`
 - 02_FRAME_POST_LABELS.csv `9907f0d7bfeb3ac2`
 - 03_FRAME_DISTRIBUTION.csv `88eeef6eb00550ff`
@@ -42,9 +42,9 @@ plain F1(127/127) 비교 금지 · silk_campaign+silk_glide_rtb 합산 금지 ·
 - 06_FUNCTION_CONSUMER_TRANSLATION.csv `a635bb46ab270d5c`
 - 07_S9_DIFFERENTIATION.csv `81f3383c4dc9ed71`
 - 08_COUNTEREVIDENCE.csv `d72382632ab2cb1a`
-- 09_FINAL_REPORT.md `4ce96c719147d0ef`
+- 09_FINAL_REPORT.md `d36816fd5f066ba8`
 - 10_SLIDE2_SCRIPT.md `179b37ad4dbf6c3e`
-- 11_SLIDE3_SCRIPT.md `73e8ae2b4fa91ff7`
+- 11_SLIDE3_SCRIPT.md `9d2afd73e89e9e83`
 - C_FRAME_TOKENS_v1.json `c79e173da9366bc1`
 - viz/D_VIZ_MANIFEST.csv `586306f2a523e7b2`
-- SHA256.csv `61bc3373ac4a41f0`
+- SHA256.csv `353b872c44f29a2a`
