@@ -5,7 +5,7 @@
 ## 한 줄 현황
 **(15:08) THREE-LAYER DIAGNOSIS COMPLETE.** 가설 PARTIAL: '이미지 층 별도 존재'는 반증(실크가 기능 집합 69건 중 34건), '기능으로 회귀'도 기각(가격 정당화 27은 프리미엄 논증); 채택된 결론 = 구매 시점 언어는 닿았고 소유 기간 언어(관리 34·교체 39·고장 22 vs 공급 4/0/6)는 안 닿았으며 어느 층에도 S9 분리가 없다. Notebook QA PASS. 상세: `reports/three_layer_20260903/FINAL.md`
 
-**(14:50) SPRINT COMPLETE — FINAL READOUT published.** 성과 정의 = 공급·화자·번역(응답 metric은 69건 기준 coverage 0.60 미달). NEVO eligible 69 unique posts, W34 34; MEDIA_EVENT 33/69, Brand 3/69; 번역 PARAPHRASE 10/INSUFFICIENT 11; Gong Yoo cohort 127(PAID 114·Creator 100·REELS 82) = 실크 35%·12년 19%·프리미엄 3% → 인지도는 샀고 가격 근거는 못 샀다; 13 claims 중 S9 분리 0. 판정·슬라이드·한계: `reports/presentation_sprint_20260903/FINAL_READOUT.md`
+**(14:50) SPRINT COMPLETE — FINAL READOUT published.** 성과 정의 = 공급·화자·번역(응답 metric은 69건 기준 coverage 0.60 미달). NEVO eligible 69 unique posts, W34 34; MEDIA_EVENT 50/117 families (post-level Media 7/69), Brand 3/69; 번역 PARAPHRASE 10/INSUFFICIENT 11; Gong Yoo cohort 127(PAID 114·Creator 100·REELS 82) = 실크 35%·12년 19%·프리미엄 3% → 인지도는 샀고 가격 근거는 못 샀다; 13 claims 중 S9 분리 0. 판정·슬라이드·한계: `reports/presentation_sprint_20260903/FINAL_READOUT.md`
 
 **(14:36) PRESENTATION RESULT-MAX SPRINT START (STOP 15:00).** 봉인된 최종 결합(KEEP 0 / OWN 0 / REPOSITION 2 / REDUCE 3 / TEST 8; 13 claims 중 NEVO를 S9에서 분리하는 claim 0; Media/Event가 10개 claim 중 8개의 dominant actor, Brand 직접 4건)에서 NEVO 런칭 캠페인 소셜 성과 리포트용 결과를 추출. A/B/D 첫 티켓 발행. 상세: `reports/presentation_sprint_20260903/RUN_START.md`
 

@@ -11,7 +11,7 @@ NEVO 런칭은 Series 9보다 61–70% 비싼 제품의 프리미엄을 소셜�
 | 1 | NEVO 광고 eligible 공급 | 69 unique posts · 117 target families | frozen 3,435 posts (2.0%) | 02 gold mart, B 01_CAMPAIGN_SNAPSHOT |
 | 2 | 시간축 | W31 1 · W32 9 · W33 6 · **W34 34** · W35 19 | 69 | B 01 (W34 = 8/20 런칭 이벤트 주) |
 | 3 | Braun이 가장 많이 말한 것 | 저마찰 포일 50 · 가격 정당화 27 · 24% 수치 13 · 면도 실패 12 · 316L 6 | claim별 dedup posts (겹침 있음, 합산 금지) | 03a, D 03_MESSAGE_SUPPLY_TOP5 |
-| 4 | 누가 운반했나 | MEDIA_EVENT 33 · OTHER_EXTERNAL 18 · CREATOR 13 · RETAIL 6 · **BRAND 3** | 69 unique posts (families: 50/39/17/7/4 of 117) | 02, C_REFERENCE_NUMBERS |
+| 4 | 누가 운반했나 | Other external 29 · Creator 24 · Media 7 · Commerce 6 · **Brand 3** (post-level partition) | 69 unique posts (partition; family-level 117: MEDIA_EVENT 50 · OTHER 39 · CREATOR 17 · RETAIL 7 · BRAND 4) | 02, C_REFERENCE_NUMBERS |
 | 5 | Brand 직접 음성 | 4 claim×post 쌍 = 3 고유 게시물; dominant actor MEDIA_EVENT 8/10 claims | 69 / 10 claims | 03a |
 | 6 | Brand→External 번역 | PARAPHRASE 10 · INSUFFICIENT 11 · EXACT/SHIFT 0 | 21 relations | 04, D 06_TRANSLATION_TOP3 |
 | 7 | 24% 수치의 운명 | 광고 13 → 소비자 정확 인용 0 (피부 결과 41은 생존, 단 category-shared) | Human Gold 144 | CL02_LAYERED_VERDICT, 07_v2 |
@@ -63,7 +63,7 @@ NEVO 런칭은 Series 9보다 61–70% 비싼 제품의 프리미엄을 소셜�
 | Slide | Headline | Primary number | Visual |
 |---|---|---|---|
 | 2 무엇을 가장 많이 말했나 | 런칭이 시장에 얹은 문장은 두 개였다. "덜 쓸린다" 50, "비싼 값을 한다" 27 | 50 / 27 (claim별 dedup, 합산 금지); W34 34/69 | S4_WEEKLY_SUPPLY + V2_MESSAGE_SUPPLY |
-| 3 누가 운반했나 (해석 규칙) | NEVO를 말한 것은 Braun이 아니었다. Brand 직접 3/69 | MEDIA_EVENT 33/69; dominant 8/10 claims | S1_WHO_CARRIED_IT |
+| 3 누가 운반했나 (해석 규칙) | NEVO를 말한 것은 Braun이 아니었다. Brand 직접 3/69 | MEDIA_EVENT 50/117 families (post-level Media 7/69); dominant 8/10 claims | S1_WHO_CARRIED_IT |
 | 4 브랜드 밖에서 어떻게 바뀌었나 | 죽은 것은 24%라는 숫자다 | PARAPHRASE 10 / INSUFFICIENT 11 (21); 24% 정확 인용 0/144 | V5_24PCT_TRANSLATION + S3_TRANSLATION_FLOW_TOP3 |
 | 5 말한 것과 가져간 것은 같았나 | engagement로는 답할 수 없다. 측정이 안 된다 | coverage likes 0.565 · views 0.507 · er 0.406 (69) vs cohort 0.677 · 0.827 · 0.717 (127, REELS 보고면) | S5_RESPONSE_COVERAGE_GAP + S6_GONG_YOO_COHORT_STRIP |
 | 6 무엇을 만들었고 무엇을 남겼나 | 첫 경쟁자는 Philips가 아니었다. Braun 자신의 Series 9였다 | 13 claims 중 S9 분리 0 (8 공유 + 5 미측정) | S2_CLAIM_FATE_STRIP (+ V6, V7 appendix) |
