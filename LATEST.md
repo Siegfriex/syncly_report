@@ -3,6 +3,8 @@
 갱신: 2026-09-03T05:36Z (KST 14:36) · Run `PRESENTATION_RESULT_MAX_SPRINT_20260903_1500` · Authority sealed `FINAL_CLOSEOUT_20260903` (27535fb) · 작성: Claude C
 
 ## 한 줄 현황
+**(15:34) PREMIUM FRAMING RETENTION AUDIT COMPLETE.** 이미지 프레임은 줄지 않았고(비순환 F1 .268 vs .261) 기능 프레임이 주 프레임이 됐다(primary F1 63/127 → F3 36/69); 두 표면 모두 경제적 가치 증명(F4)이 최저(4/127, 11/69)이며 그 F4를 세운 화자는 Commerce·Brand뿐. V1 PARTIALLY_COMPRESSED · V2 PARTIAL · V3 SHARED. Slide 2: '프리미엄 이미지는 선명했고, 지금도 줄지 않았다. 다만 제품을 설명하는 순간에는 기능적 이유가 그 위에 얹혔다.' 상세: `reports/premium_framing_20260903/FINAL.md`
+
 **(15:08) THREE-LAYER DIAGNOSIS COMPLETE.** 가설 PARTIAL: '이미지 층 별도 존재'는 반증(실크가 기능 집합 69건 중 34건), '기능으로 회귀'도 기각(가격 정당화 27은 프리미엄 논증); 채택된 결론 = 구매 시점 언어는 닿았고 소유 기간 언어(관리 34·교체 39·고장 22 vs 공급 4/0/6)는 안 닿았으며 어느 층에도 S9 분리가 없다. Notebook QA PASS. 상세: `reports/three_layer_20260903/FINAL.md`
 
 **(14:50) SPRINT COMPLETE — FINAL READOUT published.** 성과 정의 = 공급·화자·번역(응답 metric은 69건 기준 coverage 0.60 미달). NEVO eligible 69 unique posts, W34 34; MEDIA_EVENT 50/117 families (post-level Media 7/69), Brand 3/69; 번역 PARAPHRASE 10/INSUFFICIENT 11; Gong Yoo cohort 127(PAID 114·Creator 100·REELS 82) = 실크 35%·12년 19%·프리미엄 3% → 인지도는 샀고 가격 근거는 못 샀다; 13 claims 중 S9 분리 0. 판정·슬라이드·한계: `reports/presentation_sprint_20260903/FINAL_READOUT.md`

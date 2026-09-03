@@ -1,9 +1,9 @@
 {
  "schema": "syncly-report-state/1.0.0",
- "updated_utc": "2026-09-03T06:08:11Z",
+ "updated_utc": "2026-09-03T06:33:31Z",
  "research_epoch": "RE-20260901-001",
  "execution_run": "PRESENTATION_RESULT_MAX_SPRINT_20260903_1500 (STOP 15:00 KST) — on sealed FINAL_CLOSEOUT_20260903 (content 27535fb / HEAD 8e35f5b, 138/138 hash PASS)",
- "phase": "THREE_LAYER_CAMPAIGN_DIAGNOSIS_1515 COMPLETE (51fc63e): hypothesis PARTIAL — structure rejected (silk 49% inside functional set), conclusion adopted (ownership-period language unanswered, S9 separation absent); executable notebook QA PASS",
+ "phase": "PREMIUM_FRAMING_RETENTION_AUDIT COMPLETE (d2ca99d): V1 PARTIALLY_COMPRESSED (identity flat .268 vs .261, primary F1→F3), V2 PARTIAL, V3 SHARED; F4 economic proof floor on both surfaces (3.2% / 15.9%); notebook QA PASS",
  "reporter": "Claude C (single-writer)",
  "authority": "Human sprint override 2026-09-03 14:3x > sealed FINAL_CLOSEOUT_20260903 (27535fb) > Desk bundle PRE_JOIN_READY > prior lineage",
  "locks": {
